@@ -3,7 +3,7 @@ var app = angular.module('huaweiApp', ['ngRoute', 'ngSanitize', 'pascalprecht.tr
 app.config(['$routeProvider', '$locationProvider', '$translateProvider',
     function ($routeProvider, $locationProvider, $translateProvider) {
         $translateProvider.useStaticFilesLoader({
-            'prefix': 'locales/locale-',
+            'prefix': '/locales/locale-',
             'suffix': '.json'
         });
         $routeProvider
@@ -11,6 +11,15 @@ app.config(['$routeProvider', '$locationProvider', '$translateProvider',
                 templateUrl: '/templates/home.html',
                 controller: 'homeController'
             });
+        $routeProvider
+            .when("/products/:product_slug", {
+                templateUrl: '/templates/product.html',
+                controller: 'productController'
+            });
+        $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: false
+        });
     }
 ]);
 
@@ -60,6 +69,12 @@ app.controller('homeController', ['$http', '$scope', '$rootScope', '$location', 
                 slug : "huawei-nexus-6p"
             }
         ];
+    }
+]);
+
+app.controller('productController', ['$http', '$scope', '$rootScope', '$location', '$timeout', '$window', '$translate',
+    function($http, $scope, $rootScope, $location, $timeout, $window, $translate) {
+
     }
 ]);
 
