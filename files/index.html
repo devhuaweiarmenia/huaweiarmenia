@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html ng-app="huaweiApp" ng-controller="mainController">
+
+<head>
+    <meta http-equiv="content-type" content="text/html">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Huawei Armenia</title>
+
+    <link rel="stylesheet" type="text/css" href="css/allstyles.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" media="all">
+
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/angular.min.js"></script>
+
+</head>
+
+<body>
+<div class="wrapper">
+    <header id="header" class="page-header">
+        <div class="page-header-container">
+            <div class="mobile-nav icon-honor2-menu size-24">&nbsp;</div>
+            <div class="logo">
+                <a href="http://huaweiarmenia.am/">
+                    <img src="http://cdnskin.huawei.ru/ru/skin/frontend/huawei/honor-red/images/logo.png"
+                         alt="Honor России" class="large">
+                    <img src="http://cdnskin.huawei.ru/ru/skin/frontend/huawei/honor-red/images/logo.png"
+                         alt="Honor России" class="small">
+                </a>
+            </div>
+            <div class="header-nav-mob">
+                <nav id="nav">
+                    <ol class="nav-primary">
+                        <li class="level0 nav-4 parent drop">
+                            <a href="http://shop.huawei.ru/smartphone.html" class="level0 has-children" target="">Смартфоны</a>
+                            <em class="arrow"></em>
+                            <ul class="level0">
+                                <li class="level1 nav-4-1 first">
+                                    <a href="http://shop.huawei.ru/huawei-mate-8-komplekt.html" class="level1"
+                                       target="">Huawei Mate 8</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="level0 nav-5 parent drop">
+                            <a href="http://shop.huawei.ru/tablet.html" class="level0 has-children"
+                               target="">Планшеты</a>
+                            <em class="arrow"></em>
+                            <ul class="level0">
+                                <li class="level1 nav-5-1 first">
+                                    <a href="http://shop.huawei.ru/huawei-x2-zolotoj-bundle.html" class="level1"
+                                       target="">MediaPad X2</a>
+                                </li>
+                                <li class="level1 nav-5-2 last">
+                                    <a href="http://shop.huawei.ru/huawei-mediapad-m2-10-0-premium.html" class="level1"
+                                       target="">MediaPad M2 10.0</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="level0 nav-6 last parent drop">
+                            <a href="http://shop.huawei.ru/smartphone.html" class="level0 has-children" target="">Аксессуары</a>
+                            <em class="arrow"></em>
+                            <ul class="level0">
+                                <li class="level1 nav-6-1 first">
+                                    <a href="http://shop.huawei.ru/huawei-watch-pack.html" class="level1" target="">Huawei
+                                        Watch</a>
+                                </li>
+                                <li class="level1 nav-6-2">
+                                    <a href="http://shop.huawei.ru/accessories/band.html" class="level1" target="">Фитнес
+                                        трекеры</a>
+                                </li>
+                                <li class="level1 nav-6-3">
+                                    <a href="http://shop.huawei.ru/accessories/vneshnie-akkumuljatory.html"
+                                       class="level1" target="">Внешние аккумуляторы</a>
+                                </li>
+                                <li class="level1 nav-6-4">
+                                    <a href="http://shop.huawei.ru/accessories/chehly.html" class="level1" target="">Чехлы</a>
+                                </li>
+                                <li class="level1 nav-6-5">
+                                    <a href="http://shop.huawei.ru/accessories/plenki.html" class="level1" target="">Плёнки</a>
+                                </li>
+                                <li class="level1 nav-6-6 last">
+                                    <a href="http://shop.huawei.ru/accessories/earphones.html" class="level1" target="">Наушники</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </nav>
+                <div class="mobile-drop-down">
+                    <ul>
+                        <li class="beforeLogin">
+                            <a href="https://hwid8.vmall.com/casserver/remoteLogin?loginUrl=http://hwid8.vmall.com/oauth2/portal/login.jsp&amp;service=http%3A%2F%2Fshop.huawei.ru%2Fup%2Findex%2FloginReturn&amp;loginChannel=26000108&amp;reqClientType=2608&amp;lang=ru-ru&amp;adUrl=http://cdnmedia.huawei.ru/ru/media/wysiwyg/up/honor-7-russian-page-left.jpg"
+                               class="beforeLoginButton">Вход</a>
+                        </li>
+                        <li class="beforeLogin sign-up">
+                            <a href="https://hwid8.vmall.com/casserver/remoteLogin?loginUrl=https://hwid8.vmall.com/oauth2/portal/regbymail.jsp&amp;service=http%3A%2F%2Fshop.huawei.ru%2Fup%2Findex%2FloginReturn&amp;loginChannel=26000108&amp;reqClientType=2608&amp;lang=ru-ru">Регистрация</a>
+                        </li>
+                        <li class="mobile-links-invisible sign-up">
+                            <a id="sign-up" class="account"
+                               href="https://hwid8.vmall.com/casserver/remoteLogin?loginUrl=https://hwid8.vmall.com/oauth2/portal/regbymail.jsp&amp;service=http%3A%2F%2Fshop.huawei.ru%2Fup%2Findex%2FloginReturn&amp;loginChannel=26000108&amp;reqClientType=2608&amp;lang=ru-ru"
+                               title="Регистрация">Регистрация</a>
+                        </li>
+                        <li class="mobile-links-invisible">
+                            <a id="login-popup1" class="account"
+                               href="https://hwid8.vmall.com/casserver/remoteLogin?loginUrl=http://hwid8.vmall.com/oauth2/portal/login.jsp&amp;service=http%3A%2F%2Fshop.huawei.ru%2Fup%2Findex%2FloginReturn&amp;loginChannel=26000108&amp;reqClientType=2608&amp;lang=ru-ru&amp;adUrl=http://cdnmedia.huawei.ru/ru/media/wysiwyg/up/honor-7-russian-page-left.jpg"
+                               title="Вход">Вход</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-nav">
+                <ul class="header-nav-content">
+                    <li class="header-nav-item">
+                        <a href="http://shop.huawei.ru/smartphone.html" class="header-nav-link has-children" target="">{{"Smartphones"
+                            | translate}}</a>
+                        <em class="arrow"></em>
+                        <ul class="dd-menu">
+                            <li class="dd-menu-item" ng-repeat="item in menuLinks.smartphones">
+                                <a ng-href="/smartphones/{{item.link}}" class="level1" target="">{{item.title}}</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="http://shop.huawei.ru/tablet.html" class="header-nav-link has-children" target="">{{"Tablets"
+                            | translate}}</a>
+                        <em class="arrow"></em>
+                        <ul class="dd-menu">
+                            <li class="dd-menu-item" ng-repeat="item in menuLinks.tablets">
+                                <a ng-href="/smartphones/{{item.tablets}}" class="level1" target="">{{item.title}}</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="http://shop.huawei.ru/honor-5x-zolotoj.html" class="header-nav-link" target="">{{"Tablets"
+                            | translate}}</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="http://shop.huawei.ru/honor-7-pack.html" class="header-nav-link" target="">{{"Blog" |
+                            translate}}</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="http://shop.huawei.ru/honor-4x-pack.html" class="header-nav-link" target="">{{"About
+                            Us" | translate}}</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="http://shop.huawei.ru/honor-4x-pack.html" class="header-nav-link" target="">{{"Contacts"
+                            | translate}}</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </header>
+
+    <ng-view></ng-view>
+
+    <div id="block-footerLinks" class="footer-links"><!-- Include for Footer links starts -->
+        <div class="footer-links-column first-column"><h3>Для покупателей</h3>
+            <ul>
+                <li><a href="http://shop.huawei.ru/help-payments-ru">Оплата и доставка</a></li>
+                <li><a href="http://shop.huawei.ru/help-support-ru">Поддержка</a></li>
+                <li><a href="http://shop.huawei.ru/help-faq-ru">Вопросы и ответы</a></li>
+                <li><a href="http://shop.huawei.ru/help-warrantyservice-ru">Гарантийные условия</a></li>
+                <li><a href="http://shop.huawei.ru/help-exchangereturns-ru">Условия возврата</a></li>
+            </ul></div>
+        <div class="footer-links-column"><h3>О компании</h3>
+            <ul>
+                <li><a href="http://shop.huawei.ru/about-company-ru">О компании</a></li>
+                <li><a href="http://shop.huawei.ru/about-contact-us-ru/">Контакты</a></li>
+                <li><a href="http://shop.huawei.ru/service-centers-ru/">Сервисные центры</a></li>
+                <li><a href="/coming-soon-ru">График поставок</a></li>
+                <li><a href="http://fotki.yandex.ru/users/huaweirussia/">Фотобанк</a></li>
+            </ul></div>
+        <div class="footer-links-column third-column"><h3>Продукция</h3>
+            <ul>
+                <li><a href="http://shop.huawei.ru/smartphone/2-sim-card.html">Смартфоны на 2 сим-карты</a></li>
+                <li><a href="http://shop.huawei.ru/smartphone/honor.html">Смартфоны Honor</a></li><li>
+            </li><li><a href="http://shop.huawei.ru/smartphone/lte.html">Смартфоны LTE</a></li><li>
+            </li><li><a href="http://shop.huawei.ru/smartphone/new.html">Новые смартфоны</a></li><li>
+            </li><li><a href="http://shop.huawei.ru/smartphone/popular.html">Популярные смартфоны</a></li><li>
+            </li><li><a href="http://shop.huawei.ru/smartphone/slim.html">Тонкие смартфоны</a></li><li>
+            </li></ul>
+        </div>
+        <div class="footer-links-column fourth-column"><style>.contact-bkl{font-size:14pt}</style>
+            <h3>Связаться с нами</h3>
+            <ul>
+                <li class="contact-blk">Магазин:
+                    <br><span style="padding-left: 5px">8 800 7001677, <a href="mailto:support@huawei.ru">support@huawei.ru</a></span>
+                </li>
+                <li class="contact-blk">Сервис и поддержка:
+                    <br><span style="padding-left: 5px">8 800 7001606</span>, <a href="mailto:mobile.ru@huawei.com">mobile.ru@huawei.com</a></li>
+                <li>пн – пт, 09:00 – 18:00 (МСК)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="menu-bottom" style="display: none;">
+
+    </div>
+</div>
+<script src="js/lib/owl.carousel.js"></script>
+<script src="js/lib/angular-route.min.js"></script>
+<script src="js/lib/angular-sanitize.min.js"></script>
+<script src="js/lib/angular-translate.js"></script>
+<script src="js/lib/angular-translate-loader-static-files.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+
+</html>

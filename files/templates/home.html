@@ -1,0 +1,33 @@
+<div class="main-slider">
+    <ul class="main-slider-list" ng-if="homeSlider">
+
+        <li class="main-slider-item" ng-repeat="item in homeSlider" homeslider>
+            <div class="main-slider-img-container">
+                <a href="">
+                    <img ng-src="{{item.img}}" alt="{{item.title}}">
+                </a>
+            </div>
+            <div class="main-slider-content">
+                <h2 class="main-slider-content-title" ng-bind-html="item.title"></h2>
+                <div class="main-slider-content-desc">
+                    <span ng-bind-html="item.description"></span>
+                    <a href="" class="readmore">
+                        <span>Read More</span>
+                    </a>
+                </div>
+            </div>
+        </li>
+
+    </ul>
+</div>
+<div class="products-main">
+    <div class="products-item" ng-repeat="item in productsMain">
+        <a ng-href="/products/{{item.slug}}">
+            <img class="products-img" alt="{{item.title}}" ng-src="{{item.link}}">
+            <span class="products-title">{{item.title}}</span>
+            <span class="products-descr">{{item.description}}</span>
+            <span class="products-button">{{"products-more-btn" | translate}}</span>
+        </a>
+    </div>
+    <div class="clear"></div>
+</div>
