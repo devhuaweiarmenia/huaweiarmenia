@@ -26,7 +26,31 @@ app.config(['$routeProvider', '$locationProvider', '$translateProvider',
 app.controller('mainController', ['$http', '$scope', '$rootScope', '$location', '$timeout', '$window', '$translate',
     function($http, $scope, $rootScope, $location, $timeout, $window, $translate) {
         $translate.use("ru");
-
+        $scope.menuLinks = {
+            smartphones : [
+                { title : 'Nexus 6P', slug : 'nexus-6p'},
+                { title : 'G6', slug : 'g6'},
+                { title : 'G730', slug : 'g730'},
+                { title : 'Honor 3', slug : 'honor3'},
+                { title : 'Honor 3X', slug : 'honor-3x'},
+                { title : 'Honor 4C', slug : 'honor-4c'},
+                { title : 'Honor 4X', slug : 'honor-4x'},
+                { title : 'Honor 7', slug : 'honor-7'},
+                { title : 'P8 lite', slug : 'nexus-6p'},
+                { title : 'P8', slug : 'p8'},
+                { title : 'P6 S', slug : 'p6-s'},
+                { title : 'Y220', slug : 'y220'},
+                { title : 'Y330', slug : 'y330'},
+                { title : 'Y541', slug : 'y541'},
+                { title : 'Y625', slug : 'y625'},
+                { title : 'Honor 5X', slug : 'honor-5x'}
+            ],
+            tablets : [
+                { title : 'MediaPad X1', slug : 'mediapad-x1'},
+                { title : 'MediaPad T1 7 3G', slug : 'mediapad-t1-7'},
+                { title : 'MediaPad T1 8 4G', slug : 'mediapad-t1-8'}
+            ]
+        };
     }
 ]);
 

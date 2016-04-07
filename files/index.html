@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <title>Huawei Armenia</title>
 
-    <link rel="stylesheet" type="text/css" href="css/allstyles.css" media="all">
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/css/allstyles.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/css/owl.carousel.css" media="all">
 
-    <script src="js/lib/jquery.min.js"></script>
-    <script src="js/lib/angular.min.js"></script>
+    <script src="/js/lib/jquery.min.js"></script>
+    <script src="/js/lib/angular.min.js"></script>
 
 </head>
 
@@ -110,40 +110,45 @@
             <div class="header-nav">
                 <ul class="header-nav-content">
                     <li class="header-nav-item">
-                        <a href="http://shop.huawei.ru/smartphone.html" class="header-nav-link has-children" target="">{{"Smartphones"
-                            | translate}}</a>
+                        <a href="" class="header-nav-link has-children" target="">{{"Smartphones" | translate}}</a>
                         <em class="arrow"></em>
                         <ul class="dd-menu">
                             <li class="dd-menu-item" ng-repeat="item in menuLinks.smartphones">
-                                <a ng-href="/smartphones/{{item.link}}" class="level1" target="">{{item.title}}</a>
+                                <a ng-href="/products/{{item.slug}}" class="level1" target="">{{item.title}}</a>
                             </li>
                         </ul>
                     </li>
                     <li class="header-nav-item">
-                        <a href="http://shop.huawei.ru/tablet.html" class="header-nav-link has-children" target="">{{"Tablets"
-                            | translate}}</a>
+                        <a href="" class="header-nav-link has-children" target="">{{"Tablets" | translate}}</a>
                         <em class="arrow"></em>
                         <ul class="dd-menu">
                             <li class="dd-menu-item" ng-repeat="item in menuLinks.tablets">
-                                <a ng-href="/smartphones/{{item.tablets}}" class="level1" target="">{{item.title}}</a>
+                                <a ng-href="/products/{{item.tablets}}" class="level1" target="">{{item.title}}</a>
                             </li>
                         </ul>
                     </li>
                     <li class="header-nav-item">
-                        <a href="http://shop.huawei.ru/honor-5x-zolotoj.html" class="header-nav-link" target="">{{"Tablets"
-                            | translate}}</a>
+                        <a href="" class="header-nav-link has-children" target="">{{"Enterprises" | translate}}</a>
+                        <em class="arrow"></em>
+                        <ul class="dd-menu">
+                            <li class="dd-menu-item">
+                                <a href="" class="level1" target="">{{"Products" | translate}}</a>
+                                <em class="arrow"></em>
+                            </li>
+                            <li class="dd-menu-item">
+                                <a href="" class="level1" target="">{{"Solutions" | translate}}</a>
+                                <em class="arrow"></em>
+                            </li>
+                        </ul>
                     </li>
                     <li class="header-nav-item">
-                        <a href="http://shop.huawei.ru/honor-7-pack.html" class="header-nav-link" target="">{{"Blog" |
-                            translate}}</a>
+                        <a href="/blog" class="header-nav-link" target="">{{"Blog" | translate}}</a>
                     </li>
                     <li class="header-nav-item">
-                        <a href="http://shop.huawei.ru/honor-4x-pack.html" class="header-nav-link" target="">{{"About
-                            Us" | translate}}</a>
+                        <a href="/aboutus" class="header-nav-link" target="">{{"About Us" | translate}}</a>
                     </li>
                     <li class="header-nav-item">
-                        <a href="http://shop.huawei.ru/honor-4x-pack.html" class="header-nav-link" target="">{{"Contacts"
-                            | translate}}</a>
+                        <a href="/contacts" class="header-nav-link" target="">{{"Contacts" | translate}}</a>
                     </li>
                 </ul>
             </div>
@@ -198,14 +203,12 @@
 
     </div>
 </div>
-<script src="js/lib/owl.carousel.js"></script>
-<script src="js/lib/prototype.js"></script>
-<script src="js/lib/zoomer.js"></script>
-<script src="js/lib/angular-route.min.js"></script>
-<script src="js/lib/angular-sanitize.min.js"></script>
-<script src="js/lib/angular-translate.js"></script>
-<script src="js/lib/angular-translate-loader-static-files.min.js"></script>
-<script src="js/app.js"></script>
+<script src="/js/lib/owl.carousel.js"></script>
+<script src="/js/lib/angular-route.min.js"></script>
+<script src="/js/lib/angular-sanitize.min.js"></script>
+<script src="/js/lib/angular-translate.js"></script>
+<script src="/js/lib/angular-translate-loader-static-files.min.js"></script>
+<script src="/js/app.js"></script>
 </body>
 
 </html>

@@ -1,24 +1,27 @@
-<div class="main-container col1-layout">
+<div class="main-container col1-layout catalog-product-view">
     <div class="main">
-        <div class="col-main">
+        <div class="col-main product-view">
 
-        <div class="product-essential">
+            <div class="product-essential">
                 <form autocomplete="off" id="product_addtocart_form">
 
                     <div class="product-img-box">
+
                         <div class="product-name">
                             <h1>Honor 7 серый графит</h1>
                         </div>
+
                         <div class="product-image">
-                            <div style="height:486px;width:486px;" class="zoomWrapper">
-                                <img id="amasty_zoom" width="500" data-zoom-image="{{data.img}}"
-                                     ng-src="{{data.img}}"
-                                     alt="{{data.title}}" title="{{data.title}}" style="position: absolute;"></div></div>
+                            <img id="amasty_zoom" width="500" height="500px" style="margin: 0 auto"
+                                 ng-src="{{data.img}}" alt="{{data.title}}"
+                                 src="http://cdnmedia.huawei.ru/ru/media/catalog/product/cache/2/image/500x500/9df78eab33525d08d6e5fb8d27136e95/h/o/honor7_grey-black_1.jpg"
+                                 title="{{data.title}}">
+                        </div>
 
 
                         <div class="more-views">
                             <div style="position: relative;">
-                                <div id="amasty_gallery">
+                                <div class="more-views-list">
                                     <a rel="group" data-image="http://cdnmedia.huawei.ru/ru/media/catalog/product/cache/2/thumbnail/500x500/9df78eab33525d08d6e5fb8d27136e95/h/o/honor7_grey-black_1.jpg" data-zoom-image="http://cdnmedia.huawei.ru/ru/media/catalog/product/cache/2/thumbnail/9df78eab33525d08d6e5fb8d27136e95/h/o/honor7_grey-black_1.jpg" class="active">
                                         <img src="http://cdnmedia.huawei.ru/ru/media/catalog/product/cache/2/thumbnail/85x/9df78eab33525d08d6e5fb8d27136e95/h/o/honor7_grey-black_1.jpg" width="85" height="85" alt="Honor 7 серый графит" title="Honor 7 серый графит" border="1"/>
                                     </a>
@@ -28,64 +31,6 @@
                                 </div>
                             </div>
                         </div>
-                        <script type="text/javascript">
-                            AmZoomerObj = new AmZoomer({
-                                        "general": {
-                                            "zoom_enable":"0",
-                                            "lightbox_enable":"1",
-                                            "carousel_enable":"1",
-                                            "change_image":"click",
-                                            "thumbnail_lignhtbox":"0"
-                                        },
-                                        "zoom": {
-                                            "zoomType":"lens",
-                                            "preloading":"1",
-                                            "loadingIcon":"http:\/\/cdnskin.huawei.ru\/ru\/skin\/frontend\/huawei\/honor-red\/js\/amasty\/amconf\/images\/preloader.gif",
-                                            "lensShape":"round",
-                                            "lensSize":"200",
-                                            "borderSize":1,
-                                            "zoomWindowFadeIn":500,
-                                            "zoomWindowFadeOut":500,
-                                            "lensFadeIn":630,
-                                            "easing":true,
-                                            "gallery":"amasty_gallery",
-                                            "cursor":"pointer",
-                                            "galleryActiveClass":"active",
-                                            "imageCrossfade":true
-                                        },
-                                        "lightbox": {
-                                            "loop":1,
-                                            "prevEffect":"fade",
-                                            "nextEffect":"fade",
-                                            "helpers":{
-                                                "title":{"type":"float"},
-                                                "thumbs":{"width":50,"height":50}
-                                            }
-                                        },
-                                        "carousel":{
-                                            "items":4,
-                                            "circular":false,
-                                            "height":85,
-                                            "prev":{
-                                                "button":"#prev-gallery",
-                                                "key":"left"
-                                            },
-                                            "next":{
-                                                "button":"#next-gallery",
-                                                "key":"right"
-                                            },
-                                            "auto":false,
-                                            "swipe": {
-                                                "onTouch":true,
-                                                "onMouse":true
-                                            },
-                                            "pagination":"#ampagination",
-                                            "responsive":false,
-                                            "infinite":false
-                                        }
-                                    }
-                            );
-                            AmZoomerObj.loadCarousel();</script>
                     </div>
 
                     <div class="product-shop">
@@ -94,27 +39,30 @@
                             <span></span>
                         </h2>
                         <div class="short-description">
-                            <div class="std"><table style="padding-top: 0px; padding-bottom: 10px; cell-spacing: 5px">
-                                <tbody><tr>
-                                    <td style="width: 36px;">
-                                        <a href="http://shop.huawei.ru/honor-7-premium.html">
-                                            <img src="http://cdnmedia.huawei.ru/ru/media/wysiwyg/a/b/premium_gold.jpg">
-                                        </a>
-                                    </td>
-                                    <td>&nbsp;</td>
-                                    <td style="width: 36px;">
-                                        <a href="http://shop.huawei.ru/honor-7.html">
-                                            <img src="http://cdnmedia.huawei.ru/ru/media/wysiwyg/a/b/grey_grafit.jpg">
-                                        </a>
-                                    </td>
-                                    <td>&nbsp;</td>
-                                    <td style="width: 36px">
-                                        <a href="http://shop.huawei.ru/honor-7-serebristyj.html">
-                                            <img src="http://cdnmedia.huawei.ru/ru/media/wysiwyg/a/b/silver_metal.jpg">
-                                        </a>
-                                    </td>
-                                </tr>
-                                </tbody></table>
+                            <div class="std">
+                                <table style="padding-top: 0px; padding-bottom: 10px; cell-spacing: 5px">
+                                    <tbody>
+                                    <tr>
+                                        <td style="width: 36px;">
+                                            <a href="http://shop.huawei.ru/honor-7-premium.html">
+                                                <img src="http://cdnmedia.huawei.ru/ru/media/wysiwyg/a/b/premium_gold.jpg">
+                                            </a>
+                                        </td>
+                                        <td>&nbsp;</td>
+                                        <td style="width: 36px;">
+                                            <a href="http://shop.huawei.ru/honor-7.html">
+                                                <img src="http://cdnmedia.huawei.ru/ru/media/wysiwyg/a/b/grey_grafit.jpg">
+                                            </a>
+                                        </td>
+                                        <td>&nbsp;</td>
+                                        <td style="width: 36px">
+                                            <a href="http://shop.huawei.ru/honor-7-serebristyj.html">
+                                                <img src="http://cdnmedia.huawei.ru/ru/media/wysiwyg/a/b/silver_metal.jpg">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
 
                                 <br>
                                 <ul class="spec">
@@ -130,36 +78,17 @@
                                     <li>Аккумулятор 3000 мА*ч</li>
                                 </ul>
 
-                                <div style="padding-top: 20px; color: blue; font-weight: bold">Бесплатная доставка по России</div>
-
                             </div>
-                        </div>
-
-
-
-
-                        <div class="qty-wrapper">
-                            <label for="qty">Кол-во:</label>
-                            <input type="text" name="qty" id="qty" maxlength="3" value="1" title="Кол-во" class="input-text qty validate-number validate-number-range number-range-1-999">
-                        </div>
-
-                        <div class="rightSelection">
-                            <p class="availability in-stock">
-                                <span class="label">Статус:</span>
-                                <span class="value">Есть в наличии</span>
-                            </p>
                         </div>
 
                         <div class="price-info">
 
-
-
                             <div class="price-box">
-                                <span class="regular-price" id="product-price-139">
-                                            <span class="price">25&nbsp;990,00&nbsp;руб.</span>                                    </span>
-
+                                    <span class="regular-price" id="product-price-139">
+                                        <span class="price">25&nbsp;990,00&nbsp;руб.
+                                        </span>
+                                    </span>
                             </div>
-
 
                         </div>
                         <div style="clear:both"></div>
@@ -172,10 +101,6 @@
 
             <div class="clearer"></div>
 
-
-
-
-
             <div class="product-collateral toggle-content tabs">
                 <ul class="toggle-tabs">
                     <li class="current"><span>Обзор</span></li>
@@ -185,6 +110,5 @@
 
         </div>
 
-        </div>
     </div>
 </div>

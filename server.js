@@ -37,13 +37,13 @@ mongoose.connection.on('disconnected', function () {
     console.log('Mongoose default connection disconnected');
 });
 
-app.use(express.static(__dirname + '/files'));
+app.use(express.static('' + __dirname + '/files'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-app.use('/favicon.ico', express.static('./files/img/theweave.ico'));
+app.use('/favicon.ico', express.static('./files/img/favicon.ico'));
 
 app.set('json spaces', 2);
 
