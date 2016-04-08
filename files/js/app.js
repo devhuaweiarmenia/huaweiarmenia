@@ -7,12 +7,12 @@ app.config(['$routeProvider', '$locationProvider', '$translateProvider',
             'suffix': '.json'
         });
         $routeProvider
-            .when("/", {
+            .when("/:lang/", {
                 templateUrl: '/templates/home.html',
                 controller: 'homeController'
             });
         $routeProvider
-            .when("/products/:product_slug", {
+            .when("/:lang/products/:product_slug", {
                 templateUrl: '/templates/product.html',
                 controller: 'productController'
             });
@@ -22,10 +22,40 @@ app.config(['$routeProvider', '$locationProvider', '$translateProvider',
         });
     }
 ]);
-
-app.controller('mainController', ['$http', '$scope', '$rootScope', '$location', '$timeout', '$window', '$translate',
-    function($http, $scope, $rootScope, $location, $timeout, $window, $translate) {
-        $translate.use("ru");
+app.run(['$rootScope', '$routeParams', '$route', '$location', '$timeout', '$translate',
+    function($rootScope, $routeParams, $route, $location, $timeout, $translate) {
+        $rootScope.defaultLang = "hy";
+        $rootScope.preLink = "/";
+        if(!$rootScope.currentLang) $rootScope.currentLang = $rootScope.defaultLang;
+        var tempLocale = $location.path().slice(1,3);
+        if(tempLocale != "en" && tempLocale != "ru" && tempLocale != "hy") {
+            $location.path("/" + $rootScope.defaultLang + $location.path().slice(4))
+        }
+        else {
+            $rootScope.currentLang = $location.path().slice(1,3);
+            $translate.use($rootScope.currentLang);
+        }
+        $rootScope.preLink = '/' + $rootScope.currentLang;
+        $rootScope.$on('$routeChangeStart', function (event, next, current) {
+            var tempLocale = $location.path().slice(1,3);
+            if(tempLocale != "en" && tempLocale != "ru" && tempLocale != "hy") {
+                $location.path("/" + $rootScope.defaultLang + $location.path().slice(4))
+            }
+            else {
+                $rootScope.currentLang = $location.path().slice(1,3);
+                $translate.use($rootScope.currentLang);
+            }
+            $rootScope.preLink = '/' + $rootScope.currentLang;
+        });
+    }
+]);
+app.controller('mainController', ['$http', '$scope', '$routeParams', '$rootScope', '$location', '$timeout', '$window', '$translate',
+    function($http, $scope, $routeParams, $rootScope, $location, $timeout, $window, $translate) {
+        console.log($rootScope.currentLang);
+        $rootScope.changeLang = function(lang) {
+            $location.path("/" + lang + $location.path().slice(4));
+        };
+        //            $route.updateParams({lang : $rootScope.currentLang});
         $scope.menuLinks = {
             smartphones : [
                 { title : 'Nexus 6P', slug : 'nexus-6p'},

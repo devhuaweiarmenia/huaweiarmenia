@@ -8,12 +8,11 @@
                     <div class="product-img-box">
 
                         <div class="product-name">
-                            <h1>Honor 7 серый графит</h1>
+                            <h1 ng-bind-html="product.title"></h1>
                         </div>
 
                         <div class="product-image">
-                            <img id="amasty_zoom" width="500" height="500px" style="margin: 0 auto"
-                                 ng-src="{{data.img}}" alt="{{data.title}}"
+                            <img style="margin: 0 auto" ng-src="{{data.img}}" alt="{{data.title}}"
                                  src="http://cdnmedia.huawei.ru/ru/media/catalog/product/cache/2/image/500x500/9df78eab33525d08d6e5fb8d27136e95/h/o/honor7_grey-black_1.jpg"
                                  title="{{data.title}}">
                         </div>
@@ -34,48 +33,28 @@
                     </div>
 
                     <div class="product-shop">
-                        <h1 class="product-name">Honor 7 серый графит</h1>
+                        <h1 class="product-name" ng-bind-html="product.title"></h1>
                         <h2 class="product-subtitle">
                             <span></span>
                         </h2>
                         <div class="short-description">
                             <div class="std">
-                                <table style="padding-top: 0px; padding-bottom: 10px; cell-spacing: 5px">
-                                    <tbody>
-                                    <tr>
-                                        <td style="width: 36px;">
-                                            <a href="http://shop.huawei.ru/honor-7-premium.html">
-                                                <img src="http://cdnmedia.huawei.ru/ru/media/wysiwyg/a/b/premium_gold.jpg">
-                                            </a>
-                                        </td>
-                                        <td>&nbsp;</td>
-                                        <td style="width: 36px;">
-                                            <a href="http://shop.huawei.ru/honor-7.html">
-                                                <img src="http://cdnmedia.huawei.ru/ru/media/wysiwyg/a/b/grey_grafit.jpg">
-                                            </a>
-                                        </td>
-                                        <td>&nbsp;</td>
-                                        <td style="width: 36px">
-                                            <a href="http://shop.huawei.ru/honor-7-serebristyj.html">
-                                                <img src="http://cdnmedia.huawei.ru/ru/media/wysiwyg/a/b/silver_metal.jpg">
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                                <!--<table style="padding-top: 0px; padding-bottom: 10px; cell-spacing: 5px">-->
+                                    <!--<tbody>-->
+                                    <!--<tr>-->
+                                        <!--<td style="width: 36px;">-->
+                                            <!--<a href="http://shop.huawei.ru/honor-7-premium.html">-->
+                                                <!--<img src="http://cdnmedia.huawei.ru/ru/media/wysiwyg/a/b/premium_gold.jpg">-->
+                                            <!--</a>-->
+                                        <!--</td>-->
+                                        <!--<td>&nbsp;</td>-->
+                                    <!--</tr>-->
+                                    <!--</tbody>-->
+                                <!--</table>-->
 
-                                <br>
+                                <!--<br>-->
                                 <ul class="spec">
-                                    <li>Smart Key</li>
-                                    <li>Сканер отпечатка пальца</li>
-                                    <li>Основная камера 20 МП</li>
-                                    <li>Фронтальная камера 8 МП со вспышкой</li>
-                                    <li>Экран 5.2", Full HD</li>
-                                    <li>2 nano SIM-карты</li>
-                                    <li>Поддержка 4G LTE до 300 Мбит/с</li>
-                                    <li>Процессор 8 ядер</li>
-                                    <li>16 ГБ ROM + 3 ГБ RAM</li>
-                                    <li>Аккумулятор 3000 мА*ч</li>
+                                    <li ng-repeat="item in product.shortDescr">{{item}}</li>
                                 </ul>
 
                             </div>
@@ -84,10 +63,9 @@
                         <div class="price-info">
 
                             <div class="price-box">
-                                    <span class="regular-price" id="product-price-139">
-                                        <span class="price">25&nbsp;990,00&nbsp;руб.
-                                        </span>
-                                    </span>
+                                <span class="regular-price">
+                                    <span class="price" ng-bind-html="product.price"></span>
+                                </span>
                             </div>
 
                         </div>
