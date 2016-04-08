@@ -3,7 +3,9 @@ html, body {
     background: #d4d4d4;
     margin: 0;
 }
-
+::-webkit-scrollbar{width:10px;background-color:#d9d9d9}::-webkit-scrollbar-thumb{background-color:#b01a21;border-radius:10px}::-webkit-scrollbar-thumb:hover{background-color:#9a171d;border:1px
+solid #9a171d}::-webkit-scrollbar-thumb:active{background-color:#9a171d;border:1px
+solid #9a171d}
 @font-face {
     font-family: 'bignoodletitling';
     src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/big-noodle-titling/Cyrillic/BigNoodleTitlingCyr.eot");
@@ -709,12 +711,16 @@ img {
     cursor: pointer;
 }
 .catalog-product-view div.product-collateral .toggle-tabs {
-    background: #b01a21;
+    /*background: #b01a21;*/
     border: 0;
     margin-bottom: 0;
-    height: 53px;
+    min-height: 53px;
     line-height: 53px;
+
+}
+.catalog-product-view div.product-collateral .toggle-tabs .toggle-tabs-item {
     padding-left: 20px;
+    background: #b01a21;
 }
 .bodycapital-font-medium-white, .catalog-product-view div.product-collateral .toggle-tabs li span {
     font-family: CenturyGothicWeb,CenturyGothicCyr,Century Gothic Grk,muli,Arial,sans-serif;
@@ -760,10 +766,60 @@ img {
     .product-view .product-essential {
         width: 100%;
     }
+    .narrow-tabs {
+        display: block;
+    }
+    .wide-tabs {
+        display: none;
+    }
+    .tab-content-image {
+        width: 50%;
+        float: left !important;
+    }
+    .tab-content-descr {
+        width: 50%;
+        float: right !important;
+        line-height: 16px;
+    }
+    .tab-content-title {
+        padding-top: 0px !important;
+    }
+    .tab-content-text {
+        padding-right: 10px;
+    }
+    .tab-content-image img {
+        width: 100%;
+    }
+    .toggle-tabs-item {
+        border-bottom: 1px solid #fff;
+    }
+    .product-collateral .toggle-tabs-item:after {
+        content: '';
+        position: static;
+        width: 0;
+        height: 0;
+        display: block;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+        border-left: 4px solid #9a171d;
+        border-right: none;
+        border-left: 4px solid #fff;
+        float: right;
+        margin: 22px;
+    }
 }
 
 
 @media only screen and (min-width: 771px) {
+    .toggle-tabs {
+        background-color: #b01a21;
+    }
+    .narrow-tabs {
+        display: none;
+    }
+    .wide-tabs {
+        display: block;
+    }
     .catalog-product-view .product-img-box {
         width: 55%;
     }
@@ -783,7 +839,7 @@ img {
         width: 100%;
         position: relative;
         border: 1px solid #CCC;
-        background-color: #F4F4F4;
+
     }
     .product-view .product-essential {
         float: left;
@@ -792,6 +848,7 @@ img {
     .product-collateral .toggle-tabs li {
         float: left;
         border: 0;
+        background-color: #F4F4F4;
     }
     .product-collateral .toggle-tabs li>span {
         -moz-user-select: none;
@@ -808,6 +865,12 @@ img {
         font-size: 12px;
         position: relative;
         bottom: -1px;
+    }
+    .tabs-content-wide .tab-content-descr {
+        width: calc(100% - 500px);
+    }
+    .tabs-content-wide .tab-content-img{
+        width: 500px;
     }
 }
 .more-views-list a{
@@ -829,4 +892,42 @@ img {
 .current {
     color: #b01a21;
     background: none;
+}
+.tabs-content-wide {
+    margin: 30px;
+}
+.tabs-content-wide .tabs-content-item {
+    width: 100%;
+    display: inline-block;
+    padding: 20px 0 50px;
+    border-bottom: 1px solid rgb(210,210,210);
+}
+.tabs-content-wide .tabs-content-item:last-child {
+    border-bottom: none;
+}
+.tabs-content-wide .tabs-content-item:nth-child(2n) .tab-content-descr, .tabs-content-wide .tabs-content-item:nth-child(2n+1) .tab-content-item {
+    float: left;
+}
+.tabs-content-wide .tabs-content-item:nth-child(2n) .tab-content-item, .tabs-content-wide .tabs-content-item:nth-child(2n+1) .tab-content-descr {
+    float: right;
+}
+.tab-content-title {
+    width: 100%;
+    font-weight: bold !important;
+    font-size: 20px;
+    color: #333;
+    float: none;
+    padding: 20px 10px 10px;
+    line-height: 24px;
+}
+.tab-content-text {
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+    float: none;
+    padding-left: 10px;
+}
+.narrow-tabs {
+    margin: 0 20px;
+    background: #fff;
 }

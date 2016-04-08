@@ -103,8 +103,45 @@
 
             <div class="product-collateral toggle-content tabs">
                 <ul class="toggle-tabs">
-                    <li class="current"><span>Обзор</span></li>
-                    <li class=""><span>Спецификации</span></li>
+                    <li class="toggle-tabs-item" ng-class="{'current' : productBottom=='overview'}" ng-click="toggleBottom('overview')">
+                        <span>Обзор</span>
+                    </li>
+                    <ul class="tabs-content-wide narrow-tabs" ng-if="productBottom == 'overview'">
+                        <li class="tabs-content-item" ng-repeat="item in product.overview">
+                            <div class="tab-content-descr">
+                                <div class="tab-content-title" ng-bind-html="item.title"></div>
+                                <div class="tab-content-text" ng-bind-html="item.text"></div>
+                            </div>
+                            <div class="tab-content-image">
+                                <img src="/img/{{item.img}}" border="0" style="border: 0; float: right;">
+                            </div>
+                        </li>
+                    </ul>
+                    <li class="toggle-tabs-item" ng-class="{'current' : productBottom=='specification'}" ng-click="toggleBottom('specification')">
+                        <span>Спецификации</span>
+                    </li>
+                    <ul class="tabs-content-wide narrow-tabs" ng-if="productBottom=='specification'">
+                        <li class="">
+                            <div class="tab-content-descr">
+                                <span class="tab-content-title"></span>
+                                <span class="tab-content-text"></span>
+                            </div>
+                            <div class="tab-content-image">
+                                <img src="/images/kkkk.jpg" border="0" style="border: 0; float: right; margin-left: 10px; margin-right: 10px;">
+                            </div>
+                        </li>
+                    </ul>
+                </ul>
+                <ul class="tabs-content-wide wide-tabs" ng-if="productBottom == 'overview'">
+                    <li class="tabs-content-item" ng-repeat="item in product.overview">
+                        <div class="tab-content-descr">
+                            <div class="tab-content-title" ng-bind-html="item.title"></div>
+                            <div class="tab-content-text" ng-bind-html="item.text"></div>
+                        </div>
+                        <div class="tab-content-image">
+                            <img src="/img/{{item.img}}" border="0" style="border: 0; float: right; margin-left: 10px; margin-right: 10px;">
+                        </div>
+                    </li>
                 </ul>
             </div>
 

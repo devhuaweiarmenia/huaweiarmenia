@@ -1,3 +1,7 @@
+/**
+ * Created by mmalkav on 08.04.2016.
+ */
+
 var express = require('express');
 var fs = require('fs');
 var bodyParser = require('body-parser');
@@ -55,8 +59,6 @@ userSchema = mongoose.model('p_users', userAccount);
 var server = app.listen(port || 901, function() {
     console.log("listening on " + port);
 });
-
-
 
 
 var io  = require('socket.io').listen(server);
