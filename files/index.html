@@ -22,7 +22,7 @@
         <div class="page-header-container">
             <div class="mobile-nav icon-honor2-menu size-24">&nbsp;</div>
             <div class="logo">
-                <a href="http://huaweiarmenia.am/">
+                <a ng-href="{{preLink}}/">
                     <img src="http://cdnskin.huawei.ru/ru/skin/frontend/huawei/honor-red/images/logo.png"
                          alt="Honor России" class="large">
                     <img src="http://cdnskin.huawei.ru/ru/skin/frontend/huawei/honor-red/images/logo.png"
@@ -115,7 +115,7 @@
                         <em class="arrow"></em>
                         <ul class="dd-menu">
                             <li class="dd-menu-item" ng-repeat="item in menuLinks.smartphones">
-                                <a ng-href="/products/{{item.slug}}" class="level1" target="">{{item.title}}</a>
+                                <a ng-href="{{preLink}}/products/{{item.slug}}" class="level1" target="">{{item.title}}</a>
                             </li>
                         </ul>
                     </li>
@@ -124,7 +124,7 @@
                         <em class="arrow"></em>
                         <ul class="dd-menu">
                             <li class="dd-menu-item" ng-repeat="item in menuLinks.tablets">
-                                <a ng-href="/products/{{item.tablets}}" class="level1" target="">{{item.title}}</a>
+                                <a ng-href="{{preLink}}/products/{{item.tablets}}" class="level1" target="">{{item.title}}</a>
                             </li>
                         </ul>
                     </li>
@@ -143,13 +143,13 @@
                         </ul>
                     </li>
                     <li class="header-nav-item">
-                        <a href="/blog" class="header-nav-link" target="">{{"Blog" | translate}}</a>
+                        <a href="{{preLink}}/blog" class="header-nav-link" target="">{{"Blog" | translate}}</a>
                     </li>
                     <li class="header-nav-item">
-                        <a href="/aboutus" class="header-nav-link" target="">{{"About Us" | translate}}</a>
+                        <a href="{{preLink}}/aboutus" class="header-nav-link" target="">{{"About Us" | translate}}</a>
                     </li>
                     <li class="header-nav-item">
-                        <a href="/contacts" class="header-nav-link" target="">{{"Contacts" | translate}}</a>
+                        <a href="{{preLink}}/contacts" class="header-nav-link" target="">{{"Contacts" | translate}}</a>
                     </li>
                 </ul>
             </div>
@@ -187,7 +187,7 @@
                 <li><a href="http://shop.huawei.ru/about-company-ru">О компании</a></li>
                 <li><a href="http://shop.huawei.ru/about-contact-us-ru/">Контакты</a></li>
                 <li><a href="http://shop.huawei.ru/service-centers-ru/">Сервисные центры</a></li>
-                <li><a href="/coming-soon-ru">График поставок</a></li>
+                <li><a href="{{preLink}}/coming-soon-ru">График поставок</a></li>
                 <li><a href="http://fotki.yandex.ru/users/huaweirussia/">Фотобанк</a></li>
             </ul></div>
         <div class="footer-links-column third-column"><h3>Продукция</h3>

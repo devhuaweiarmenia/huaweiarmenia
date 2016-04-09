@@ -82,7 +82,7 @@
             <div class="product-collateral toggle-content tabs">
                 <ul class="toggle-tabs">
                     <li class="toggle-tabs-item" ng-class="{'current' : productBottom=='overview'}" ng-click="toggleBottom('overview')">
-                        <span>Обзор</span>
+                        <span>{{"Overview" | translate}}</span>
                     </li>
                     <ul class="tabs-content-wide narrow-tabs" ng-if="productBottom == 'overview'">
                         <li class="tabs-content-item" ng-repeat="item in product.overview">
@@ -96,16 +96,15 @@
                         </li>
                     </ul>
                     <li class="toggle-tabs-item" ng-class="{'current' : productBottom=='specification'}" ng-click="toggleBottom('specification')">
-                        <span>Спецификации</span>
+                        <span>{{"Specifications" | translate}}</span>
                     </li>
-                    <ul class="tabs-content-wide narrow-tabs" ng-if="productBottom=='specification'">
-                        <li class="">
+                    <ul class="tabs-content-wide narrow-tabs content-specifications" ng-if="productBottom=='specification'">
+                        <li class="tabs-content-item" ng-repeat="item in product.specification">
                             <div class="tab-content-descr">
-                                <span class="tab-content-title"></span>
-                                <span class="tab-content-text"></span>
-                            </div>
-                            <div class="tab-content-image">
-                                <img src="/images/kkkk.jpg" border="0" style="border: 0; float: right; margin-left: 10px; margin-right: 10px;">
+                                <div class="tab-content-title" ng-bind-html="item.title"></div>
+                                <div class="tab-content-text specifications-text">
+                                    <div class="tab-content-text" ng-repeat="spec in item.text" ng-bind-html="spec"></div>
+                                </div>
                             </div>
                         </li>
                     </ul>
@@ -118,6 +117,19 @@
                         </div>
                         <div class="tab-content-image">
                             <img src="/img/{{item.img}}" border="0" style="border: 0; float: right; margin-left: 10px; margin-right: 10px;">
+                        </div>
+                    </li>
+                </ul>
+                <ul class="tabs-content-wide wide-tabs content-specifications" ng-if="productBottom == 'specification'">
+                    <li class="tabs-content-item" ng-repeat="item in product.specification" ng-class="{'specification-size-item' : item.title=='Size'}">
+                        <div class="tab-content-descr">
+                            <div class="tab-content-title" ng-bind-html="item.title"></div>
+                            <div class="tab-content-text specifications-text">
+                                <div class="tab-content-text" ng-repeat="spec in item.text" ng-bind-html="spec"></div>
+                            </div>
+                            <div class="tab-content-img" ng-if="item.title=='Size'">
+                                <img width="100%" src="/img/{{product.slug}}/specification/size.png">
+                            </div>
                         </div>
                     </li>
                 </ul>
