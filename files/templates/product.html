@@ -12,20 +12,15 @@
                         </div>
 
                         <div class="product-image">
-                            <img style="margin: 0 auto" ng-src="{{data.img}}" alt="{{data.title}}"
-                                 src="http://cdnmedia.huawei.ru/ru/media/catalog/product/cache/2/image/500x500/9df78eab33525d08d6e5fb8d27136e95/h/o/honor7_grey-black_1.jpg"
-                                 title="{{data.title}}">
+                            <img style="margin: 0 auto" ng-src="/img/{{product.slug}}/images/{{currentBigImg}}" alt="{{data.title}}" title="{{product.title}}">
                         </div>
 
 
                         <div class="more-views">
-                            <div style="position: relative;">
+                            <div style="position: relative;padding: 0px 60px;">
                                 <div class="more-views-list">
-                                    <a rel="group" data-image="http://cdnmedia.huawei.ru/ru/media/catalog/product/cache/2/thumbnail/500x500/9df78eab33525d08d6e5fb8d27136e95/h/o/honor7_grey-black_1.jpg" data-zoom-image="http://cdnmedia.huawei.ru/ru/media/catalog/product/cache/2/thumbnail/9df78eab33525d08d6e5fb8d27136e95/h/o/honor7_grey-black_1.jpg" class="active">
-                                        <img src="http://cdnmedia.huawei.ru/ru/media/catalog/product/cache/2/thumbnail/85x/9df78eab33525d08d6e5fb8d27136e95/h/o/honor7_grey-black_1.jpg" width="85" height="85" alt="Honor 7 серый графит" title="Honor 7 серый графит" border="1"/>
-                                    </a>
-                                    <a rel="group" data-image="http://cdnmedia.huawei.ru/ru/media/catalog/product/cache/2/thumbnail/500x500/9df78eab33525d08d6e5fb8d27136e95/0/8/08_1.jpg" data-zoom-image="http://cdnmedia.huawei.ru/ru/media/catalog/product/cache/2/thumbnail/9df78eab33525d08d6e5fb8d27136e95/0/8/08_1.jpg">
-                                        <img src="http://cdnmedia.huawei.ru/ru/media/catalog/product/cache/2/thumbnail/85x/9df78eab33525d08d6e5fb8d27136e95/0/8/08_1.jpg" width="85" height="85" alt="" title="" border="1"/>
+                                    <a rel="group" ng-class="{'active' : currentBigImg==item}" ng-repeat="item in product.img" ng-click="toggleBigImg(item)" productsimgslider>
+                                        <img ng-src="/img/{{product.slug}}/images/{{item}}" width="85" height="85" alt="{{product.title}}" title="{{product.title}}" border="1"/>
                                     </a>
                                 </div>
                             </div>

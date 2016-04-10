@@ -8,111 +8,73 @@ solid #9a171d}::-webkit-scrollbar-thumb:active{background-color:#9a171d;border:1
 solid #9a171d}
 @font-face {
     font-family: 'bignoodletitling';
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/big-noodle-titling/Cyrillic/BigNoodleTitlingCyr.eot");
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/big-noodle-titling/Cyrillic/BigNoodleTitlingCyr.eot?#iefix") format("embedded-opentype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/big-noodle-titling/Cyrillic/BigNoodleTitlingCyr.woff2") format("woff2"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/big-noodle-titling/Cyrillic/BigNoodleTitlingCyr.woff") format("woff"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/big-noodle-titling/Cyrillic/BigNoodleTitlingCyr.ttf") format("truetype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/big-noodle-titling/Cyrillic/BigNoodleTitlingCyr.svg#bignoodletitlingregular") format("svg");
+    src: url("/fonts/big-noodle-titling/Cyrillic/BigNoodleTitlingCyr.eot");
+    src: url("/fonts/big-noodle-titling/Cyrillic/BigNoodleTitlingCyr.eot?#iefix") format("embedded-opentype"), url("/fonts/big-noodle-titling/Cyrillic/BigNoodleTitlingCyr.woff2") format("woff2"), url("/fonts/big-noodle-titling/Cyrillic/BigNoodleTitlingCyr.woff") format("woff"), url("/fonts/big-noodle-titling/Cyrillic/BigNoodleTitlingCyr.ttf") format("truetype"), url("/fonts/big-noodle-titling/Cyrillic/BigNoodleTitlingCyr.svg#bignoodletitlingregular") format("svg");
     font-weight: normal;
     font-style: normal
 }
 
 @font-face {
     font-family: 'bignoodletitling';
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/big-noodle-titling/Default/big_noodle_titling_oblique-webfont.eot");
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/big-noodle-titling/Default/big_noodle_titling_oblique-webfont.eot?#iefix") format("embedded-opentype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/big-noodle-titling/Default/big_noodle_titling_oblique-webfont.woff2") format("woff2"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/big-noodle-titling/Default/big_noodle_titling_oblique-webfont.woff") format("woff"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/fonts/big-noodle-titling/Default/big_noodle_titling_oblique-webfont.ttf") format("truetype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/big-noodle-titling/Default/big_noodle_titling_oblique-webfont.svg#bignoodletitlingoblique") format("svg");
+    src: url("/fonts/big-noodle-titling/Default/big_noodle_titling_oblique-webfont.eot");
+    src: url("/fonts/big-noodle-titling/Default/big_noodle_titling_oblique-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/big-noodle-titling/Default/big_noodle_titling_oblique-webfont.woff2") format("woff2"), url("/fonts/big-noodle-titling/Default/big_noodle_titling_oblique-webfont.woff") format("woff"), url("/fonts/fonts/big-noodle-titling/Default/big_noodle_titling_oblique-webfont.ttf") format("truetype"), url("/fonts/big-noodle-titling/Default/big_noodle_titling_oblique-webfont.svg#bignoodletitlingoblique") format("svg");
     font-weight: normal;
     font-style: italic
 }
 
 @font-face {
-    font-family: 'dead_islandregular';
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/dead-island/dead_island-webfont.eot");
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/dead-island/dead_island-webfont.eot?#iefix") format("embedded-opentype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/dead-island/dead_island-webfont.woff2") format("woff2"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/dead-island/dead_island-webfont.woff") format("woff"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/dead-island/dead_island-webfont.ttf") format("truetype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/dead-island/dead_island-webfont.svg#dead_islandregular") format("svg");
-    font-weight: normal;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'mulilight_italic';
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli-lightitalic-webfont.eot");
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli-lightitalic-webfont.woff2") format("woff2"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli-lightitalic-webfont.woff") format("woff"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli-lightitalic-webfont.ttf") format("truetype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli-lightitalic-webfont.svg#mulilight_italic") format("svg");
-    font-weight: normal;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'muliitalic';
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli-italic-webfont.eot");
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli-italic-webfont.eot?#iefix") format("embedded-opentype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli-italic-webfont.woff2") format("woff2"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli-italic-webfont.woff") format("woff"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli-italic-webfont.ttf") format("truetype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli-italic-webfont.svg#muliitalic") format("svg");
-    font-weight: normal;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'mulilight';
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli-light-webfont.eot");
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli-light-webfont.eot?#iefix") format("embedded-opentype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli-light-webfont.woff2") format("woff2"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli-light-webfont.woff") format("woff"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli-light-webfont.ttf") format("truetype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli-light-webfont.svg#mulilight") format("svg");
-    font-weight: normal;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'muliregular';
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli/muli-regular-webfont.eot");
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli/muli-regular-webfont.eot?#iefix") format("embedded-opentype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli/muli-regular-webfont.woff2") format("woff2"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli/muli-regular-webfont.woff") format("woff"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli/muli-regular-webfont.ttf") format("truetype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/muli/muli-regular-webfont.svg#muliregular") format("svg")
+    font-family: CenturyGothicWeb;
+    src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.eot");
+    src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.woff") format("woff"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.ttf") format("truetype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.svg#bignoodletitlingregular") format("svg")
 }
 
 @font-face {
     font-family: CenturyGothicWeb;
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.eot");
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.eot?#iefix") format("embedded-opentype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.woff") format("woff"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.ttf") format("truetype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.svg#bignoodletitlingregular") format("svg")
-}
-
-@font-face {
-    font-family: CenturyGothicWeb;
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.eot");
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.eot?#iefix") format("embedded-opentype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.woff") format("woff"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.ttf") format("truetype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.svg#bignoodletitlingregular") format("svg");
+    src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.eot");
+    src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.woff") format("woff"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.ttf") format("truetype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.svg#bignoodletitlingregular") format("svg");
     font-weight: 700
 }
 
 @font-face {
     font-family: CenturyGothicWeb;
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-BoldIt.eot");
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-BoldIt.eot?#iefix") format("embedded-opentype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-BoldIt.woff") format("woff"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-BoldIt.ttf") format("truetype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-BoldIt.svg#bignoodletitlingregular") format("svg");
+    src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-BoldIt.eot");
+    src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-BoldIt.eot?#iefix") format("embedded-opentype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-BoldIt.woff") format("woff"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-BoldIt.ttf") format("truetype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-BoldIt.svg#bignoodletitlingregular") format("svg");
     font-weight: 700;
     font-style: italic
 }
 
 @font-face {
     font-family: CenturyGothicWeb;
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.eot");
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.eot?#iefix") format("embedded-opentype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.woff") format("woff"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.ttf") format("truetype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.svg#bignoodletitlingregular") format("svg");
+    src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.eot");
+    src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.eot?#iefix") format("embedded-opentype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.woff") format("woff"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.ttf") format("truetype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.svg#bignoodletitlingregular") format("svg");
     font-style: italic
 }
 
 @font-face {
     font-family: CenturyGothicCyr;
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.eot");
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.eot?#iefix") format("embedded-opentype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.woff") format("woff"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.ttf") format("truetype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.svg#bignoodletitlingregular") format("svg")
+    src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.eot");
+    src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.woff") format("woff"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.ttf") format("truetype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.svg#bignoodletitlingregular") format("svg")
 }
 
 @font-face {
     font-family: CenturyGothicCyr;
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.eot");
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.eot?#iefix") format("embedded-opentype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.woff") format("woff"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.ttf") format("truetype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.svg#bignoodletitlingregular") format("svg");
+    src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.eot");
+    src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.woff") format("woff"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.ttf") format("truetype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.svg#bignoodletitlingregular") format("svg");
     font-weight: 700
 }
 
 @font-face {
     font-family: CenturyGothicCyr;
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-BoldIt.eot");
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-BoldIt.eot?#iefix") format("embedded-opentype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-BoldIt.woff") format("woff"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-BoldIt.ttf") format("truetype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-BoldIt.svg#bignoodletitlingregular") format("svg");
+    src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-BoldIt.eot");
+    src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-BoldIt.eot?#iefix") format("embedded-opentype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-BoldIt.woff") format("woff"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-BoldIt.ttf") format("truetype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-BoldIt.svg#bignoodletitlingregular") format("svg");
     font-weight: 700;
     font-style: italic
 }
 
 @font-face {
     font-family: CenturyGothicCyr;
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.eot");
-    src: url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.eot?#iefix") format("embedded-opentype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.woff") format("woff"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.ttf") format("truetype"), url("http://cdnskin.huawei.ru/ru/skin/frontend/huawei/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.svg#bignoodletitlingregular") format("svg");
+    src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.eot");
+    src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.eot?#iefix") format("embedded-opentype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.woff") format("woff"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.ttf") format("truetype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.svg#bignoodletitlingregular") format("svg");
     font-style: italic
 }
 
@@ -651,8 +613,8 @@ img {
 }
 .catalog-product-view .product-view .product-img-box .more-views {
     width: 100%;
-    max-width: 515px;
-    margin: 10px auto auto auto;
+    max-width: 500px;
+    margin: 10px 0 0 0;
 }
 .catalog-product-view .product-view .product-img-box {
     cursor: pointer;
@@ -702,10 +664,15 @@ img {
 .product-img-box .product-image {
     margin-bottom: 10px;
     padding-top: 10px;
+    line-height: 400px;
+    height: 400px;
+    display: inline-block;
 }
 .product-img-box .product-image img {
     width: 100%;
     max-width: 500px;
+    vertical-align: middle;
+    display: inline-block;
 }
 .catalog-product-view .product-img-box {
     padding-right: 15px;
@@ -876,13 +843,17 @@ img {
         width: 500px;
     }
 }
-.more-views-list a{
+.more-views-list a {
     cursor: pointer;
     margin: 0 9px;
     display: inline-block;
     width: 68px;
     height: 66px;
     padding: 5px;
+    line-height: 56px;
+}
+.more-views-list a img {
+    vertical-align: middle;
 }
 .more-views-list a.active {
     background: url(http://cdnskin.huawei.ru/ru/skin/frontend/huawei/images/honor-red/sprite/product-detail-sprite.png) no-repeat -300px -89px transparent;
@@ -974,4 +945,24 @@ img {
 .specification-size-item .specifications-text, .specification-size-item .tab-content-title, .specification-size-item .tab-content-img {
     width: 33%;
     float: left;
+}
+.more-views .owl-pagination {
+    display: none;
+}
+.more-views .owl-prev {
+    position: absolute;
+    left: -40px;
+    top: 20px;
+}
+.more-views .owl-next {
+    position: absolute;
+    right: -40px;
+    top: 20px;
+}
+.more-views-list.owl-theme .owl-controls .owl-buttons div {
+    background: transparent;
+    filter: Alpha(Opacity=100);
+    opacity: 0.5;
+    margin: 0;
+    padding: 0;
 }

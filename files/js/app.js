@@ -51,6 +51,7 @@ app.run(['$rootScope', '$routeParams', '$route', '$location', '$timeout', '$tran
         });
     }
 ]);
+
 app.controller('mainController', ['$http', '$scope', '$routeParams', '$route', '$rootScope', '$location', '$timeout', '$window', '$translate',
     function($http, $scope, $routeParams, $route, $rootScope, $location, $timeout, $window, $translate) {
         console.log($rootScope.currentLang);
@@ -92,17 +93,17 @@ app.controller('homeController', ['$http', '$scope', '$rootScope', '$location', 
         $scope.homeSlider = [
             {
                 title : 'Ascend Honor 4C',
-                img : 'http://huaweiarmenia.am/images/P8.png',
+                img : '/img/slider/P8.png',
                 description : "\- Three-segment ultra slim frame design <br> - Innovative design <br> - Strong signal reception delivers stable call experience <br>"
             },
             {
                 title : 'Ascend Honor 4C',
-                img : 'http://huaweiarmenia.am/images/P8.png',
+                img : '/img/slider/P8.png',
                 description : "\- Three-segment ultra slim frame design <br> - Innovative design <br> - Strong signal reception delivers stable call experience <br>"
             },
             {
                 title : 'Ascend Honor 4C',
-                img : 'http://huaweiarmenia.am/images/P8.png',
+                img : '/img/slider/P8.png',
                 description : "\- Three-segment ultra slim frame design <br> - Innovative design <br> - Strong signal reception delivers stable call experience <br>"
             }
         ];
@@ -110,19 +111,19 @@ app.controller('homeController', ['$http', '$scope', '$rootScope', '$location', 
             {
                 title : "Huawei P8",
                 description : "5.2\" Dual SIM smartphone with IPS LCD display",
-                link : "http://huaweiarmenia.am/images/01_3.png",
+                img : "/img/main-products/Huawei P8.png",
                 slug : "huawei-p8"
             },
             {
                 title : "Huawei Honor 7",
                 description : "5.2\" Dual SIM smartphone with IPS-NEO LCD display",
-                link : "http://huaweiarmenia.am/images/01_2.png",
+                img : "/img/main-products/Huawei Honor 7.png",
                 slug : "huawei-honor-7"
             },
             {
                 title : "Huawei NEXUS 6P",
                 description : "5.7\" Single SIM smartphone with AMOLED displayy",
-                link : "http://huaweiarmenia.am/images/01_1.png",
+                img : "/img/main-products/Huawei NEXUS 6P.png",
                 slug : "huawei-nexus-6p"
             }
         ];
@@ -137,7 +138,7 @@ app.controller('productController', ['$http', '$scope', '$routeParams', '$rootSc
         $scope.isNarrow = $(window).width() > 770;
 
         $scope.productBottom = $scope.isNarrow ? 'overview' : 'none';
-
+        $scope.currentBigImg = "";
         $scope.toggleBottom = function(tab) {
             $scope.productBottom == tab ? $scope.productBottom = 'none' : $scope.productBottom = tab;
         };
@@ -151,11 +152,16 @@ app.controller('productController', ['$http', '$scope', '$routeParams', '$rootSc
         }).success(function (product) {
             if(!product.error) {
                 $scope.product = product.data;
+                if($scope.product.img.length > 0) $scope.currentBigImg = $scope.product.img[0];
+                $scope.toggleBigImg = function(url) {
+                    $scope.currentBigImg = url;
+                }
             }
             else {
                 $location.path("/" + $rootScope.currentLang + "/404")
             }
         });
+
     }
 ]);
 
@@ -182,3 +188,28 @@ app.directive('homeslider', function($timeout) {
     }
 });
 
+app.directive('productsimgslider', function($timeout) {
+    return {
+        restrict: 'A',
+        link: function(scope, el, attrs) {
+            $timeout(function() {
+                if (scope.$last === true) {
+                    var owl = $('.more-views-list');
+                    owl.owlCarousel({
+                        margin: 0,
+                        loop: true,
+                        dots: false,
+                        navigation: true,
+                        navigationText: [
+                            "<img class=\"prod-arrow-left\" src='/img/other/arrow_dark_left.png'>",
+                            "<img class=\"prod-arrow-right\" src='/img/other/arrow_dark_right.png'>"
+                        ],
+                        autoplay: true,
+                        autoplayTimeout: 5000,
+                        autoplayHoverPause: true
+                    });
+                }
+            })
+        }
+    }
+});
