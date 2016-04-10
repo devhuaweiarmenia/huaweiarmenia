@@ -10,6 +10,7 @@
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="/css/allstyles.css" media="all">
     <link rel="stylesheet" type="text/css" href="/css/owl.carousel.css" media="all">
+    <style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak{display:none;}ng\:form{display:block;}</style>
 
     <script src="/js/lib/jquery.min.js"></script>
     <script src="/js/lib/angular.min.js"></script>
@@ -17,16 +18,14 @@
 </head>
 
 <body>
-<div class="wrapper">
+<div class="wrapper" ng-show="appStart">
     <header id="header" class="page-header">
         <div class="page-header-container">
             <div class="mobile-nav icon-honor2-menu size-24">&nbsp;</div>
             <div class="logo">
                 <a ng-href="{{preLink}}/">
-                    <img src="/img/logo.png"
-                         alt="Honor России" class="large">
-                    <img src="/img/logo.png"
-                         alt="Honor России" class="small">
+                    <img src="/img/logo.png" alt="Huawei Honor" class="large">
+                    <img src="/img/logo.png" alt="Huawei Honor" class="small">
                 </a>
             </div>
             <div class="header-nav-mob">
@@ -163,42 +162,71 @@
     <ng-view></ng-view>
 
     <div id="block-footerLinks" class="footer-links"><!-- Include for Footer links starts -->
-        <div class="footer-links-column first-column"><h3>Для покупателей</h3>
+        <div class="footer-links-column footer-x2">
             <ul>
-                <li><a href="http://shop.huawei.ru/help-payments-ru">Оплата и доставка</a></li>
-                <li><a href="http://shop.huawei.ru/help-support-ru">Поддержка</a></li>
-                <li><a href="http://shop.huawei.ru/help-faq-ru">Вопросы и ответы</a></li>
-                <li><a href="http://shop.huawei.ru/help-warrantyservice-ru">Гарантийные условия</a></li>
-                <li><a href="http://shop.huawei.ru/help-exchangereturns-ru">Условия возврата</a></li>
-            </ul></div>
-        <div class="footer-links-column"><h3>О компании</h3>
-            <ul>
-                <li><a href="http://shop.huawei.ru/about-company-ru">О компании</a></li>
-                <li><a href="http://shop.huawei.ru/about-contact-us-ru/">Контакты</a></li>
-                <li><a href="http://shop.huawei.ru/service-centers-ru/">Сервисные центры</a></li>
-                <li><a href="{{preLink}}/coming-soon-ru">График поставок</a></li>
-                <li><a href="http://fotki.yandex.ru/users/huaweirussia/">Фотобанк</a></li>
-            </ul></div>
-        <div class="footer-links-column third-column"><h3>Продукция</h3>
-            <ul>
-                <li><a href="http://shop.huawei.ru/smartphone/2-sim-card.html">Смартфоны на 2 сим-карты</a></li>
-                <li><a href="http://shop.huawei.ru/smartphone/honor.html">Смартфоны Honor</a></li><li>
-            </li><li><a href="http://shop.huawei.ru/smartphone/lte.html">Смартфоны LTE</a></li><li>
-            </li><li><a href="http://shop.huawei.ru/smartphone/new.html">Новые смартфоны</a></li><li>
-            </li><li><a href="http://shop.huawei.ru/smartphone/popular.html">Популярные смартфоны</a></li><li>
-            </li><li><a href="http://shop.huawei.ru/smartphone/slim.html">Тонкие смартфоны</a></li><li>
-            </li></ul>
-        </div>
-        <div class="footer-links-column fourth-column"><style>.contact-bkl{font-size:14pt}</style>
-            <h3>Связаться с нами</h3>
-            <ul>
-                <li class="contact-blk">Магазин:
-                    <br><span style="padding-left: 5px">8 800 7001677, <a href="mailto:support@huawei.ru">support@huawei.ru</a></span>
+                <li>
+                    <img src="/img/logo.png" alt="Huawei Honor" class="large">
                 </li>
-                <li class="contact-blk">Сервис и поддержка:
-                    <br><span style="padding-left: 5px">8 800 7001606</span>, <a href="mailto:mobile.ru@huawei.com">mobile.ru@huawei.com</a></li>
-                <li>пн – пт, 09:00 – 18:00 (МСК)</li>
             </ul>
+        </div>
+
+        <div class="footer-links-column footer-x3"><style>.contact-bkl{font-size:14pt}</style>
+            <h3>{{"Contact us" | translate}}</h3>
+            <ul>
+                <li class="contact-blk">{{"Huawei shop" | translate}}:
+                    <br><span style="padding-left: 5px">+374 10 60 60 60</span>, <a href="mailto:support@huawei.ru">shop@moblios.am</a>
+                </li>
+                <li>{{"Every day" | translate}}, 11:00-21:00</li>
+                <li class="contact-blk">{{"Service and technical support" | translate}}:
+                    <br><span style="padding-left: 5px">+374 96 192 168</span>, <a href="mailto:mobile.ru@huawei.com">info@innotech.am</a>
+                </li>
+                <li>{{"Mon-Fri" | translate}}, 10:00-19:00</li>
+                <li>{{"Sat" | translate}}, 11:00-18:00</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-links">
+        <h3 class="footer-partners-title">{{"Our partners" | translate}}</h3>
+        <div class="footer-links-column footer-x8">
+            <a href="http://www.karabakhtelecom.com/en/">
+                <img src="/img/partners/kt-logo.jpg"/>
+            </a>
+        </div>
+        <div class="footer-links-column footer-x8">
+            <a href="http://redinet.am/">
+                <img src="/img/partners/redinet-logo.png"/>
+            </a>
+        </div>
+        <div class="footer-links-column footer-x8">
+            <a href="http://itplaza.am/">
+                <img src="/img/partners/itplaza-logo.jpg"/>
+            </a>
+        </div>
+        <div class="footer-links-column footer-x8">
+            <a href="http://mts.am/">
+                <img src="/img/partners/viva-logo.png"/>
+            </a>
+        </div>
+        <div class="footer-links-column footer-x8">
+            <a href="https://beeline.am/am/?lang=hy">
+                <img src="/img/partners/beeline-logo.png" style="width: 75px;margin: 0px 30px;"/>
+            </a>
+        </div>
+        <div class="footer-links-column footer-x8">
+            <a href="https://ucom.am/hy/home.html">
+                <img src="/img/partners/ucom-logo.jpg"/>
+            </a>
+        </div>
+        <div class="footer-links-column footer-x8">
+            <a href="http://www.huawei.com/en/">
+                <img src="/img/partners/huawei-logo.png" style="width: 50px;margin: 0px 25px;"/>
+            </a>
+        </div>
+        <div class="footer-links-column footer-x8">
+            <a href="http://innotech.am/">
+                <img src="/img/partners/innotech-logo.png"/>
+            </a>
         </div>
     </div>
 

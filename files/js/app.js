@@ -16,6 +16,11 @@ app.config(['$routeProvider', '$locationProvider', '$translateProvider',
                 templateUrl: '/templates/product.html',
                 controller: 'productController'
             });
+        $routeProvider
+            .when("/:lang/enterprises", {
+                templateUrl: '/templates/enterprises.html',
+                controller: 'enterprisesController'
+            });
         $locationProvider.html5Mode({
             enabled: true,
             requireBase: false
@@ -24,41 +29,24 @@ app.config(['$routeProvider', '$locationProvider', '$translateProvider',
 ]);
 app.run(['$rootScope', '$routeParams', '$route', '$location', '$timeout', '$translate',
     function($rootScope, $routeParams, $route, $location, $timeout, $translate) {
-        $rootScope.defaultLang = "hy";
-        $rootScope.preLink = "/";
-        if(!$rootScope.currentLang) $rootScope.currentLang = $rootScope.defaultLang;
-        var tempLocale = $location.path().slice(1,3);
-        if(tempLocale != "en" && tempLocale != "ru" && tempLocale != "hy") {
-            $location.path("/" + $rootScope.defaultLang + $location.path());
-            $translate.use($rootScope.defaultLang);
-        }
-        else {
-            $rootScope.currentLang = $location.path().slice(1,3);
-            $translate.use($rootScope.currentLang);
-        }
-        $rootScope.preLink = '/' + $rootScope.currentLang;
-        $rootScope.$on('$routeChangeStart', function (event, next, current) {
-            var tempLocale = $location.path().slice(1,3);
-            if(tempLocale != "en" && tempLocale != "ru" && tempLocale != "hy") {
-                $location.path("/" + $rootScope.defaultLang + $location.path());
-                $translate.use($rootScope.defaultLang);
-            }
-            else {
-                $rootScope.currentLang = $location.path().slice(1,3);
-                $translate.use($rootScope.currentLang);
-            }
-            $rootScope.preLink = '/' + $rootScope.currentLang;
-        });
+        //$rootScope.$on('$routeChangeStart', function (event, next, current) {
+            //var tempLocale = $location.path().slice(1,3);
+            //if(tempLocale != "en" && tempLocale != "ru" && tempLocale != "hy") {
+                //$location.path("/" + $rootScope.defaultLang + $location.path());
+                //$translate.use($rootScope.defaultLang);
+            //}
+            //else {
+            //    $rootScope.currentLang = $location.path().slice(1,3);
+            //    $translate.use($rootScope.currentLang);
+            //}
+            //$rootScope.preLink = '/' + $rootScope.currentLang;
+        //});
     }
 ]);
 
-app.controller('mainController', ['$http', '$scope', '$routeParams', '$route', '$rootScope', '$location', '$timeout', '$window', '$translate',
-    function($http, $scope, $routeParams, $route, $rootScope, $location, $timeout, $window, $translate) {
-        console.log($rootScope.currentLang);
-        $rootScope.changeLang = function(lang) {
-            $rootScope.currentLang = lang;
-            $location.path("/" + lang + "/" + $location.path().slice(4));
-        };
+app.controller('mainController', ['$http', '$scope', 'mainService',
+    function($http, $scope, mainService) {
+        $scope.appStart = true;
         //            $route.updateParams({lang : $rootScope.lang});
         $scope.menuLinks = {
             smartphones : [
@@ -88,8 +76,9 @@ app.controller('mainController', ['$http', '$scope', '$routeParams', '$route', '
     }
 ]);
 
-app.controller('homeController', ['$http', '$scope', '$rootScope', '$location', '$timeout', '$window', '$translate',
-    function($http, $scope, $rootScope, $location, $timeout, $window, $translate) {
+app.controller('homeController', ['$http', '$scope', '$rootScope', '$location', '$timeout', '$routeParams', '$translate', 'mainService',
+    function($http, $scope, $rootScope, $location, $timeout, $routeParams, $translate, mainService) {
+        mainService.init($routeParams);
         $scope.homeSlider = [
             {
                 title : 'Ascend Honor 4C',
@@ -130,10 +119,10 @@ app.controller('homeController', ['$http', '$scope', '$rootScope', '$location', 
     }
 ]);
 
-app.controller('productController', ['$http', '$scope', '$routeParams', '$rootScope', '$location', '$timeout', '$window', '$translate',
-    function($http, $scope, $routeParams, $rootScope, $location, $timeout, $window, $translate) {
+app.controller('productController', ['$http', '$scope', '$routeParams', '$rootScope', '$location', 'mainService',
+    function($http, $scope, $routeParams, $rootScope, $location, mainService) {
 
-        //function getWindWidth();
+        mainService.init($routeParams);
 
         $scope.isNarrow = $(window).width() > 770;
 
@@ -162,6 +151,47 @@ app.controller('productController', ['$http', '$scope', '$routeParams', '$rootSc
             }
         });
 
+    }
+]);
+
+app.controller('enterprisesController', ['$scope', '$routeParams', '$rootScope', 'mainService',
+    function($scope, $routeParams, $rootScope, mainService) {
+        mainService.init($routeParams);
+        $scope.enterpriseLink = $rootScope.currentLang != 'hy' ? $rootScope.currentLang : 'ru';
+    }
+]);
+
+app.service('mainService', ['$rootScope', '$translate', '$location', '$route',
+    function($rootScope, $translate, $location, $route){
+        return {
+            init : function(routeParams) {
+                $rootScope.defaultLang = "hy";
+                $rootScope.preLink = "/";
+                if(!$rootScope.currentLang) $rootScope.currentLang = $rootScope.defaultLang;
+                var tempLocale = routeParams.lang;
+                console.log(tempLocale);
+                if(routeParams.lang) {
+                    if(tempLocale != "en" && tempLocale != "ru" && tempLocale != "hy") {
+                        $location.path("/" + $rootScope.defaultLang + $location.path());
+                        $translate.use($rootScope.defaultLang);
+                    }
+                    else {
+                        $rootScope.currentLang = routeParams.lang;
+                        $translate.use($rootScope.currentLang);
+                    }
+                    $rootScope.preLink = '/' + $rootScope.currentLang;
+                    $rootScope.changeLang = function(lang) {
+                        $rootScope.currentLang = lang;
+                        $route.updateParams({lang : $rootScope.currentLang});
+                        //$location.path("/" + lang + "/" + $location.path().slice(4));
+                    };
+                }
+                else {
+                    $location.path("/" + $rootScope.defaultLang + $location.path());
+                    $translate.use($rootScope.defaultLang);
+                }
+            }
+        }
     }
 ]);
 
