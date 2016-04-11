@@ -201,6 +201,11 @@ app.directive('homeslider', function($timeout) {
                         loop: true,
                         dots: true,
                         items :1,
+                        navigation: true,
+                        navigationText: [
+                            "<div class=\"main-slider-arrow-left\"></div>",
+                            "<div class=\"main-slider-arrow-right\"></div>"
+                        ],
                         autoplay: true,
                         autoplayTimeout: 5000,
                         autoplayHoverPause: true,

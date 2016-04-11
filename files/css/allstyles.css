@@ -433,8 +433,7 @@ img {
     clear: both;
     position: relative;
     overflow: hidden;
-    width: 80% !important;
-    margin: 0 10%;
+    width: 100% !important;
 }
 
 .main-slider-content {
@@ -535,8 +534,10 @@ img {
         line-height: 237px !important;
         width: 100% !important;
     }
-
     .menu-bottom-column {
+        width: 50% !important;
+    }
+    .footer-links .footer-links-column.footer-x8 {
         width: 50% !important;
     }
 }
@@ -564,7 +565,8 @@ img {
 
 .main-slider-item {
     float: left;
-    width: 100%;
+    width: 80%;
+    margin: 0 10%;
 }
 
 .main-slider-item .active {
@@ -1354,4 +1356,34 @@ img {
     float: left;
 }
 
-
+.main-slider-arrow-left {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 20px;
+    margin-top: -21px !important;
+    border-radius: 1em;
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 10;
+    width: 53px !important;
+    height: 53px !important;
+    background: url(../img/slider/sliderLeftArrow.png) no-repeat left top !important;
+}
+.main-slider-arrow-right {
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 20px;
+    margin-top: -21px !important;
+    border-radius: 1em;
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 10;
+    width: 53px !important;
+    height: 53px !important;
+    background: url(../img/slider/sliderRightArrow.png) no-repeat left top !important;
+}
+.owl-theme .owl-controls .owl-buttons div {
+    padding: 0 !important;
+}
