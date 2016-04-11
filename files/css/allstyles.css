@@ -5,9 +5,27 @@ html, body {
     width: 100%;
     text-align: center;
 }
-::-webkit-scrollbar{width:10px;background-color:#d9d9d9}::-webkit-scrollbar-thumb{background-color:#b01a21;border-radius:10px}::-webkit-scrollbar-thumb:hover{background-color:#9a171d;border:1px
-solid #9a171d}::-webkit-scrollbar-thumb:active{background-color:#9a171d;border:1px
-solid #9a171d}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #d9d9d9
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b01a21;
+    border-radius: 10px
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #9a171d;
+    border: 1px solid #9a171d
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #9a171d;
+    border: 1px solid #9a171d
+}
+
 @font-face {
     font-family: 'bignoodletitling';
     src: url("/fonts/big-noodle-titling/Cyrillic/BigNoodleTitlingCyr.eot");
@@ -15,6 +33,7 @@ solid #9a171d}
     font-weight: normal;
     font-style: normal
 }
+
 @font-face {
     font-family: 'bignoodletitling';
     src: url("/fonts/big-noodle-titling/Default/big_noodle_titling_oblique-webfont.eot");
@@ -22,17 +41,20 @@ solid #9a171d}
     font-weight: normal;
     font-style: italic
 }
+
 @font-face {
     font-family: CenturyGothicWeb;
     src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.eot");
     src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.woff") format("woff"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.ttf") format("truetype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.svg#bignoodletitlingregular") format("svg")
 }
+
 @font-face {
     font-family: CenturyGothicWeb;
     src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.eot");
     src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.woff") format("woff"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.ttf") format("truetype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.svg#bignoodletitlingregular") format("svg");
     font-weight: 700
 }
+
 @font-face {
     font-family: CenturyGothicWeb;
     src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-BoldIt.eot");
@@ -40,23 +62,27 @@ solid #9a171d}
     font-weight: 700;
     font-style: italic
 }
+
 @font-face {
     font-family: CenturyGothicWeb;
     src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.eot");
     src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.eot?#iefix") format("embedded-opentype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.woff") format("woff"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.ttf") format("truetype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.svg#bignoodletitlingregular") format("svg");
     font-style: italic
 }
+
 @font-face {
     font-family: CenturyGothicCyr;
     src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.eot");
     src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.woff") format("woff"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.ttf") format("truetype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Regular.svg#bignoodletitlingregular") format("svg")
 }
+
 @font-face {
     font-family: CenturyGothicCyr;
     src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.eot");
     src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.woff") format("woff"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.ttf") format("truetype"), url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Bold.svg#bignoodletitlingregular") format("svg");
     font-weight: 700
 }
+
 @font-face {
     font-family: CenturyGothicCyr;
     src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-BoldIt.eot");
@@ -64,6 +90,7 @@ solid #9a171d}
     font-weight: 700;
     font-style: italic
 }
+
 @font-face {
     font-family: CenturyGothicCyr;
     src: url("/fonts/Century-Gothic/Cyrillic/CenturyGothicProCyr-Italic.eot");
@@ -90,11 +117,13 @@ body, button, input, table, textarea {
 html, body, img, fieldset, abbr, acronym {
     border: 0;
 }
+
 a {
     color: #9a171d;
     text-decoration: none;
     outline: 0;
 }
+
 ol, ul, li {
     list-style: none;
     margin: 0;
@@ -192,9 +221,11 @@ img {
     /*width: 65%;*/
     margin-top: 14px;
 }
+
 .header-nav-mob {
     display: none;
 }
+
 .header-nav-content {
     float: left;
 }
@@ -210,9 +241,11 @@ img {
         display: block;
         overflow-y: auto;
     }
+
     .header-nav {
         display: none;
     }
+
     .mobile-nav {
         background: url(http://cdnskin.huawei.ru/ru/skin/frontend/huawei/images/honor-red/sprite/home-sprite.png) no-repeat 96% -101px;
         cursor: pointer;
@@ -238,42 +271,47 @@ img {
     transition: all 0.25s ease-out;
     border-bottom: 0 solid #9a171d;
 }
+
 .header-nav .header-nav-link {
     padding: 0;
 }
+
 .header-nav .header-nav-link:hover {
     color: #9a171d;
 }
 
 .header-nav a {
-    font-family: bignoodletitling,Impact,Charcoal,sans-serif;
+    font-family: bignoodletitling, Impact, Charcoal, sans-serif;
     font-size: 20px;
     color: #444;
     font-style: normal;
     text-transform: uppercase;
     font-weight: 300;
 }
+
 /*.header-nav-item:hover .header-nav-link {*/
-    /*display: inline-block;*/
-    /*line-height: 28px;*/
-    /*padding-bottom: 10px;*/
-    /*text-decoration: none;*/
-    /*transition: all 0.25s ease-out;*/
-    /*border-bottom: 0 solid #9a171d;*/
+/*display: inline-block;*/
+/*line-height: 28px;*/
+/*padding-bottom: 10px;*/
+/*text-decoration: none;*/
+/*transition: all 0.25s ease-out;*/
+/*border-bottom: 0 solid #9a171d;*/
 /*}*/
 .mobile-nav {
     display: none;
 }
+
 .clear {
     clear: both;
     height: 0px;
     margin: 0px;
     padding: 0px;
 }
+
 @media only screen and (min-width: 980px) {
     .header-nav-item .header-nav-link:after {
         background-color: #b01a21;
-        background-color: transparent\9;
+        background-color: transparent \9;
         content: "";
         display: block;
         margin-top: 6px;
@@ -282,10 +320,12 @@ img {
         opacity: 0;
         transition: all 0.25s ease-out;
     }
+
     .header-nav-item:hover .header-nav-link:after {
         margin-top: 0;
         opacity: 1;
     }
+
     .header-nav-item .dd-menu {
         background: #f4f4f4;
         position: absolute;
@@ -294,20 +334,24 @@ img {
         width: 150px;
         display: none;
     }
+
     .header-nav-item:hover .dd-menu {
         display: block;
     }
+
     .header-nav-item .dd-menu-item {
         border-bottom: 1px solid #efefef;
         border-top: 1px solid #efefef;
         padding: 0px 18px 0px 18px;
     }
+
     .header-nav-item .dd-menu-item:hover {
         transition: all 0.8s;
         background: #efefef;
         border-bottom: 1px solid #ddd;
         border-top: 1px solid #ddd;
     }
+
     .dd-menu-item a {
         line-height: 34px;
     }
@@ -327,24 +371,29 @@ img {
     width: 100%;
     text-align: center;
 }
+
 .products-main .products-item {
     margin: 28px 15px;
     display: inline-block;
     width: calc(25% - 30px);
 }
+
 .products-item a {
     display: inline-block;
     border: 1px solid #fff;
     padding: 20px 0;
 }
+
 .products-item .products-img {
     height: 165px;
     margin: 0 auto;
     margin-bottom: 20px;
 }
+
 .products-item:hover a {
     border: 1px solid #ddd;
 }
+
 .products-item span {
     font-size: 16px;
     width: 100%;
@@ -352,29 +401,34 @@ img {
     display: inline-block;
     font-weight: bold;
 }
+
 .products-item .products-descr {
     font-size: 14px;
-    color: rgb(71,71,71);
+    color: rgb(71, 71, 71);
     padding: 0 10%;
 }
+
 .products-item .products-button {
     margin-top: 10px;
     font-size: 14px;
     width: 120px;
     line-height: 30px;
     text-align: center;
-    background: rgb(1,180,220);
+    background: rgb(1, 180, 220);
     color: #fff;
 }
+
 .main-slider {
     background: url(http://huaweiarmenia.am/templates/ja_t3_blank/images/moblios/sliderBg.png) repeat-x left top;
     width: 100%;
     clear: both;
     text-align: left;
 }
+
 .main-slider .owl-theme .owl-controls {
     margin-top: -60px;
 }
+
 .main-slider-list {
     clear: both;
     position: relative;
@@ -382,28 +436,33 @@ img {
     width: 80% !important;
     margin: 0 10%;
 }
+
 .main-slider-content {
     margin-top: 40px;
     width: 40%;
     zoom: 80%;
     float: left;
 }
+
 .main-slider-img-container {
     float: right;
     line-height: 437px;
     /* height: 437px; */
     width: 60%;
 }
+
 .main-slider-img-container a {
     width: 100%;
     float: left;
 }
+
 .main-slider-img-container img {
     max-width: 100%;
     height: auto;
     display: inline;
     vertical-align: middle;
 }
+
 .main-slider-content-title {
     background: none !important;
     text-transform: uppercase !important;
@@ -420,24 +479,30 @@ img {
     display: inline-block;
     zoom: 80%;
 }
+
 @media only screen and (min-width: 420px) and (max-width: 979px) {
     .main-slider-content-title {
         font-size: 55px;
     }
+
     .main-slider-content-desc span {
         font-size: 16px !important;
         width: 300px !important;
     }
+
     .products-main .products-item {
         width: calc(50% - 30px);
     }
+
     .products-main .owl-item {
         height: 300px !important;
     }
+
     .main-slider-img-container {
         line-height: 337px !important;
     }
 }
+
 @media only screen and (max-width: 419px) {
     .main-slider-content {
         width: 100% !important;
@@ -446,33 +511,41 @@ img {
         position: absolute;
         margin-top: 0px;
     }
+
     .main-slider-content-title {
         font-size: 40px;
         width: 100% !important;
         margin-top: 20px !important;
         text-align: center;
     }
+
     .main-slider-content-desc {
         display: none !important;
     }
+
     .products-main .products-item {
         width: calc(100% - 30px);
     }
+
     .products-main .owl-item {
         height: 200px !important;
     }
+
     .main-slider-img-container {
         line-height: 237px !important;
         width: 100% !important;
     }
+
     .menu-bottom-column {
         width: 50% !important;
     }
 }
+
 @font-face {
     font-family: dense;
     src: url(./fonts/Dense-Regular.otf);
 }
+
 .main-slider-content-desc {
     color: #fff;
     font-size: 1.1em;
@@ -481,19 +554,23 @@ img {
     padding: 10px;
     display: inline-block;
 }
+
 .main-slider-content-desc span {
     display: block;
     font-size: 26px;
     line-height: 40px;
     width: 440px;
 }
+
 .main-slider-item {
     float: left;
     width: 100%;
 }
+
 .main-slider-item .active {
     z-index: 99;
 }
+
 .menu-bottom {
     background: url(http://huaweiarmenia.am/templates/ja_t3_blank/images/moblios/footerMenuBg.png) repeat left top;
     background-size: cover;
@@ -501,6 +578,7 @@ img {
     padding: 45px 10%;
     float: left;
 }
+
 .menu-bottom-column {
     float: left;
     width: 25%;
@@ -508,14 +586,17 @@ img {
     border-right: 1px solid #fbfbfb;
     padding: 0 5%;
 }
+
 .menu-bottom-column:last-child {
     border-right: none;
 }
+
 .menu-bottom-column-inner {
 
 }
+
 .body-font-medium, #header-nav1 .sb-search-input, #header-nav1 .language-selector a, .static-template-container .st_content, .static-template-container .ancore, h2.product-name, h3.product-name, h4.product-name, h5.product-name, p.product-name, .products-grid .product-name, .products-list .product-name, .catalog-category-view .no-products .note-msg, .catalogsearch-result-index .no-products .note-msg, .catalog-category-view .col-main .right-container .nav-section .product-name, .catalogsearch-result-index .col-main .right-container .nav-section .product-name, .catalog-category-view .module-title span, .catalogsearch-result-index .module-title span, .header-minicart .subtotal .price, .accessories-container a, .social-container .honor-text, .checkout-onestep-index .opc-billaddress-newbtn .opc-new-address, .checkout-onestep-index .opc-payment dt label, .checkout-onestep-index #co-shipping-form .input-box .input-text-presmall, .checkout-onestep-index #co-billing-form .input-box .input-text-presmall, .checkout-onestep-index .opc-address-main .address-format-type-normal, #co-shipping-method-form .sp-methods dt label, #co-shipping-method-form .sp-methods dd label, #checkout-payment-method-load .sp-methods dt label, #checkout-payment-method-load .sp-methods dd label, .sp-methods dt label, .block-progress dt, .block-progress dd, .block-progress .payment-info dt, #checkout-review-table tbody td .item-options, #checkout-review-table tbody td .item-options dt, #checkout-review-table tbody td p, #checkout-review-table tfoot .order-summary-price .cost-detail, .pts-payment-redirect .redirect-bottom, .product-view .product-shop, .product-view .spec-ul li, .product-view .spec li, .catalog-product-view .extra-feature dd ul.options-list li span.label label, .catalog-product-view .extra-feature dd ul.options-list li span.label label .price, .catalog-product-view .product-view .add-to-cart-wrapper .grouped-items-table-wrapper .data-table .name-wrapper, .catalog-product-view .product-view .qty-wrapper label, .catalog-product-view .inBox .rightData .inner-data .product-name, .catalog-product-view .collateral-tabs .tab-content, .catalog-product-view .collateral-tabs .tab-content .tableStucture .quality, #product-options-wrapper dt, .cart-contact .mail, .checkout-cart-index .cart-table .product-cart-info .product-cart-sku, .checkout-cart-index .cart-table .bundle-inner .product-code, .checkout-cart-index .discount-container .rows .cost-detail, .checkout-cart-index .discount-container .rows .click-coupon .apply-coupon-close .coupon-text, .checkout-cart-index .block-proceed-chkout .cart-methods-info, .checkout-cart-index .coupons-popup .coupon-code p, .checkout-cart-index .coupons-popup .or-seperator, .checkout-cart-index .coupons-popup .coupon-list-heading, .checkout-cart-index .no-items .cart-empty p, .checkout-onestep-success .order-success-container .success-message .track-order span, .checkout-onestep-success .order-success-container .success-message .process-text, .checkout-onestep-success .order-summary-container .heading-block h3 span, .checkout-onestep-success .order-summary-container .cust-details ul, .checkout-onestep-success .order-summary-container .cust-details ul .heading, .checkout-onestep-success .order-summary-container .cust-details .email-alert, .checkout-onestep-success .cart-table .product-cart-image .product-cart-info, .checkout-onestep-success .cart-table .product-cart-image .product-cart-info .item-options, .checkout-onestep-success .cart-table .product-cart-actions, .checkout-onestep-success .cart-table .product-cart-actions p, .checkout-onestep-success .success-total .list-outer .cost-detail, .remember-me-popup p, .delete-box p, .my-account .display-info .form-list-label, .my-account .edit-info .fieldset ul li .input-text-presmall, .my-account .address-first-page .add-new-address, .my-account .address-first-page .add-new-address p, .addresses-book ol li, .addresses-book ol div.add-new-address a, .addresses-book .address-format-type-bold, .my-account .monkey-multisubscribe .grouping, .my-account .monkey-multisubscribe .grouping ul li label, .customer-address-index .input-box .input-text-presmall, .oms-order-modify .input-box .input-text-presmall, .customer-address-form .input-box .input-text-presmall, #customerNewaddress .fields-content-first label, #customerNewaddress .fields-content label, #customerEditaddress .fields-content-first label, #customerEditaddress .fields-content label, .customer-account .main .block-title ul li a, .customer-account .main .block-title ul li a strong, .oms-order-modify #customerNewaddress table, .oms-order-modify .order-summary table, .cms-page-view .cont-left, .cms-page-view .cont-right, .cms-page-view .cont-main label, .cms-page-view .cont-main label .required:after, body.customer-account .my-account .review-table tr td a, body.customer-account .my-account .review-table tr td.review-details, body.customer-account .my-account .product-review .product-details dl.ratings-description dd, #overview-outer-wrapper, #overview-outer-wrapper .section-table, #overview-outer-wrapper .tableStucture .quality, .recOuter .inner-content .product-name a, .combo-outer ul.tabs li a, .coupon-index-coupons .my-account ul .coupon-wrapper .coupon-main .email-container label, .coupon-index-coupons .my-account #my-orders-table, .event-registration-info table tbody tr, .col2-left-layout .col-left .block .block-title ul li a, .col2-left-layout .col-main .my-account .order-details-address .address-format-type-normal, .col2-left-layout .col-main .my-account .order-details-address td p, .col2-left-layout .col-main .my-account .order-details-address .address-format-type-bold, .col2-left-layout .col-main .my-account .order-details-address td.email, .order-details table tr td:nth-child(2), .order-details-address table tr td:nth-child(2), .sales-order-view #my-orders-table .product-cart-image .product-cart-info .item-options, .sales-order-history #my-orders-table .product-cart-image .product-cart-info .item-options, .vm-paymentPage .order-date, .pts-payment-paynow .vm-paymentPage .checkout-cart-index .cart-table .product-cart-image .product-cart-info .item-options, .honorcode-index-index .main-container .col-right, .show-shipping-method .store-pickup .pickup-left, .show-shipping-method .store-pickup .storepickup-list li label, .store-locator-container .locator-banner-ru, .store-locator-container .add-box {
-    font-family: CenturyGothicWeb,CenturyGothicCyr,Century Gothic Grk,muli,Arial,sans-serif;
+    font-family: CenturyGothicWeb, CenturyGothicCyr, Century Gothic Grk, muli, Arial, sans-serif;
     font-size: 15px;
     color: #222;
     font-style: normal;
@@ -523,29 +604,34 @@ img {
     -webkit-font-smoothing: antialiased;
     line-height: normal;
 }
+
 .header-font-xlarge, .product-container .figcaption h5, .catalog-product-view .empty-content h1, .catalog-product-view h1.product-name, .catalog-product-view .specifications h3, .catalog-product-view .collateral-tabs .tab-content .tableStucture .quality .headerTlt, .checkout-cart-index .no-items .page-title h1, .checkout-onestep-success .order-success-container .success-message span, .checkout-onestep-success .order-failure-container .success-message span, #overview-outer-wrapper .sections h3, #overview-outer-wrapper .tableStucture .quality .headerTlt, .recOuter h3, .honorcode-index-index .main-container .col-left .inner-content h1 {
-    font-family: bignoodletitling,Impact,Charcoal,sans-serif;
+    font-family: bignoodletitling, Impact, Charcoal, sans-serif;
     font-size: 30px;
     color: #444;
     font-style: normal;
     text-transform: uppercase;
     font-weight: 300;
 }
+
 .price-font-large, #checkout-review-table tfoot .order-summary-price .total-amount-price .price, .product-view .regular-price .price, .product-view .special-price .price, .product-view .full-product-price .price, .catalog-product-view .product-view .special-price, .catalog-product-view .product-view .special-price .price, .catalog-product-view .product-view .product-shop .price-info .price-box .special-price, .checkout-cart-index .discount-container .rows .total-amount, .checkout-onestep-success .success-total .discount-detail .cost-detail, .combo-outer .total-price .content {
-    font-family: CenturyGothicWeb,CenturyGothicCyr,Century Gothic Grk,muli,Arial,sans-serif;
+    font-family: CenturyGothicWeb, CenturyGothicCyr, Century Gothic Grk, muli, Arial, sans-serif;
     font-size: 18px;
     color: #222;
     font-style: normal;
 }
+
 .products-main .owl-item {
     height: 400px;
 }
+
 .footer-links {
     padding: 30px 5% 0;
     text-align: left;
     float: left;
     width: 100%;
 }
+
 .footer-links-column {
     float: left;
     width: 24.190476190476193%;
@@ -554,37 +640,46 @@ img {
     font-style: normal;
     font-weight: 300;
 }
+
 .footer-x2 {
     width: 50%;
 }
+
 .footer-x8 {
     width: 12.5%;
     height: 105px;
     line-height: 105px;
     padding: 0 10px;
 }
+
 .footer-x8 a {
     width: 100%;
     vertical-align: middle;
     display: inline-block;
 }
+
 .footer-x8 img {
     width: 100%;
 }
+
 .footer-partners-title {
     color: #222;
     font-style: normal;
     margin-bottom: -13px;
 }
-.footer-links-column h3,  {
+
+.footer-links-column h3, {
     margin-bottom: 18px;
 }
+
 .footer-links-column ul {
     margin-bottom: 33px;
 }
+
 .footer-links-column li {
     margin-bottom: 10px;
 }
+
 @media only screen and (max-width: 979px) {
     .footer-links h3 {
         background: url(http://cdnskin.huawei.ru/ru/skin/frontend/huawei/images/honor-red/sprite/home-sprite.png) no-repeat 96% -435px;
@@ -594,18 +689,22 @@ img {
         padding: 20px 20px 15px;
         margin-bottom: 0;
     }
+
     .footer-links {
         padding: 1px 0 0;
         margin-top: 0;
         margin-bottom: 30px;
     }
+
     .footer-links .footer-links-column {
         position: relative;
         margin-top: -1px;
     }
+
     .footer-links .footer-links-column {
         width: 100%;
     }
+
     .footer-links .footer-links-column ul {
         margin: 20px;
     }
@@ -622,9 +721,11 @@ img {
     margin-bottom: 0px;
     padding-bottom: 20px;
 }
+
 .product-img-box {
     padding-right: 15px;
 }
+
 .product-view .product-shop {
     width: 45%;
     float: right;
@@ -632,20 +733,25 @@ img {
     padding-right: 30px;
     text-align: left;
 }
+
 .product-view .product-shop, .product-view .add-to-cart-wrapper, .product-view .block-related, .product-img-box, .product-collateral {
     margin-bottom: 10px;
 }
+
 .catalog-product-view .product-view .product-img-box .more-views {
     width: 100%;
     max-width: 500px;
     margin: 10px 0 0 0;
 }
+
 .catalog-product-view .product-view .product-img-box {
     cursor: pointer;
 }
+
 .product-view .product-shop h1.product-name {
     margin-bottom: 0px;
 }
+
 .product-view .product-shop .short-description {
     clear: both;
     margin-top: 25px;
@@ -655,11 +761,13 @@ img {
     padding-bottom: 0px;
     width: 100%;
 }
+
 .product-view .spec {
     list-style: inherit;
     line-height: 20px;
     margin-bottom: 0px;
 }
+
 .product-view .spec li {
     margin-left: 0;
     list-style: none;
@@ -668,6 +776,7 @@ img {
     padding-bottom: 6px;
     text-align: left;
 }
+
 .catalog-product-view .product-view .product-shop .price-info {
     margin-left: 0;
     padding-left: 0;
@@ -675,17 +784,20 @@ img {
     width: 100%;
     float: left;
 }
+
 .product-view .product-shop .price-box {
     margin-top: 10px;
     margin-bottom: 10px;
     float: left;
 }
+
 .product-view .product-shop .price-box .regular-price {
-    font-family: bignoodletitling,Impact,Charcoal,sans-serif;
+    font-family: bignoodletitling, Impact, Charcoal, sans-serif;
     padding-right: 0;
     line-height: 1.2;
     display: block;
 }
+
 .product-img-box .product-image {
     margin-bottom: 10px;
     padding-top: 10px;
@@ -693,17 +805,20 @@ img {
     height: 400px;
     display: inline-block;
 }
+
 .product-img-box .product-image img {
     width: 100%;
     max-width: 500px;
     vertical-align: middle;
     display: inline-block;
 }
+
 .catalog-product-view .product-img-box {
     padding-right: 15px;
     float: left;
     cursor: pointer;
 }
+
 .catalog-product-view div.product-collateral .toggle-tabs {
     /*background: #b01a21;*/
     border: 0;
@@ -712,23 +827,27 @@ img {
     line-height: 53px;
 
 }
+
 .catalog-product-view div.product-collateral .toggle-tabs .toggle-tabs-item {
     padding-left: 20px;
     background: #b01a21;
     cursor: pointer;
 }
+
 .bodycapital-font-medium-white, .catalog-product-view div.product-collateral .toggle-tabs li span {
-    font-family: CenturyGothicWeb,CenturyGothicCyr,Century Gothic Grk,muli,Arial,sans-serif;
+    font-family: CenturyGothicWeb, CenturyGothicCyr, Century Gothic Grk, muli, Arial, sans-serif;
     font-size: 15px;
     color: #fff;
     font-style: normal;
     text-transform: uppercase;
 }
+
 .catalog-product-view div.product-collateral .toggle-tabs li span {
     color: #ffb0b0;
     height: 53px;
     line-height: 53px;
 }
+
 .catalog-product-view div.product-collateral .toggle-tabs li.current span {
     text-decoration: none;
     background: none;
@@ -739,6 +858,7 @@ img {
     .catalog-product-view .product-img-box {
         width: 100%;
     }
+
     .product-view .product-shop, .product-view .add-to-cart-wrapper, .product-view .block-related, .product-img-box, .product-collateral {
         width: 100%;
         float: none;
@@ -746,48 +866,61 @@ img {
         padding-left: 0;
         padding-top: 30px;
     }
+
     .catalog-product-view .product-img-box .product-name h1 {
         font-size: 36px;
         margin-top: 20px;
         color: #222;
         font-weight: normal;
     }
+
     .catalog-product-view .product-view .product-shop h1.product-name {
         display: none;
     }
+
     .catalog-product-view .product-view .product-essential {
         padding: 0 20px 15px 20px;
     }
+
     .product-view .product-essential {
         width: 100%;
     }
+
     .narrow-tabs {
         display: block;
     }
+
     .wide-tabs {
         display: none;
     }
+
     .tab-content-image {
         width: 50%;
         float: left !important;
     }
+
     .tab-content-descr {
         width: 50%;
         float: right !important;
         line-height: 16px;
     }
+
     .tab-content-title {
         padding-top: 0px !important;
     }
+
     .tab-content-text {
         padding-right: 10px;
     }
+
     .tab-content-image img {
         width: 100%;
     }
+
     .toggle-tabs-item {
         border-bottom: 1px solid #fff;
     }
+
     .product-collateral .toggle-tabs-item:after {
         content: '';
         position: static;
@@ -804,31 +937,37 @@ img {
     }
 }
 
-
 @media only screen and (min-width: 771px) {
     .toggle-tabs {
         background-color: #b01a21;
     }
+
     .narrow-tabs {
         display: none;
     }
+
     .wide-tabs {
         display: block;
     }
+
     .catalog-product-view .product-img-box {
         width: 55%;
     }
+
     .product-img-box .product-name {
         display: none;
     }
+
     .product-view .product-shop .product-name {
         display: block;
         margin-bottom: 9px;
     }
+
     .product-collateral {
         width: 100%;
         display: inline-block;
     }
+
     .product-collateral .toggle-tabs {
         display: block;
         width: 100%;
@@ -836,16 +975,19 @@ img {
         border: 1px solid #CCC;
 
     }
+
     .product-view .product-essential {
         float: left;
         width: 100%;
     }
+
     .product-collateral .toggle-tabs li {
         float: left;
         border: 0;
         background-color: #F4F4F4;
     }
-    .product-collateral .toggle-tabs li>span {
+
+    .product-collateral .toggle-tabs li > span {
         -moz-user-select: none;
         -ms-user-select: none;
         -webkit-user-select: none;
@@ -861,13 +1003,16 @@ img {
         position: relative;
         bottom: -1px;
     }
+
     .tabs-content-wide .tab-content-descr {
         width: calc(100% - 500px);
     }
-    .tabs-content-wide .tab-content-img{
+
+    .tabs-content-wide .tab-content-img {
         width: 500px;
     }
 }
+
 .more-views-list a {
     cursor: pointer;
     margin: 0 9px;
@@ -877,40 +1022,50 @@ img {
     padding: 5px;
     line-height: 56px;
 }
+
 .more-views-list a img {
     vertical-align: middle;
 }
+
 .more-views-list a.active {
     background: url(http://cdnskin.huawei.ru/ru/skin/frontend/huawei/images/honor-red/sprite/product-detail-sprite.png) no-repeat -300px -89px transparent;
 }
+
 .more-views-list img {
     display: inline !important;
     width: 100%;
     height: auto;
 }
+
 .current {
     color: #b01a21;
     background: none;
 }
+
 .tabs-content-wide {
     margin: 30px;
     text-align: left;
 }
+
 .tabs-content-wide .tabs-content-item {
     width: 100%;
     display: inline-block;
     padding: 20px 0 50px;
-    border-bottom: 1px solid rgb(210,210,210);
+    border-bottom: 1px solid rgb(210, 210, 210);
 }
+
 .tabs-content-wide .tabs-content-item:last-child {
     border-bottom: none;
 }
+
 .tabs-content-wide .tabs-content-item:nth-child(2n) .tab-content-descr, .tabs-content-wide .tabs-content-item:nth-child(2n+1) .tab-content-item {
     float: left;
 }
+
 .tabs-content-wide .tabs-content-item:nth-child(2n) .tab-content-item, .tabs-content-wide .tabs-content-item:nth-child(2n+1) .tab-content-descr {
     float: right;
 }
+
 .tab-content-title {
     width: 100%;
     font-weight: bold !important;
@@ -920,6 +1075,7 @@ img {
     padding: 20px 10px 10px;
     line-height: 24px;
 }
+
 .tab-content-text {
     width: 100%;
     font-size: 14px;
@@ -927,64 +1083,80 @@ img {
     float: none;
     padding-left: 10px;
 }
+
 .narrow-tabs {
     margin: 0 20px;
     background: #fff;
 }
+
 .lang-section {
     float: right;
     padding: 20px 0 0;
 }
+
 .lang-list {
     float: left;
 }
+
 .lang-item {
     float: left;
     margin: 0 5px 5px;
     cursor: pointer;
     border: 1px solid #fff;
 }
+
 .current-lang {
     border-bottom: 1px solid #9a171d;
 }
+
 .content-specifications .tab-content-descr {
-    float : left;
+    float: left;
     width: 100%;
 }
+
 .content-specifications .tab-content-title, .content-specifications .specifications-text {
-    float : left;
+    float: left;
     width: 50%;
     padding-top: 0;
 }
+
 .content-specifications .specifications-text {
     border-left: 1px solid #b01a21;
 }
+
 .content-specifications .tabs-content-item {
     padding: 10px 0;
 }
+
 .content-specifications.wide-tabs .tabs-content-item {
     width: 66%;
 }
+
 .content-specifications.wide-tabs .tabs-content-item.specification-size-item {
     width: 100%;
 }
+
 .specification-size-item .specifications-text, .specification-size-item .tab-content-title, .specification-size-item .tab-content-img {
     width: 33%;
     float: left;
 }
+
 .more-views .owl-pagination {
     display: none;
 }
+
 .more-views .owl-prev {
     position: absolute;
     left: -40px;
     top: 20px;
 }
+
 .more-views .owl-next {
     position: absolute;
     right: -40px;
     top: 20px;
 }
+
 .more-views-list.owl-theme .owl-controls .owl-buttons div {
     background: transparent;
     filter: Alpha(Opacity=100);
@@ -992,17 +1164,20 @@ img {
     margin: 0;
     padding: 0;
 }
+
 .enterprises-all {
     text-align: center;
     border-bottom: 1px solid #d7d7d7;
     padding: 0 15px;
 }
+
 .enterprises-all .title {
     font-size: 36px;
     text-align: center;
     line-height: 48px;
     margin: 24px 0;
 }
+
 .enterprises-all > .row {
     padding-bottom: 48px;
     margin-left: -15px;
@@ -1010,13 +1185,16 @@ img {
     width: 100%;
     float: left;
 }
+
 @media (max-width: 767px) {
     .enterprises-all > .row {
         padding-bottom: 0px;
     }
+
     .enterprises-all .row > .col-sm-3 {
         padding-bottom: 24px !Important;
     }
+
     .enterprises-all .cell div:first-child {
         width: 29%;
         vertical-align: top;
@@ -1024,6 +1202,7 @@ img {
         padding-top: 6px;
         display: table-cell;
     }
+
     .enterprises-all .cell div:first-child + div {
         width: 71%;
         text-align: left;
@@ -1032,6 +1211,7 @@ img {
         display: table-cell;
         vertical-align: top;
     }
+
     .enterprises-all .cell div:first-child + div h3 {
         margin-top: 0;
         color: #000;
@@ -1039,29 +1219,139 @@ img {
         font-size: 20px;
         line-height: 130%;
     }
+
     .enterprises-all p {
         line-height: 25px;
         padding: 0;
         margin: 0;
     }
 }
+
 @media (min-width: 768px) {
     .enterprises-all .cell div:first-child + div h3 {
         margin-top: 12px;
         font-size: 18px;
     }
+
     .col-sm-3 {
         width: 25%;
         float: left;
     }
 }
+
 .enterprises-all, .enterprises-all .row .col-sm-3 {
     text-align: center;
     float: left;
     padding: 0 15px;
 }
+
 .enterprises-all img {
     max-width: 100px;
     margin: 0 auto;
 }
+
+.follow-us {
+    margin-top: 2px
+}
+
+.follow-us .social-link {
+    display: inline-block;
+    position: relative;
+    top: -6px;
+    left: -3px
+}
+
+.follow-us .social-link a {
+    background: url(http://cdnskin.huawei.ru/ru/skin/frontend/huawei/images/honor-red/sprite/sprite.png) no-repeat;
+    width: 28px;
+    height: 35px;
+    display: inline-block;
+    text-indent: -99999px
+}
+
+.follow-us .social-link a.f-link {
+    background-position: -47px 0
+}
+
+.follow-us .social-link a.f-link:hover {
+    background-position: -47px -36px
+}
+
+.follow-us .social-link a.t-link {
+    background-position: -13px 0
+}
+
+.follow-us .social-link a.t-link:hover {
+    background-position: -13px -35px
+}
+
+.follow-us .social-link a.g-link {
+    background-position: -15px -412px;
+    margin-right: 2px
+}
+
+.follow-us .social-link a.g-link:hover {
+    background-position: -51px -412px
+}
+
+.follow-us .social-link a.m-link {
+    background-position: -81px 0
+}
+
+.follow-us .social-link a.m-link:hover {
+    background-position: -83px -34px
+}
+
+.follow-us .social-link a.i-link {
+    background-position: -49px -258px
+}
+
+.follow-us .social-link a.i-link:hover {
+    background-position: -49px -293px
+}
+
+.follow-us .social-link a.b-link {
+    background-position: -82px -258px
+}
+
+.follow-us .social-link a.b-link:hover {
+    background-position: -83px -293px
+}
+
+.follow-us .social-link a.y-link {
+    background-position: -14px -258px
+}
+
+.follow-us .social-link a.y-link:hover {
+    background-position: -14px -292px
+}
+
+.follow-us .social-link a.h-link {
+    background-position: -14px -137px
+}
+
+.follow-us .social-link a.h-link:hover {
+    background-position: -50px -136px
+}
+.follow-us li {
+    width: 50%;
+    float: left;
+}
+@media (max-width: 979px) {
+    .follow-us li {
+        width: 100%;
+        float: left;
+    }
+    .footer-links .footer-links-column.footer-x8 {
+        width: 25%;
+    }
+}
+.contact-us-list {
+
+}
+.contact-us-item {
+    width: 50%;
+    float: left;
+}
+
 

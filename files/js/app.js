@@ -7,6 +7,11 @@ app.config(['$routeProvider', '$locationProvider', '$translateProvider',
             'suffix': '.json'
         });
         $routeProvider
+            .when("/", {
+                templateUrl: '/templates/home.html',
+                controller: 'homeController'
+            });
+        $routeProvider
             .when("/:lang/", {
                 templateUrl: '/templates/home.html',
                 controller: 'homeController'
@@ -27,25 +32,14 @@ app.config(['$routeProvider', '$locationProvider', '$translateProvider',
         });
     }
 ]);
-app.run(['$rootScope', '$routeParams', '$route', '$location', '$timeout', '$translate',
-    function($rootScope, $routeParams, $route, $location, $timeout, $translate) {
-        //$rootScope.$on('$routeChangeStart', function (event, next, current) {
-            //var tempLocale = $location.path().slice(1,3);
-            //if(tempLocale != "en" && tempLocale != "ru" && tempLocale != "hy") {
-                //$location.path("/" + $rootScope.defaultLang + $location.path());
-                //$translate.use($rootScope.defaultLang);
-            //}
-            //else {
-            //    $rootScope.currentLang = $location.path().slice(1,3);
-            //    $translate.use($rootScope.currentLang);
-            //}
-            //$rootScope.preLink = '/' + $rootScope.currentLang;
-        //});
+app.run(['$rootScope', '$routeParams', '$route', '$location', '$timeout', '$translate', 'mainService',
+    function($rootScope, $routeParams, $route, $location, $timeout, $translate, mainService) {
+
     }
 ]);
 
-app.controller('mainController', ['$http', '$scope', 'mainService',
-    function($http, $scope, mainService) {
+app.controller('mainController', ['$http', '$routeParams', '$scope', 'mainService',
+    function($http, $routeParams, $scope, mainService) {
         $scope.appStart = true;
         //            $route.updateParams({lang : $rootScope.lang});
         $scope.menuLinks = {
