@@ -28,6 +28,8 @@ mongoose.connection.on('disconnected', function () {
 });
 
 app.use(express.static('' + __dirname + '/files'));
+app.set('views',[''+__dirname + '/files/templates', ''+__dirname + '/files/templates/botView/']);
+app.engine('html', require('ejs').renderFile);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
