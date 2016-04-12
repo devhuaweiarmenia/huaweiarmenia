@@ -11,7 +11,7 @@ var redis = require('redis');
 mongoose = require('mongoose');
 uaParser = require('ua-parser');
 
-var port = parseInt(process.env.PORT) || parseInt(process.env.OPENSHIFT_NODEJS_PORT) || 901;
+var port = parseInt(process.env.OPENSHIFT_NODEJS_PORT) || parseInt(process.env.PORT) ||  901;
 
 var dbURI = 'mongodb://huaweiarmenia:huawei901@ds019970.mlab.com:19970/heroku_c5wd0q4r';
 
