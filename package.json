@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "interactive",
   "main": "server.js",
+  "start": "server.js",
   "scripts": {
     "test": "node server",
     "start": "node server.js"
