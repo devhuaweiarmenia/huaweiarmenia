@@ -247,7 +247,7 @@ img {
     }
 
     .mobile-nav {
-        background: url(http://cdnskin.huawei.ru/ru/skin/frontend/huawei/images/honor-red/sprite/home-sprite.png) no-repeat 96% -101px;
+        background: url(../img/other/home-sprite.png) no-repeat 96% -101px;
         cursor: pointer;
         display: block;
         left: 15px;
@@ -419,7 +419,7 @@ img {
 }
 
 .main-slider {
-    background: url(http://huaweiarmenia.am/templates/ja_t3_blank/images/moblios/sliderBg.png) repeat-x left top;
+    background: url(../img/other/sliderBg.png) repeat-x left top;
     width: 100%;
     clear: both;
     text-align: left;
@@ -574,7 +574,7 @@ img {
 }
 
 .menu-bottom {
-    background: url(http://huaweiarmenia.am/templates/ja_t3_blank/images/moblios/footerMenuBg.png) repeat left top;
+    background: url(../img/other/footerMenuBg.png) repeat left top;
     background-size: cover;
     width: 100%;
     padding: 45px 10%;
@@ -1341,7 +1341,7 @@ img {
 }
 @media (max-width: 979px) {
     .follow-us li {
-        width: 100%;
+        width: 50%;
         float: left;
     }
     .footer-links .footer-links-column.footer-x8 {
