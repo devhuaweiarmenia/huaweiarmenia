@@ -8,8 +8,8 @@
     <title>Huawei Armenia</title>
 
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="/css/allstyles.css" media="all">
-    <link rel="stylesheet" type="text/css" href="/css/owl.carousel.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/css/allstyles.min.css" media="all">
+    <!--<link rel="stylesheet" type="text/css" href="/css/owl.carousel.css" media="all">-->
     <link rel="stylesheet" type="text/css" ng-if="currentLang=='hy'" href="/css/arm.css" media="all">
     <style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak{display:none;}ng\:form{display:block;}</style>
 
@@ -19,7 +19,8 @@
 </head>
 
 <body ng-cloak="">
-<div class="wrapper" ng-show="appStart">
+<div class="wrapper" ng-show="appStart" style="background: url(/img/other/Under_construction.png);background-repeat: no-repeat;background-position: center;background-color: #fff;"></div>
+<div class="wrapper" ng-show="!appStart">
     <header id="header" class="page-header">
         <div class="page-header-container">
             <div class="mobile-nav icon-honor2-menu size-24">&nbsp;</div>
