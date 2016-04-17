@@ -38,9 +38,13 @@ app.run(['$rootScope', '$routeParams', '$route', '$location', '$timeout', '$tran
     }
 ]);
 
-app.controller('mainController', ['$http', '$routeParams', '$scope', 'mainService',
-    function($http, $routeParams, $scope, mainService) {
+app.controller('mainController', ['$http', '$routeParams', '$scope', '$rootScope', 'mainService',
+    function($http, $routeParams, $scope, $rootScope, mainService) {
         $scope.appStart = true;
+        console.log(location.hostname);
+        if(location.hostname == 'localhost' || location.hostname.indexOf('heroku')) {
+            $scope.appStart = false;
+        }
         //            $route.updateParams({lang : $rootScope.lang});
         $scope.menuLinks = {
             smartphones : [
@@ -67,11 +71,36 @@ app.controller('mainController', ['$http', '$routeParams', '$scope', 'mainServic
                 { title : 'MediaPad T1 8 4G', slug : 'mediapad-t1-8'}
             ]
         };
+        $scope.productsSubmenu = [
+            {
+                title : "Huawei P8",
+                description : "5.2\" Dual SIM smartphone with IPS LCD display",
+                img : "/img/main-products/Huawei P8.png",
+                slug : "huawei-p8"
+            },
+            {
+                title : "Huawei Honor 7",
+                description : "5.2\" Dual SIM smartphone with IPS-NEO LCD display",
+                img : "/img/main-products/Huawei Honor 7.png",
+                slug : "huawei-honor-7"
+            },
+            {
+                title : "Huawei NEXUS 6P",
+                description : "5.7\" Single SIM smartphone with AMOLED displayy",
+                img : "/img/main-products/Huawei NEXUS 6P.png",
+                slug : "huawei-nexus-6p"
+            }
+        ];
+        $rootScope.scrollToTop = function() {
+            //window.scrollTo(0, 0);
+            $('html, body').animate({ scrollTop: 0 }, 'fast');
+        }
     }
 ]);
 
 app.controller('homeController', ['$http', '$scope', '$rootScope', '$location', '$timeout', '$routeParams', '$translate', 'mainService',
     function($http, $scope, $rootScope, $location, $timeout, $routeParams, $translate, mainService) {
+        $rootScope.scrollToTop();
         mainService.init($routeParams);
         $scope.homeSlider = [
             {
@@ -115,7 +144,7 @@ app.controller('homeController', ['$http', '$scope', '$rootScope', '$location', 
 
 app.controller('productController', ['$http', '$scope', '$routeParams', '$rootScope', '$location', 'mainService',
     function($http, $scope, $routeParams, $rootScope, $location, mainService) {
-
+        $rootScope.scrollToTop();
         mainService.init($routeParams);
 
         $scope.isNarrow = $(window).width() > 770;
@@ -150,6 +179,7 @@ app.controller('productController', ['$http', '$scope', '$routeParams', '$rootSc
 
 app.controller('enterprisesController', ['$scope', '$routeParams', '$rootScope', 'mainService',
     function($scope, $routeParams, $rootScope, mainService) {
+        $rootScope.scrollToTop();
         mainService.init($routeParams);
         $scope.enterpriseLink = $rootScope.currentLang != 'hy' ? $rootScope.currentLang : 'ru';
     }

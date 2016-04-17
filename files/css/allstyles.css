@@ -133,7 +133,7 @@ ol, ul, li {
 .wrapper {
     background: #fff;
     margin: 0 auto;
-    max-width: 1280px;
+    /*max-width: 1280px;*/
     min-height: 100%;
     min-width: 320px;
     border: 1px solid #d4d4d4;
@@ -151,10 +151,14 @@ ol, ul, li {
     border-bottom: 1px solid #e7e7e7;
     box-shadow: 0px 3px 4px -3px #e0e0e0;
     margin: 0 auto;
-    max-width: 1280px;
+    /*max-width: 1278px;*/
     padding: 5px 46px 15px;
-    position: relative;
+    position: fixed;
+    background-color: #ffffff;
     z-index: 1;
+    width: 100%;
+    top: 0;
+    height: 64px;
 }
 
 @media only screen and (max-width: 979px) {
@@ -335,8 +339,54 @@ img {
         display: none;
     }
 
+    .dd-sub-menu {
+        display: none;
+        z-index: -10;
+        background-color: #f6f6f6;
+        left: 0;
+        min-height: 315px;
+        text-align: center;
+        width: 100%;
+        position: fixed;
+        padding: 30px 0px 30px 225px;
+    }
+
     .header-nav-item:hover .dd-menu {
         display: block;
+    }
+
+    .header-nav-item:hover .dd-sub-menu {
+        display: block;
+    }
+
+    .dd-sub-menu-left {
+        width: 200px;
+        float: left;
+        padding: 35px 20px;
+    }
+
+    .dd-sub-menu-left a {
+        width: 100%;
+        float: left;
+        text-align: left;
+        line-height: 50px;
+        font-size: 25px;
+    }
+
+    .dd-sub-menu-right .products-item {
+        float: left;
+        width: auto !Important;
+        margin: 5px 15px !important;
+    }
+
+    .dd-sub-menu-right .products-item a {
+        border: none !important;
+        padding: 0 !important;
+    }
+
+    .dd-sub-menu-right {
+        width: calc(100% - 200px);
+        float: right;
     }
 
     .header-nav-item .dd-menu-item {
@@ -1386,4 +1436,21 @@ img {
 }
 .owl-theme .owl-controls .owl-buttons div {
     padding: 0 !important;
+}
+.view-content {
+    margin-top: 63px;
+    display: block;
+}
+
+.go-to-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.go-to-top svg {
+    zoom: 250%;
 }
