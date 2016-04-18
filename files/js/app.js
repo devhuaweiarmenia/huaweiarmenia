@@ -40,16 +40,19 @@ app.run(['$rootScope', '$routeParams', '$route', '$location', '$timeout', '$tran
 
 app.controller('mainController', ['$http', '$routeParams', '$scope', '$rootScope', 'mainService',
     function($http, $routeParams, $scope, $rootScope, mainService) {
+
         $scope.appStart = false;
+
         console.log(location.hostname);
-        if(location.hostname == 'localhost' || location.hostname.indexOf('heroku')) {
+
+        if(location.hostname != 'huaweiarmenia.am') {
             $scope.appStart = true;
         }
-        else {
-            $scope.appStart = false;
-        }
+
         console.log($scope.appStart);
+
         //            $route.updateParams({lang : $rootScope.lang});
+
         $scope.menuLinks = {
             smartphones : [
                 { title : 'Nexus 6P', slug : 'nexus-6p'},
