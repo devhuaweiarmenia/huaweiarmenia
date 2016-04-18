@@ -40,10 +40,10 @@ app.run(['$rootScope', '$routeParams', '$route', '$location', '$timeout', '$tran
 
 app.controller('mainController', ['$http', '$routeParams', '$scope', '$rootScope', 'mainService',
     function($http, $routeParams, $scope, $rootScope, mainService) {
-        $scope.appStart = true;
+        $scope.appStart = false;
         console.log(location.hostname);
         if(location.hostname == 'localhost' || location.hostname.indexOf('heroku')) {
-            $scope.appStart = false;
+            $scope.appStart = true;
         }
         //            $route.updateParams({lang : $rootScope.lang});
         $scope.menuLinks = {
