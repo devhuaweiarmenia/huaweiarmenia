@@ -45,6 +45,10 @@ app.controller('mainController', ['$http', '$routeParams', '$scope', '$rootScope
         if(location.hostname == 'localhost' || location.hostname.indexOf('heroku')) {
             $scope.appStart = true;
         }
+        else {
+            $scope.appStart = false;
+        }
+        console.log($scope.appStart);
         //            $route.updateParams({lang : $rootScope.lang});
         $scope.menuLinks = {
             smartphones : [
