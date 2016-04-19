@@ -7,6 +7,7 @@ var fs = require('fs');
 var bodyParser = require('body-parser');
 var app = express();
 var redis = require('redis');
+var http = require('http');
 
 mongoose = require('mongoose');
 uaParser = require('ua-parser');
@@ -47,3 +48,46 @@ productsSchema = mongoose.model('products', huaweiModels.product);
 var server = app.listen(port || 901, function() {
     console.log("listening on " + port);
 });
+
+var subscriber = JSON.stringify({
+    "email_address": "test@test.com",
+    "status": "subscribed",
+    "merge_fields": {
+        "FNAME": "Tester",
+        "LNAME": "Testerson"
+    }
+});
+
+var options = {
+    host: 'us13.api.mailchimp.com',
+    path: '/3.0/lists/403ece5b2c/members',
+    method: 'POST',
+    headers: {
+        'Authorization': 'apikey a756db21ca45ac2c287198217355ecd2-us13',
+        'Content-Type': 'application/json',
+        'Content-Length': subscriber.length
+    }
+};
+
+var hreq = http.request(options, function (hres) {
+    console.log('STATUS CODE: ' + hres.statusCode);
+    console.log('HEADERS: ' + JSON.stringify(hres.headers));
+    hres.setEncoding('utf8');
+
+    hres.on('data', function (chunk) {
+        console.log('\n\n===========CHUNK===============')
+        console.log(chunk);
+        //res.send(chunk);
+    });
+
+    hres.on('end', function(res) {
+        console.log('\n\n=========RESPONSE END===============');
+    });
+
+    hres.on('error', function (e) {
+        console.log('ERROR: ' + e.message);
+    });
+});
+
+hreq.write(subscriber);
+hreq.end();
