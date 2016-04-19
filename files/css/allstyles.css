@@ -344,19 +344,22 @@ img {
         z-index: -10;
         background-color: #f6f6f6;
         left: 0;
-        min-height: 315px;
+        min-height: 285px;
         text-align: center;
         width: 100%;
         position: fixed;
         padding: 30px 0px 30px 225px;
+
     }
 
     .header-nav-item:hover .dd-menu {
         display: block;
+        z-index: 999;
     }
 
     .header-nav-item:hover .dd-sub-menu {
         display: block;
+        z-index: 999;
     }
 
     .dd-sub-menu-left {
@@ -1453,4 +1456,85 @@ img {
 
 .go-to-top svg {
     zoom: 250%;
+}
+
+.smartphones-menu {
+    float: left;
+    width: 214px;
+    padding: 25px;
+}
+.smartphones-menu-item {
+    float: left;
+    width: 164px;
+    margin-bottom: 25px;
+    border: 2px solid #ffffff;
+    padding: 10px 5px;
+}
+.smartphones-menu-item span {
+    color: #444444;
+}
+.smartphones-menu-item.active-menu-item {
+    border: 2px solid #444444;
+}
+.smartphones-menu-item.active-menu-item a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    margin-top: -118px;
+    left: 188px;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent transparent #444444;
+    border-style: solid;
+    border-width: 20px;
+}
+.smartphones-menu-item.active-menu-item:after {
+    content: '';
+    display: block;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 155px;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent transparent #ffffff;
+    border-style: solid;
+    border-width: 18px;
+}
+.smartphones-menu-item.active-menu-item span {
+    color: #9a171d;
+}
+
+.smartphones-menu-item svg {
+    width: 150px;
+    height: 160px;
+    fill: #444444;
+}
+.smartphones-menu-item.active-menu-item svg {
+    fill: #9a171d;
+}
+
+.smartphones-menu-item a {
+    float: left;
+    height: 185px;
+}
+.smartphones-right {
+    float: left;
+    width: calc(100% - 214px);
+    padding: 25px;
+}
+.dd-sub-menu-left a:hover {
+    color: #9a171d;
+    border-bottom: 0 solid #9a171d;
+}
+.smartphones-right h1 {
+    text-align: left;
+}
+.smartphones-main .products-main {
+    text-align: left;
+}
+.smartphones-main .products-main .products-item {
+    margin: 0 auto;
+    display: inline-block;
+    width: 230px;
+    text-align: center;
 }

@@ -17,6 +17,16 @@ app.config(['$routeProvider', '$locationProvider', '$translateProvider',
                 controller: 'homeController'
             });
         $routeProvider
+            .when("/:lang/smartphones", {
+                templateUrl: '/templates/smartphones.html',
+                controller: 'smartphonesController'
+            });
+        $routeProvider
+            .when("/:lang/tablets", {
+                templateUrl: '/templates/smartphones.html',
+                controller: 'tabletsController'
+            });
+        $routeProvider
             .when("/:lang/products/:product_slug", {
                 templateUrl: '/templates/product.html',
                 controller: 'productController'
@@ -151,13 +161,73 @@ app.controller('homeController', ['$http', '$scope', '$rootScope', '$location', 
 
 app.controller('smartphonesController', ['$http', '$scope', '$rootScope', '$location', '$timeout', '$routeParams', '$translate', 'mainService',
     function($http, $scope, $rootScope, $location, $timeout, $routeParams, $translate, mainService) {
-
+        $rootScope.scrollToTop();
+        mainService.init($routeParams);
+        $scope.menuActive = 'smartphones';
+        $scope.productsMain = [
+            {
+                title : "Huawei P8",
+                description : "5.2\" Dual SIM smartphone with IPS LCD display",
+                img : "/img/main-products/Huawei P8.png",
+                slug : "huawei-p8"
+            },
+            {
+                title : "Huawei Honor 7",
+                description : "5.2\" Dual SIM smartphone with IPS-NEO LCD display",
+                img : "/img/main-products/Huawei Honor 7.png",
+                slug : "huawei-honor-7"
+            },
+            {
+                title : "Huawei NEXUS 6P",
+                description : "5.7\" Single SIM smartphone with AMOLED displayy",
+                img : "/img/main-products/Huawei NEXUS 6P.png",
+                slug : "huawei-nexus-6p"
+            },
+            {
+                title : "Huawei P8",
+                description : "5.2\" Dual SIM smartphone with IPS LCD display",
+                img : "/img/main-products/Huawei P8.png",
+                slug : "huawei-p8"
+            },
+            {
+                title : "Huawei Honor 7",
+                description : "5.2\" Dual SIM smartphone with IPS-NEO LCD display",
+                img : "/img/main-products/Huawei Honor 7.png",
+                slug : "huawei-honor-7"
+            },
+            {
+                title : "Huawei NEXUS 6P",
+                description : "5.7\" Single SIM smartphone with AMOLED displayy",
+                img : "/img/main-products/Huawei NEXUS 6P.png",
+                slug : "huawei-nexus-6p"
+            },
+            {
+                title : "Huawei P8",
+                description : "5.2\" Dual SIM smartphone with IPS LCD display",
+                img : "/img/main-products/Huawei P8.png",
+                slug : "huawei-p8"
+            },
+            {
+                title : "Huawei Honor 7",
+                description : "5.2\" Dual SIM smartphone with IPS-NEO LCD display",
+                img : "/img/main-products/Huawei Honor 7.png",
+                slug : "huawei-honor-7"
+            },
+            {
+                title : "Huawei NEXUS 6P",
+                description : "5.7\" Single SIM smartphone with AMOLED displayy",
+                img : "/img/main-products/Huawei NEXUS 6P.png",
+                slug : "huawei-nexus-6p"
+            }
+        ];
     }
 ]);
 
 app.controller('tabletsController', ['$http', '$scope', '$rootScope', '$location', '$timeout', '$routeParams', '$translate', 'mainService',
     function($http, $scope, $rootScope, $location, $timeout, $routeParams, $translate, mainService) {
-
+        $rootScope.scrollToTop();
+        mainService.init($routeParams);
+        $scope.menuActive = 'tablets';
     }
 ]);
 
