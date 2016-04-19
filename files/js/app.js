@@ -149,6 +149,18 @@ app.controller('homeController', ['$http', '$scope', '$rootScope', '$location', 
     }
 ]);
 
+app.controller('smartphonesController', ['$http', '$scope', '$rootScope', '$location', '$timeout', '$routeParams', '$translate', 'mainService',
+    function($http, $scope, $rootScope, $location, $timeout, $routeParams, $translate, mainService) {
+
+    }
+]);
+
+app.controller('tabletsController', ['$http', '$scope', '$rootScope', '$location', '$timeout', '$routeParams', '$translate', 'mainService',
+    function($http, $scope, $rootScope, $location, $timeout, $routeParams, $translate, mainService) {
+
+    }
+]);
+
 app.controller('productController', ['$http', '$scope', '$routeParams', '$rootScope', '$location', 'mainService',
     function($http, $scope, $routeParams, $rootScope, $location, mainService) {
         $rootScope.scrollToTop();
