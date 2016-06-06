@@ -36,6 +36,26 @@ app.config(['$routeProvider', '$locationProvider', '$translateProvider',
                 templateUrl: '/templates/enterprises.html',
                 controller: 'enterprisesController'
             });
+        $routeProvider
+            .when("/:lang/about-us", {
+                templateUrl: '/templates/aboutus.html',
+                controller: 'enterprisesController'
+            });
+        $routeProvider
+            .when("/:lang/ourpartners", {
+                templateUrl: '/templates/partners.html',
+                controller: 'enterprisesController'
+            });
+        $routeProvider
+            .when("/:lang/our-projects", {
+                templateUrl: '/templates/projects.html',
+                controller: 'enterprisesController'
+            });
+        $routeProvider
+            .when("/:lang/contacts", {
+                templateUrl: '/templates/contacts.html',
+                controller: 'enterprisesController'
+            });
         $locationProvider.html5Mode({
             enabled: true,
             requireBase: false
@@ -44,12 +64,14 @@ app.config(['$routeProvider', '$locationProvider', '$translateProvider',
 ]);
 app.run(['$rootScope', '$routeParams', '$route', '$location', '$timeout', '$translate', 'mainService',
     function($rootScope, $routeParams, $route, $location, $timeout, $translate, mainService) {
-
+        $rootScope.$on( "$routeChangeSuccess", function(event, current) {
+            $rootScope.currentRoute = location.pathname.slice(4);
+        });
     }
 ]);
 
-app.controller('mainController', ['$http', '$routeParams', '$scope', '$rootScope', 'mainService',
-    function($http, $routeParams, $scope, $rootScope, mainService) {
+app.controller('mainController', ['$http', '$routeParams', '$scope', '$rootScope', '$sce', 'mainService',
+    function($http, $routeParams, $scope, $rootScope, $sce, mainService) {
 
         $scope.appStart = false;
 
@@ -92,24 +114,26 @@ app.controller('mainController', ['$http', '$routeParams', '$scope', '$rootScope
             {
                 title : "Huawei P8",
                 description : "5.2\" Dual SIM smartphone with IPS LCD display",
-                img : "/img/main-products/Huawei P8.png",
+                img : "/img/header-menu/6p.png",
                 slug : "huawei-p8"
             },
             {
                 title : "Huawei Honor 7",
                 description : "5.2\" Dual SIM smartphone with IPS-NEO LCD display",
-                img : "/img/main-products/Huawei Honor 7.png",
+                img : "/img/header-menu/6p.png",
                 slug : "huawei-honor-7"
             },
             {
                 title : "Huawei NEXUS 6P",
                 description : "5.7\" Single SIM smartphone with AMOLED displayy",
-                img : "/img/main-products/Huawei NEXUS 6P.png",
+                img : "/img/header-menu/6p.png",
                 slug : "huawei-nexus-6p"
             }
         ];
+        $scope.trustSrc = function(src) {
+            return $sce.trustAsResourceUrl(src);
+        };
         $rootScope.scrollToTop = function() {
-            //window.scrollTo(0, 0);
             $('html, body').animate({ scrollTop: 0 }, 'fast');
         }
     }
@@ -118,36 +142,62 @@ app.controller('mainController', ['$http', '$routeParams', '$scope', '$rootScope
 app.controller('homeController', ['$http', '$scope', '$rootScope', '$location', '$timeout', '$routeParams', '$translate', 'mainService',
     function($http, $scope, $rootScope, $location, $timeout, $routeParams, $translate, mainService) {
         $rootScope.scrollToTop();
+        $scope.videoLink = '';
+        $scope.showVideo = false;
         mainService.init($routeParams);
         $scope.homeSlider = [
             {
                 title : 'Ascend Honor 4C',
-                img : '/img/slider/P8.png',
+                img : '/img/slider/111.png',
                 description : "\- Three-segment ultra slim frame design <br> - Innovative design <br> - Strong signal reception delivers stable call experience <br>"
             },
             {
                 title : 'Ascend Honor 4C',
-                img : '/img/slider/P8.png',
+                img : '/img/slider/111.png',
                 description : "\- Three-segment ultra slim frame design <br> - Innovative design <br> - Strong signal reception delivers stable call experience <br>"
             },
             {
                 title : 'Ascend Honor 4C',
-                img : '/img/slider/P8.png',
+                img : '/img/slider/111.png',
                 description : "\- Three-segment ultra slim frame design <br> - Innovative design <br> - Strong signal reception delivers stable call experience <br>"
             }
         ];
         $scope.productsMain = [
             {
-                title : "Huawei P8",
-                description : "5.2\" Dual SIM smartphone with IPS LCD display",
-                img : "/img/main-products/Huawei P8.png",
-                slug : "huawei-p8"
+                title : "Huawei NEXUS 6P",
+                description : "5.7\" Single SIM smartphone with AMOLED displayy",
+                img : "/img/main-products/Huawei NEXUS 6P.png",
+                slug : "huawei-nexus-6p"
             },
             {
-                title : "Huawei Honor 7",
-                description : "5.2\" Dual SIM smartphone with IPS-NEO LCD display",
-                img : "/img/main-products/Huawei Honor 7.png",
-                slug : "huawei-honor-7"
+                title : "Huawei NEXUS 6P",
+                description : "5.7\" Single SIM smartphone with AMOLED displayy",
+                img : "/img/main-products/Huawei NEXUS 6P.png",
+                slug : "huawei-nexus-6p"
+            },
+            {
+                title : "Huawei NEXUS 6P",
+                description : "5.7\" Single SIM smartphone with AMOLED displayy",
+                img : "/img/main-products/Huawei NEXUS 6P.png",
+                slug : "huawei-nexus-6p"
+            },
+            {
+                title : "Huawei NEXUS 6P",
+                description : "5.7\" Single SIM smartphone with AMOLED displayy",
+                img : "/img/main-products/Huawei NEXUS 6P.png",
+                slug : "huawei-nexus-6p"
+            },
+            {
+                title : "Huawei NEXUS 6P",
+                description : "5.7\" Single SIM smartphone with AMOLED displayy",
+                img : "/img/main-products/Huawei NEXUS 6P.png",
+                slug : "huawei-nexus-6p"
+            },
+            {
+                title : "Huawei NEXUS 6P",
+                description : "5.7\" Single SIM smartphone with AMOLED displayy",
+                img : "/img/main-products/Huawei NEXUS 6P.png",
+                slug : "huawei-nexus-6p"
             },
             {
                 title : "Huawei NEXUS 6P",
@@ -156,6 +206,52 @@ app.controller('homeController', ['$http', '$scope', '$rootScope', '$location', 
                 slug : "huawei-nexus-6p"
             }
         ];
+        $scope.mainVideos = [
+            {
+                title : 'Huawei P8',
+                img : '/img/video/p9.png',
+                text : 'Smartphone Huawei P8!',
+                link : 'https://www.youtube.com/embed/uPV7v1SUDkY'
+            },
+            {
+                title : 'Huawei P8',
+                img : '/img/video/p9.png',
+                text : 'Short video.',
+                link : 'https://www.youtube.com/embed/WGBqpJFoUds'
+            },
+            {
+                title : 'Huawei P8',
+                img : '/img/video/p9.png',
+                text : 'Smartphone Huawei P8?',
+                link : 'https://www.youtube.com/embed/uPV7v1SUDkY'
+            },
+            {
+                title : 'Huawei P8',
+                img : '/img/video/p9.png',
+                text : 'Short video.',
+                link : 'https://www.youtube.com/embed/WGBqpJFoUds'
+            },
+            {
+                title : 'Huawei P8',
+                img : '/img/video/p9.png',
+                text : 'Smartphone Huawei P8.',
+                link : 'https://www.youtube.com/embed/uPV7v1SUDkY'
+            },
+            {
+                title : 'Huawei P8',
+                img : '/img/video/p9.png',
+                text : 'Short video.',
+                link : 'https://www.youtube.com/embed/WGBqpJFoUds'
+            }
+        ];
+        $scope.openVideoMain = function(link) {
+            $scope.showVideo = true;
+            $scope.videoLink = link;
+        };
+        $scope.closeVideo = function() {
+            $scope.showVideo = false;
+            $scope.videoLink = '';
+        };
     }
 ]);
 
@@ -335,7 +431,31 @@ app.directive('homeslider', function($timeout) {
         }
     }
 });
-
+app.directive('secondslider', function($timeout) {
+    return {
+        restrict: 'A',
+        link: function(scope, el, attrs) {
+            $timeout(function() {
+                if (scope.$last === true) {
+                    var owl = $('.products-slider-list');
+                    owl.owlCarousel({
+                        margin: 0,
+                        loop: true,
+                        dots: false,
+                        navigation: true,
+                        navigationText: [
+                            "<div class=\"main-slider-arrow-left\"></div>",
+                            "<div class=\"main-slider-arrow-right\"></div>"
+                        ],
+                        autoplay: true,
+                        autoplayTimeout: 5000,
+                        autoplayHoverPause: true
+                    });
+                }
+            })
+        }
+    }
+});
 app.directive('productsimgslider', function($timeout) {
     return {
         restrict: 'A',

@@ -1,33 +1,77 @@
 <div class="main-slider" ng-show="homeSlider">
-
     <ul class="main-slider-list">
-        <li class="main-slider-item" ng-repeat="item in homeSlider" homeslider>
+        <a href="" class="main-slider-item" ng-repeat="item in homeSlider" homeslider>
             <div class="main-slider-img-container">
-                <a href="">
-                    <img ng-src="{{item.img}}" alt="{{item.title}}">
-                </a>
+                <img ng-src="{{item.img}}" alt="{{item.title}}">
             </div>
-            <div class="main-slider-content">
-                <h2 class="main-slider-content-title" ng-bind-html="item.title"></h2>
-                <div class="main-slider-content-desc">
-                    <span ng-bind-html="item.description"></span>
-                    <a href="" class="readmore">
-                        <span>Read More</span>
-                    </a>
-                </div>
-            </div>
+        </a>
+    </ul>
+</div>
+<div class="second-menu">
+    <ul class="second-menu-list">
+        <li class="second-menu-item">
+            <a class="second-menu-link">
+                {{"New arrivals" | translate}}
+            </a>
+        </li>
+        <li class="second-menu-item">
+            <a class="second-menu-link">
+                {{"New arrivals" | translate}}
+            </a>
+        </li>
+        <li class="second-menu-item">
+            <a class="second-menu-link">
+                {{"New arrivals" | translate}}
+            </a>
+        </li>
+        <li class="second-menu-item">
+            <a class="second-menu-link">
+                {{"New arrivals" | translate}}
+            </a>
+        </li>
+        <li class="second-menu-item">
+            <a class="second-menu-link">
+                {{"New arrivals" | translate}}
+            </a>
         </li>
     </ul>
-
 </div>
+
 <div class="products-main">
-    <div class="products-item" ng-repeat="item in productsMain">
-        <a ng-href="/products/{{item.slug}}">
-            <img class="products-img" alt="{{item.title}}" ng-src="{{item.img}}">
-            <span class="products-title">{{item.title}}</span>
-            <span class="products-descr">{{item.description}}</span>
-            <span class="products-button">{{"products-more-btn" | translate}}</span>
-        </a>
+    <div class="products-slider-list">
+        <div class="products-item" ng-repeat="item in productsMain" secondslider>
+            <a ng-href="/products/{{item.slug}}">
+                <img class="products-img" alt="{{item.title}}" ng-src="{{item.img}}">
+                <span class="products-title">{{item.title}}</span>
+                <span class="products-button">{{"products-more-btn" | translate}}</span>
+            </a>
+        </div>
     </div>
     <div class="clear"></div>
+</div>
+
+<div class="products-main video-list">
+    <div class="video-list">
+        <div class="video-item" ng-repeat="video in mainVideos" ng-click="openVideoMain(video.link)">
+            <div class="video-item-left">
+                <img class="video-item-img" ng-src="{{video.img}}">
+            </div>
+            <div class="video-item-right">
+                <span class="video-item-title">{{video.title}}</span>
+                <span class="video-item-text">{{video.text}}</span>
+            </div>
+            <div class="products-main-cover"></div>
+            <div class="products-main-play"></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="video-wrapper" ng-if="showVideo">
+    <div class="video-outer">
+        <div class="close-video" ng-click="closeVideo()"></div>
+        <div class="video-inner">
+            <iframe width="100%" height="600px" ng-src="{{trustSrc(videoLink + '?autoplay=1')}}" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
 </div>
