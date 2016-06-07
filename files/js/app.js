@@ -42,7 +42,7 @@ app.config(['$routeProvider', '$locationProvider', '$translateProvider',
                 controller: 'enterprisesController'
             });
         $routeProvider
-            .when("/:lang/ourpartners", {
+            .when("/:lang/our-partners", {
                 templateUrl: '/templates/partners.html',
                 controller: 'enterprisesController'
             });
