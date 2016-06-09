@@ -56,6 +56,21 @@ app.config(['$routeProvider', '$locationProvider', '$translateProvider',
                 templateUrl: '/templates/contacts.html',
                 controller: 'enterprisesController'
             });
+        $routeProvider
+            .when("/:lang/blog", {
+                templateUrl: '/templates/contacts.html',
+                controller: 'enterprisesController'
+            });
+        $routeProvider
+            .when("/:lang/blog", {
+                templateUrl: '/templates/blog.html',
+                controller: 'blogController'
+            });
+        $routeProvider
+            .when("/:lang/blog/:slug", {
+                templateUrl: '/templates/article.html',
+                controller: 'articleController'
+            });
         $locationProvider.html5Mode({
             enabled: true,
             requireBase: false
@@ -134,7 +149,9 @@ app.controller('mainController', ['$http', '$routeParams', '$scope', '$rootScope
             return $sce.trustAsResourceUrl(src);
         };
         $rootScope.scrollToTop = function() {
+            console.log('a');
             $('html, body').animate({ scrollTop: 0 }, 'fast');
+            $('html, body').scrollTop( 300 );
         }
     }
 ]);
@@ -367,6 +384,74 @@ app.controller('enterprisesController', ['$scope', '$routeParams', '$rootScope',
         $rootScope.scrollToTop();
         mainService.init($routeParams);
         $scope.enterpriseLink = $rootScope.currentLang != 'hy' ? $rootScope.currentLang : 'ru';
+    }
+]);
+
+app.controller('blogController', ['$scope', '$routeParams', '$rootScope', 'mainService',
+    function($scope, $routeParams, $rootScope, mainService) {
+        $rootScope.scrollToTop();
+        mainService.init($routeParams);
+        $scope.enterpriseLink = $rootScope.currentLang != 'hy' ? $rootScope.currentLang : 'ru';
+        $scope.news = [
+            {
+                title : 'All About App Search: Indexing, Ranking Factors, Universal Links, and More - Whiteboard Friday',
+                text : 'App search is growing and changing, and there\'s more opportunity than ever to both draw customers in at the top of the funnel and retain them at the bottom. In today\'s special British Whiteboard Friday, Tom Anthony and Will Critchlow of Distilled dig into everything app search and highlight a future where Google may have some competition as the search engine giant.',
+                date : 'May 20th, 2016',
+                img : '1.png',
+                slug : 'news1'
+            },
+            {
+                title : 'All About App Search: Indexing, Ranking Factors, Universal Links, and More - Whiteboard Friday',
+                text : 'App search is growing and changing, and there\'s more opportunity than ever to both draw customers in at the top of the funnel and retain them at the bottom. In today\'s special British Whiteboard Friday, Tom Anthony and Will Critchlow of Distilled dig into everything app search and highlight a future where Google may have some competition as the search engine giant.',
+                date : 'May 20th, 2016',
+                img : '1.png',
+                slug : 'news1'
+            },
+            {
+                title : 'All About App Search: Indexing, Ranking Factors, Universal Links, and More - Whiteboard Friday',
+                text : 'App search is growing and changing, and there\'s more opportunity than ever to both draw customers in at the top of the funnel and retain them at the bottom. In today\'s special British Whiteboard Friday, Tom Anthony and Will Critchlow of Distilled dig into everything app search and highlight a future where Google may have some competition as the search engine giant.',
+                date : 'May 20th, 2016',
+                img : '1.png',
+                slug : 'news1'
+            },
+            {
+                title : 'All About App Search: Indexing, Ranking Factors, Universal Links, and More - Whiteboard Friday',
+                text : 'App search is growing and changing, and there\'s more opportunity than ever to both draw customers in at the top of the funnel and retain them at the bottom. In today\'s special British Whiteboard Friday, Tom Anthony and Will Critchlow of Distilled dig into everything app search and highlight a future where Google may have some competition as the search engine giant.',
+                date : 'May 20th, 2016',
+                img : '1.png',
+                slug : 'news1'
+            },
+            {
+                title : 'All About App Search: Indexing, Ranking Factors, Universal Links, and More - Whiteboard Friday',
+                text : 'App search is growing and changing, and there\'s more opportunity than ever to both draw customers in at the top of the funnel and retain them at the bottom. In today\'s special British Whiteboard Friday, Tom Anthony and Will Critchlow of Distilled dig into everything app search and highlight a future where Google may have some competition as the search engine giant.',
+                date : 'May 20th, 2016',
+                img : '1.png',
+                slug : 'news1'
+            },
+            {
+                title : 'All About App Search: Indexing, Ranking Factors, Universal Links, and More - Whiteboard Friday',
+                text : 'App search is growing and changing, and there\'s more opportunity than ever to both draw customers in at the top of the funnel and retain them at the bottom. In today\'s special British Whiteboard Friday, Tom Anthony and Will Critchlow of Distilled dig into everything app search and highlight a future where Google may have some competition as the search engine giant.',
+                date : 'May 20th, 2016',
+                img : '1.png',
+                slug : 'news1'
+            }
+        ];
+    }
+]);
+
+app.controller('articleController', ['$scope', '$routeParams', '$rootScope', 'mainService',
+    function($scope, $routeParams, $rootScope, mainService) {
+        $rootScope.scrollToTop();
+        mainService.init($routeParams);
+        $scope.enterpriseLink = $rootScope.currentLang != 'hy' ? $rootScope.currentLang : 'ru';
+
+        $scope.article = {
+            title : 'All About App Search: Indexing, Ranking Factors, Universal Links, and More - Whiteboard Friday',
+            text : 'App search is growing and changing, and there\'s more opportunity than ever to both draw customers in at the top of the funnel and retain them at the bottom. In today\'s special British Whiteboard Friday, Tom Anthony and Will Critchlow of Distilled dig into everything app search and highlight a future where Google may have some competition as the search engine giant.',
+            date : 'May 20th, 2016',
+            img : '1.png',
+            slug : 'news1'
+        };
     }
 ]);
 

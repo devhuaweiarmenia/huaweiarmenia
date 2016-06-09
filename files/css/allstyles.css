@@ -1376,76 +1376,80 @@ img {
     left: -3px
 }
 
-.follow-us .social-link a {
+.follow-us .social-link a , .article-social-item {
     background: url(http://cdnskin.huawei.ru/ru/skin/frontend/huawei/images/honor-red/sprite/sprite.png) no-repeat;
     width: 28px;
     height: 35px;
     display: inline-block;
     text-indent: -99999px
 }
+.article-social-item {
+    width: 36px;
+    height: 36px;
+}
 
-.follow-us .social-link a.f-link {
+.follow-us .social-link a.f-link, .article-social-item.f-link{
     background-position: -47px 0
 }
 
-.follow-us .social-link a.f-link:hover {
+.follow-us .social-link a.f-link:hover, .article-social-item.f-link:hover {
     background-position: -47px -36px
 }
 
-.follow-us .social-link a.t-link {
+.follow-us .social-link a.t-link, .article-social-item.t-link {
     background-position: -13px 0
 }
 
-.follow-us .social-link a.t-link:hover {
+.follow-us .social-link a.t-link:hover, .article-social-item.t-link:hover {
     background-position: -13px -35px
 }
 
-.follow-us .social-link a.g-link {
+.follow-us .social-link a.g-link, .article-social-item.g-link{
     background-position: -15px -412px;
     margin-right: 2px
 }
 
-.follow-us .social-link a.g-link:hover {
+.follow-us .social-link a.g-link:hover, .article-social-item.g-link:hover {
     background-position: -51px -412px
 }
 
-.follow-us .social-link a.m-link {
+.follow-us .social-link a.m-link, .article-social-item.m-link {
     background-position: -81px 0
 }
 
-.follow-us .social-link a.m-link:hover {
+.follow-us .social-link a.m-link:hover, .article-social-item.m-link:hover {
     background-position: -83px -34px
 }
 
-.follow-us .social-link a.i-link {
+.follow-us .social-link a.i-link, .article-social-item.i-link {
     background-position: -49px -258px
 }
 
-.follow-us .social-link a.i-link:hover {
+.follow-us .social-link a.i-link:hover, .article-social-item.i-link:hover {
     background-position: -49px -293px
 }
 
-.follow-us .social-link a.b-link {
+.follow-us .social-link a.b-link, .article-social-item.b-link {
     background-position: -82px -258px
 }
 
-.follow-us .social-link a.b-link:hover {
+.follow-us .social-link a.b-link:hover, .article-social-item.b-link:hover {
     background-position: -83px -293px
 }
 
-.follow-us .social-link a.y-link {
+.follow-us .social-link a.y-link, .article-social-item.y-link {
     background-position: -14px -258px
 }
 
-.follow-us .social-link a.y-link:hover {
+.follow-us .social-link a.y-link:hover, .article-social-item.y-link:hover {
     background-position: -14px -292px
 }
 
-.follow-us .social-link a.h-link {
+.follow-us .social-link a.h-link, .article-social-item.h-link {
     background-position: -14px -137px
 }
 
-.follow-us .social-link a.h-link:hover {
+.follow-us .social-link a.h-link:hover, .article-social-item.h-link:hover {
     background-position: -50px -136px
 }
 .follow-us li {
@@ -1925,4 +1929,129 @@ img {
     text-align: left;
     color: #FFFFFF;
     font-size: 30px;
+}
+.blog-title {
+    background-color: #ca0e1f;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    line-height: 67px;
+    font-size: 50px;
+    font-family: dense;
+    text-align: left;
+    padding-left: 116px;
+    margin-bottom: 34px;
+}
+.blog-item {
+    display: inline-block;
+    width: 681px;
+    margin: 0 37px 42px;
+    color: #3c3f44;
+}
+.blog-item img {
+    width: 100%;
+    border: 1px solid #d2d2d2;
+}
+.blog-item-date {
+    width: 100%;
+    position: relative;
+    float: right;
+    text-align: right;
+    margin: 15px 0 25px;
+    font-family: ArmHelvetica;
+    font-size: 17px;
+    font-weight: 900;
+}
+.blog-item-title {
+    width: 100%;
+    position: relative;
+    float: right;
+    text-align: left;
+    margin: 0 0 35px;
+    font-family: ArmHelvetica;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 30px;
+}
+.blog-item-text {
+    width: 100%;
+    position: relative;
+    float: right;
+    text-align: left;
+    margin: 0 0 35px;
+    font-family: ArmHelvetica;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+}
+.blog-item-button {
+    font-size: 14px;
+    width: 106px;
+    border-radius: 4px;
+    line-height: 30px;
+    text-align: center;
+    background: rgb(1, 180, 220);
+    color: #fff;
+    float: left;
+}
+.blog-item:hover .blog-item-button {
+    background: #ca0e1f;
+}
+.blog-item:hover .blog-item-title {
+    color : #ca0e1f;
+}
+.article {
+    padding: 0 75px;
+    margin-bottom: 50px;
+}
+.article-inner, .article-text-and-social {
+    max-width: 1200px;
+    display: inline-block;
+}
+.article-img {
+    width: 100%;
+    border: 1px solid #d2d2d2;
+}
+.article-date {
+    width: 100%;
+    position: relative;
+    float: right;
+    text-align: right;
+    margin: 22px 0 27px;
+    font-family: ArmHelvetica;
+    font-size: 17px;
+    font-weight: 900;
+    color: #3c3f44;
+}
+.article-title {
+    width: calc(100% - 100px);
+    position: relative;
+    float: left;
+    text-align: left;
+    margin: 0 0 35px;
+    font-family: ArmHelvetica;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 30px;
+    color: #ca0e1f;
+}
+.article-text {
+    width: calc(100% - 100px);
+    position: relative;
+    float: left;
+    text-align: left;
+    margin: 0;
+    font-family: ArmHelvetica;
+    font-size: 16px;
+    font-weight: 900;
+    color: #3c3f44;
+}
+.article-social {
+    float: right;
+    width: 100px;
+}
+.article-social-item {
+    width: 34px;
+    height: 34px;
+    margin: 0 50px 25px 20px !important;
+    cursor: pointer;
 }

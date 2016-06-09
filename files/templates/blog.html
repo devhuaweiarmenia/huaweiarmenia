@@ -1,0 +1,12 @@
+<div class="blog-title">
+    {{"Blogs" | translate}}
+</div>
+<div class="blog-wrapper">
+    <a class="blog-item" ng-href="{{preLink}}/blog/{{article.slug}}" ng-repeat="article in news">
+        <img class="blog-item-img" src="/img/blog/{{article.img}}">
+        <span class="blog-item-date">{{article.date}}</span>
+        <span class="blog-item-title">{{article.title}}</span>
+        <span class="blog-item-text">{{article.text}}</span>
+        <span class="blog-item-button">{{"products-more-btn" | translate}}</span>
+    </a>
+</div>
