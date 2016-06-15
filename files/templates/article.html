@@ -10,10 +10,10 @@
             <div class="article-text-and-social">
                 <span class="article-text">{{article.text}}</span>
                 <div class="article-social">
-                    <div class="article-social-item f-link"></div>
-                    <div class="article-social-item t-link"></div>
-                    <div class="article-social-item g-link"></div>
-                    <div class="article-social-item b-link"></div>
+                    <div class="article-social-item f-link" ng-click="shareIt.facebook(article.slug, article.title, article.img, article.text.slice(120))"></div>
+                    <div class="article-social-item t-link" ng-click="shareIt.twitter(article.slug, article.title)"></div>
+                    <div class="article-social-item g-link" ng-click="shareIt.google(article.slug)"></div>
+                    <div class="article-social-item b-link" ng-click="shareIt.vkontakte(article.slug, article.title, article.img, article.text.slice(120))"></div>
                 </div>
             </div>
 

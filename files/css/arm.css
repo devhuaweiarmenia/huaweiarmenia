@@ -2,3 +2,25 @@ a, span, div, p {
     font-family: arial, sans-serif !important;
     text-transform: none !important;
 }
+.header-nav a, .enterprises-big-line-right {
+    font-size: 18px !important;
+}
+.enterprises-big-line-left {
+    font-size: 36px;
+}
+.contact-footer-title {
+    font-size: 20px;
+    display: block;
+}
+.contact-us-item {
+    font-size: 16px;
+}
+.blog-item-title {
+    font-size: 20px;
+}
+.blog-item-text {
+    line-height: 20px;
+}
+.blog-title {
+    font-size: 40px;
+}

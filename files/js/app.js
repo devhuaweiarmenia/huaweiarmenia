@@ -57,7 +57,7 @@ app.config(['$routeProvider', '$locationProvider', '$translateProvider',
                 controller: 'enterprisesController'
             });
         $routeProvider
-            .when("/:lang/blog", {
+            .when("/:lang/contacts", {
                 templateUrl: '/templates/contacts.html',
                 controller: 'enterprisesController'
             });
@@ -282,12 +282,16 @@ app.controller('smartphonesController', ['$http', '$scope', '$rootScope', '$loca
                 title : "Huawei P8",
                 description : "5.2\" Dual SIM smartphone with IPS LCD display",
                 img : "/img/main-products/Huawei P8.png",
+                status : 'hot',
+                statusText : 'HOT',
                 slug : "huawei-p8"
             },
             {
                 title : "Huawei Honor 7",
                 description : "5.2\" Dual SIM smartphone with IPS-NEO LCD display",
                 img : "/img/main-products/Huawei Honor 7.png",
+                status : 'out',
+                statusText : 'Out of stock',
                 slug : "huawei-honor-7"
             },
             {
@@ -300,6 +304,8 @@ app.controller('smartphonesController', ['$http', '$scope', '$rootScope', '$loca
                 title : "Huawei P8",
                 description : "5.2\" Dual SIM smartphone with IPS LCD display",
                 img : "/img/main-products/Huawei P8.png",
+                status : 'new',
+                statusText : 'NEW',
                 slug : "huawei-p8"
             },
             {
@@ -365,7 +371,7 @@ app.controller('productController', ['$http', '$scope', '$routeParams', '$rootSc
             }
         }).success(function (product) {
             if(!product.error) {
-                $scope.product = product.data;
+                $scope.product = product;
                 if($scope.product.img.length > 0) $scope.currentBigImg = $scope.product.img[0];
                 $scope.toggleBigImg = function(url) {
                     $scope.currentBigImg = url;
@@ -436,6 +442,36 @@ app.controller('blogController', ['$scope', '$routeParams', '$rootScope', 'mainS
                 slug : 'news1'
             }
         ];
+        var Share = {
+            vkontakte: function(purl, ptitle, pimg, text) {
+                url  = 'http://vkontakte.ru/share.php?';
+                url += 'url='          + 'http://' + location.hostname +  $rootScope.preLink + '/news/article/' + encodeURIComponent(purl);
+                url += '&title='       + encodeURIComponent(ptitle);
+                url += '&description=' + encodeURIComponent(text);
+                url += '&image='       + encodeURIComponent(pimg);
+                url += '&noparse=true';
+                Share.popup(url);
+            },
+            facebook: function(purl, ptitle, pimg, text) {
+                url  = 'http://www.facebook.com/sharer.php?s=100';
+                url += '&p[title]='     + encodeURIComponent(ptitle);
+                url += '&p[summary]='   + encodeURIComponent(text);
+                url += '&p[url]='       + 'http://' + location.hostname +  $rootScope.preLink + '/news/article/' + encodeURIComponent(purl);
+                url += '&p[images][0]=' + encodeURIComponent(pimg);
+                Share.popup(url);
+            },
+            twitter: function(purl, ptitle) {
+                url  = 'http://twitter.com/share?';
+                url += 'text='      + encodeURIComponent(ptitle.replace(/<\S[^><]*>/g, ''));
+                url += '&url='      + 'http://' + location.hostname +  $rootScope.preLink + '/news/article/' + encodeURIComponent(purl);
+                url += '&counturl=' + encodeURIComponent(purl);
+                Share.popup(url);
+            },
+            popup: function(url) {
+                window.open(url,'','toolbar=0,status=0,width=626,height=436');
+            }
+        };
+        $scope.shareIt = Share;
     }
 ]);
 
@@ -452,6 +488,41 @@ app.controller('articleController', ['$scope', '$routeParams', '$rootScope', 'ma
             img : '1.png',
             slug : 'news1'
         };
+        var Share = {
+            vkontakte: function(purl, ptitle, pimg, text) {
+                url  = 'http://vkontakte.ru/share.php?';
+                url += 'url='          + 'http://' + location.host +  $rootScope.preLink + '/news/article/' + encodeURIComponent(purl);
+                url += '&title='       + encodeURIComponent(ptitle);
+                url += '&description=' + encodeURIComponent(text);
+                url += '&image='       + encodeURIComponent(pimg);
+                url += '&noparse=true';
+                Share.popup(url);
+            },
+            facebook: function(purl, ptitle, pimg, text) {
+                url  = 'http://www.facebook.com/sharer.php?s=100';
+                url += '&p[title]='     + encodeURIComponent(ptitle);
+                url += '&p[summary]='   + encodeURIComponent(text);
+                url += '&p[url]='       + 'http://' + location.host +  $rootScope.preLink + '/news/article/' + encodeURIComponent(purl);
+                url += '&p[images][0]=' + encodeURIComponent(pimg);
+                Share.popup(url);
+            },
+            twitter: function(purl, ptitle) {
+                url  = 'http://twitter.com/share?';
+                url += 'text='      + encodeURIComponent(ptitle.replace(/<\S[^><]*>/g, ''));
+                url += '&url='      + 'http://' + location.host +  $rootScope.preLink + '/news/article/' + encodeURIComponent(purl);
+                url += '&counturl=' + encodeURIComponent(purl);
+                Share.popup(url);
+            },
+            google: function(purl) {
+                url  = 'https://plus.google.com/share?';
+                url += '&url='      + 'http://' + location.host +  $rootScope.preLink + '/news/article/' + encodeURIComponent(purl);
+                Share.popup(url);
+            },
+            popup: function(url) {
+                window.open(url,'','toolbar=0,status=0,width=626,height=436');
+            }
+        };
+        $scope.shareIt = Share;
     }
 ]);
 

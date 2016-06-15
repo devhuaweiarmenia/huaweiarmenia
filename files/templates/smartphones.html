@@ -21,9 +21,10 @@
         <h1 class="product-name ng-binding">{{menuActive | translate}}</h1>
         <div class="products-main">
             <div class="products-item" ng-repeat="item in productsMain">
-                <a ng-href="/products/{{item.slug}}">
+                <a ng-href="{{preLink}}/products/{{item.slug}}">
                     <img class="products-img" alt="{{item.title}}" ng-src="{{item.img}}">
                     <span class="products-title">{{item.title}}</span>
+                    <span ng-if="item.status" class="products-descr status" ng-class="{{item.status}}">{{item.statusText}}</span>
                     <span class="products-descr">{{item.description}}</span>
                     <span class="products-button">{{"products-more-btn" | translate}}</span>
                 </a>
