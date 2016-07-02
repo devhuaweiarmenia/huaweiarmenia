@@ -635,6 +635,9 @@ img {
     .footer-links .footer-links-column.footer-x8 {
         width: 50% !important;
     }
+    .video-item {
+        min-width: calc(100% - 100px);
+    }
 }
 
 
@@ -1660,10 +1663,14 @@ img {
 }
 .video-item {
     display: inline-block;
-    width: 432px;
+    /*width: 432px;*/
+    max-width: 1200px;
+    min-width: calc(100% - 200px);
     border: 1px solid #aeaeae;
     margin: 5px 5px;
     cursor: pointer;
+    background-color: #FFFFFF;
+    position: relative;
 }
 .video-item:hover .products-main-cover {
     display: none;
@@ -1712,8 +1719,8 @@ img {
 }
 .products-main-cover {
     position: absolute;
-    width: 430px;
-    height: 260px;
+    width: 100%;
+    height: 100%;
     float: left;
     background-color: #bbbbbe;
     opacity: 0.65;
@@ -1721,12 +1728,11 @@ img {
 .products-main-play {
     background: url(../img/slider/sliderRightArrow.png) no-repeat left top !important;
     width: 50px !important;
-    width: 50px !important;
     height: 50px !important;
     background-size: contain !important;
     position: absolute;
-    margin-top: 110px;
-    margin-left: 190px;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
     cursor: pointer;
 }
 .products-header-item {
@@ -1803,12 +1809,15 @@ img {
     background-repeat: no-repeat;
     min-height: 100px;
     width: 100%;
-    display: none;
+    /* display: none; */
+    position: absolute;
+    top: -3px;
 }
 .about-us-wrapper {
     padding-top: 45px;
     text-align: left;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
+    position: relative;
 }
 .about-us-title {
     color: #c70012;
@@ -2183,4 +2192,51 @@ img {
     .header-nav .header-nav-item {
         margin: 0px 0 0 5px;
     }
+}
+.contacts {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.contacts-item {
+    max-width: 1100px;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    margin: 30px 0 7px;
+    padding: 0 0 25px;
+    border-bottom: 2px solid #bfbfc1;
+}
+.contacts-item-left {
+    width: 50%;
+    float: left;
+}
+.contacts-item-right {
+    width: 50%;
+    float: right;
+}
+.contacts-item-right .map-wrapper {
+    float: right;
+}
+.contacts-title {
+    font-family: dense !important;
+    font-size: 34px;
+    color: #c70012;
+    width: 100%;
+    border-bottom: 1px solid #c70012;
+    line-height: 34px;
+}
+.contacts-text {
+    font-family: ArmHelvetica !important;
+    font-size: 18px;
+    color: #383b40;
+    width: 100%;
+    float: left;
+    line-height: 24px;
+    margin-top: 10px;
+}
+.contact-us-wrapper {
+    padding-top: 15px;
+    text-align: left;
+    position: relative;
 }

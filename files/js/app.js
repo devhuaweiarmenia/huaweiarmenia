@@ -165,17 +165,17 @@ app.controller('homeController', ['$http', '$scope', '$rootScope', '$location', 
         $scope.homeSlider = [
             {
                 title : 'Ascend Honor 4C',
-                img : '/img/slider/111.png',
+                img : '/img/slider/111.jpg',
                 description : "\- Three-segment ultra slim frame design <br> - Innovative design <br> - Strong signal reception delivers stable call experience <br>"
             },
             {
                 title : 'Ascend Honor 4C',
-                img : '/img/slider/111.png',
+                img : '/img/slider/111.jpg',
                 description : "\- Three-segment ultra slim frame design <br> - Innovative design <br> - Strong signal reception delivers stable call experience <br>"
             },
             {
                 title : 'Ascend Honor 4C',
-                img : '/img/slider/111.png',
+                img : '/img/slider/111.jpg',
                 description : "\- Three-segment ultra slim frame design <br> - Innovative design <br> - Strong signal reception delivers stable call experience <br>"
             }
         ];
@@ -229,36 +229,6 @@ app.controller('homeController', ['$http', '$scope', '$rootScope', '$location', 
                 img : '/img/video/p9.png',
                 text : 'Smartphone Huawei P8!',
                 link : 'https://www.youtube.com/embed/uPV7v1SUDkY'
-            },
-            {
-                title : 'Huawei P8',
-                img : '/img/video/p9.png',
-                text : 'Short video.',
-                link : 'https://www.youtube.com/embed/WGBqpJFoUds'
-            },
-            {
-                title : 'Huawei P8',
-                img : '/img/video/p9.png',
-                text : 'Smartphone Huawei P8?',
-                link : 'https://www.youtube.com/embed/uPV7v1SUDkY'
-            },
-            {
-                title : 'Huawei P8',
-                img : '/img/video/p9.png',
-                text : 'Short video.',
-                link : 'https://www.youtube.com/embed/WGBqpJFoUds'
-            },
-            {
-                title : 'Huawei P8',
-                img : '/img/video/p9.png',
-                text : 'Smartphone Huawei P8.',
-                link : 'https://www.youtube.com/embed/uPV7v1SUDkY'
-            },
-            {
-                title : 'Huawei P8',
-                img : '/img/video/p9.png',
-                text : 'Short video.',
-                link : 'https://www.youtube.com/embed/WGBqpJFoUds'
             }
         ];
         $scope.openVideoMain = function(link) {
