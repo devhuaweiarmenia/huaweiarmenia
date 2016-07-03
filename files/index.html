@@ -24,14 +24,14 @@
     <header id="header" class="page-header">
         <div class="page-header-container">
             <div class="mobile-nav icon-honor2-menu size-24">&nbsp;</div>
+            <div class="mob-menu" ng-click="leftMenu.open()">
+
+            </div>
             <div class="logo">
                 <a ng-href="{{preLink}}/">
                     <img src="/img/logo.png" alt="Huawei Honor" class="large">
                     <img src="/img/logo.png" alt="Huawei Honor" class="small">
                 </a>
-            </div>
-            <div class="header-nav-mob">
-
             </div>
             <div class="header-nav">
                 <ul class="header-nav-content">
@@ -161,6 +161,33 @@
     <!--</div>-->
     <div class="menu-bottom" style="display: none;">
 
+    </div>
+</div>
+<div class="header-nav-mob" ng-class="{'left-menu-opened' : leftMenu.visible}">
+    <div class="left-menu">
+        <div class="close-video" ng-click="leftMenu.close()"></div>
+        <ul class="left-menu-list">
+            <li class="left-menu-item">
+                <a class="left-menu-link" ng-class="{'left-menu-active' : leftMenu.opened.products}" ng-click="leftMenu.toggle('products')">{{"Products"}}<em class="arrow-bottom"></em></a>
+                <div class="left-menu-dd" ng-show="leftMenu.opened.products">
+                    <a class="left-menu-link" ng-href="{{preLink}}/smartphones">{{"Mobiles"}}</a>
+                    <a class="left-menu-link" ng-href="{{preLink}}/tablets">{{"Tablets"}}</a>
+                </div>
+            </li>
+            <li class="left-menu-item">
+                <a class="left-menu-link" ng-href="{{preLink}}/enterprises">{{"Enterprises"}}</a>
+            </li>
+            <li class="left-menu-item">
+                <a class="left-menu-link" ng-href="{{preLink}}/blog">{{"Blog"}}</a>
+            </li>
+            <li class="left-menu-item">
+                <a class="left-menu-link" ng-class="{'left-menu-active' : leftMenu.opened.aboutus}" ng-click="leftMenu.toggle('aboutus')">{{"About us"}}<em class="arrow-bottom"></em></a>
+                <div class="left-menu-dd" ng-show="leftMenu.opened.aboutus">
+                    <a class="left-menu-link" ng-href="{{preLink}}/about-us">{{"About us"}}</a>
+                    <a class="left-menu-link" ng-href="{{preLink}}/our-partners">{{"Our partners"}}</a>
+                </div>
+            </li>
+        </ul>
     </div>
 </div>
 <script src="/js/lib/owl.carousel.js"></script>

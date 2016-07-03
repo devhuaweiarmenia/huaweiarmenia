@@ -152,6 +152,22 @@ app.controller('mainController', ['$http', '$routeParams', '$scope', '$rootScope
             console.log('a');
             $('html, body').animate({ scrollTop: 0 }, 'fast');
             $('html, body').scrollTop( 300 );
+        };
+        $rootScope.leftMenu = {
+            visible : false,
+            opened : {
+                products : false,
+                abouts : false
+            },
+            toggle : function(target) {
+                $rootScope.leftMenu.opened[''+ target] = !$rootScope.leftMenu.opened[''+ target];
+            },
+            open : function() {
+                $rootScope.leftMenu.visible = true;
+            },
+            close : function() {
+                $rootScope.leftMenu.visible = false;
+            }
         }
     }
 ]);

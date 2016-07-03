@@ -237,14 +237,95 @@ img {
     .header-nav-mob {
         background: #fff;
         height: 100%;
-        width: 250px;
-        left: -250px;
+        width: 100%;
+        left: -100%;
         top: 0;
         position: fixed;
         display: block;
         overflow-y: auto;
+        background: rgba(0,0,0,0.9);
+        z-index: 888;
     }
-
+    .header-nav-mob-active {
+        left: 0;
+        -webkit-transition: top 1s ease-out 0.5s;
+        -moz-transition: top 1s ease-out 0.5s;
+        -o-transition: top 1s ease-out 0.5s;
+        transition: top 1s ease-out 0.5s;
+    }
+    .mob-menu {
+        float: left;
+        height: 20px;
+        background-image: url(/img/mob-buter.png);
+        width: 26px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 12px 23px 0 25px;
+    }
+    .left-menu {
+        background: #f0f0f0;
+        height: 100%;
+        width: 250px;
+        left: 0;
+        top: 0;
+        position: absolute;
+        display: block;
+        overflow-y: auto;
+    }
+    .left-menu .close-video {
+        position: absolute;
+        top: 10px;
+        left: 225px;
+        margin: 0;
+        z-index: 999;
+        width: 15px;
+        height: 15px;
+        background-size: contain;
+    }
+    .left-menu-list {
+        padding-top: 40px;
+    }
+    .left-menu-item {
+        line-height: 65px;
+        text-align: left;
+        padding-left: 50px;
+        font-family: dense;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .left-menu-link {
+        font-family: dense !Important;
+        font-size: 29px;
+        text-transform: uppercase !important;
+        color: #3c3f44;
+        width: 100%;
+        position: relative;
+        float: left;
+    }
+    .left-menu-link .arrow-bottom {
+        background: url("../img/other/arrow-bot.png") no-repeat;
+        width: 12px;
+        height: 10px;
+        margin-left: 10px;
+        margin-bottom: 3px;
+        background-size: contain;
+        float: none;
+        display: inline-block;
+    }
+    .left-menu-active .arrow-bottom{
+        background: url("../img/other/arrow-top-active.png") no-repeat;
+        background-size: contain;
+    }
+    .left-menu-active {
+        color: #c70012;
+    }
+    .left-menu-opened {
+        left: 0;
+        -webkit-transition: top 1s ease-out 0.5s;
+        -moz-transition: top 1s ease-out 0.5s;
+        -o-transition: top 1s ease-out 0.5s;
+        transition: top 1s ease-out 0.5s;
+    }
     .header-nav {
         display: none;
     }
@@ -2094,7 +2175,9 @@ img {
 
 
 
-
+.enterprises-mob-title {
+    display: none;
+}
 
 
 
@@ -2115,22 +2198,32 @@ img {
     .footer-links {
         padding: 1px 0 0;
         margin-top: 0;
-        margin-bottom: 30px;
+        /*margin-bottom: 30px;*/
     }
 
     .footer-links .footer-links-column {
         position: relative;
         margin-top: -1px;
+        text-align: center;
     }
-
+    .footer-links .footer-links-column div {
+        display: inline-block;
+    }
     .footer-links .footer-links-column {
         width: 100%;
     }
-
+    .footer-links-column .contact-footer-title {
+        text-align: center;
+    }
     .footer-links .footer-links-column ul {
         margin: 20px;
     }
-
+    .enterprises-big-line-right {
+        display: none;
+    }
+    .enterprises-mob-title {
+        display: block;
+    }
     .lang-section {
         padding: 11px 15px 0 0 !important;
     }
@@ -2150,6 +2243,8 @@ img {
     }
     .view-content {
         margin-top: 0;
+        min-height: calc(100% - 403px);
+        padding-bottom: 359px;
     }
     .main-slider .owl-theme .owl-controls {
         margin-top: -16px !important;
@@ -2186,6 +2281,29 @@ img {
         height: 30px !important;
         background: url(../img/slider/sliderLeftArrow.png) no-repeat left top !important;
         background-size: cover !important;
+    }
+    .blog-item {
+        width: calc(100% - 74px);
+    }
+    .blog-title {
+        font-size: 40px;
+        padding-left: 74px;
+    }
+    .about-us-wrapper {
+        padding: 45px 34px 45px;
+    }
+    .about-us-article {
+        width: 100%;
+    }
+    .partners {
+        width: 100%;
+        display: inline-block;
+    }
+    .partners-item {
+        width: 100%;
+    }
+    .partners-item a {
+        width: 100%;
     }
 }
 @media only screen and (max-width: 1200px) {
