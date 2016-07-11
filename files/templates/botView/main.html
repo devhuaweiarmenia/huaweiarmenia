@@ -11,6 +11,9 @@
     <% for(var link in data.seo.lang_links) {%>
         <link rel="alternate" href=" <%= data.seo.lang_links[link].href %> " hreflang="<%= data.seo.lang_links[link].lang %>" />
     <% } %>
+    <% for(var link in data.seo.social_links) {%>
+        <link rel="publisher" href=" <%= data.seo.social_links[link] %> " />
+    <% } %>
     <style>
         .film_block img,
         .film_block div.info{
@@ -28,5 +31,10 @@
 </head>
 <body>
 <h1><%= data.seo.site_title %></h1>
+<footer>
+    <% for(var link in data.seo.social_links) {%>
+        <a href=" <%= data.seo.social_links[link] %> "> <%= data.seo.social_links[link] %></a>
+    <% } %>
+</footer>
 </body>
 </html>

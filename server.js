@@ -69,25 +69,25 @@ var options = {
     }
 };
 
-var hreq = http.request(options, function (hres) {
-    console.log('STATUS CODE: ' + hres.statusCode);
-    console.log('HEADERS: ' + JSON.stringify(hres.headers));
-    hres.setEncoding('utf8');
+// var hreq = http.request(options, function (hres) {
+//     console.log('STATUS CODE: ' + hres.statusCode);
+//     console.log('HEADERS: ' + JSON.stringify(hres.headers));
+//     hres.setEncoding('utf8');
+//
+//     hres.on('data', function (chunk) {
+//         console.log('\n\n===========CHUNK===============')
+//         console.log(chunk);
+//         //res.send(chunk);
+//     });
+//
+//     hres.on('end', function(res) {
+//         console.log('\n\n=========RESPONSE END===============');
+//     });
+//
+//     hres.on('error', function (e) {
+//         console.log('ERROR: ' + e.message);
+//     });
+// });
 
-    hres.on('data', function (chunk) {
-        console.log('\n\n===========CHUNK===============')
-        console.log(chunk);
-        //res.send(chunk);
-    });
-
-    hres.on('end', function(res) {
-        console.log('\n\n=========RESPONSE END===============');
-    });
-
-    hres.on('error', function (e) {
-        console.log('ERROR: ' + e.message);
-    });
-});
-
-hreq.write(subscriber);
-hreq.end();
+// hreq.write(subscriber);
+// hreq.end();
