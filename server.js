@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var app = express();
 var redis = require('redis');
 var http = require('http');
+var compression = require('compression');
 
 mongoose = require('mongoose');
 uaParser = require('ua-parser');
@@ -28,6 +29,7 @@ mongoose.connection.on('disconnected', function () {
     console.log('Mongoose default connection disconnected');
 });
 
+app.use(compression());
 app.use(express.static('' + __dirname + '/files'));
 app.set('views',[''+__dirname + '/files/templates', ''+__dirname + '/files/templates/botView/']);
 app.engine('html', require('ejs').renderFile);
