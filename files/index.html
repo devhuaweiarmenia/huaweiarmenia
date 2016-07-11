@@ -184,17 +184,13 @@
     <link rel="stylesheet" type="text/css" href="/css/allstyles.css"/>
 </noscript>
 <script>
-    var loadDeferredStyles = function() {
-        var addStylesNode = document.getElementById("deferred-styles");
-        var replacement = document.createElement("div");
-        replacement.innerHTML = addStylesNode.textContent;
-        document.body.appendChild(replacement)
-        addStylesNode.parentElement.removeChild(addStylesNode);
-    };
-    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-            webkitRequestAnimationFrame || msRequestAnimationFrame;
-    if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-    else window.addEventListener('load', loadDeferredStyles);
+    function ready() {
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = "/css/allstyles.css";
+        document.head.appendChild(link);
+    }
+    document.addEventListener("DOMContentLoaded", ready);
 </script>
 </body>
 <!--<link rel="stylesheet" type="text/css" ng-if="currentLang!='en'" href="/css/arm.css" media="all">-->
