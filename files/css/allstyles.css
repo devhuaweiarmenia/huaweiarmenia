@@ -238,7 +238,7 @@ img{display:block;}
 .enterprises-all img{max-width:100px;margin:0 auto;}
 .follow-us{margin-top:-4px;margin-left:10px;}
 .follow-us .social-link{display:inline-block;position:relative;top:-6px;left:-3px}
-.follow-us .social-link a , .article-social-item{background:url(http://cdnskin.huawei.ru/ru/skin/frontend/huawei/images/honor-red/sprite/sprite.png) no-repeat;width:28px;height:35px;display:inline-block;text-indent:-99999px}
+.follow-us .social-link a , .article-social-item{background:url(../img/sprite.png) no-repeat;width:28px;height:35px;display:inline-block;text-indent:-99999px}
 .article-social-item{width:36px;height:36px;}
 .follow-us .social-link a.f-link, .article-social-item.f-link{background-position:-47px 0}
 .follow-us .social-link a.f-link:hover, .article-social-item.f-link:hover{background-position:-47px -36px}
