@@ -180,11 +180,28 @@
         </ul>
     </div>
 </div>
+<noscript id="deferred-styles">
+    <link rel="stylesheet" type="text/css" href="/css/allstyles.css"/>
+</noscript>
+<script>
+    var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+            webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+    else window.addEventListener('load', loadDeferredStyles);
+</script>
+</body>
 <!--<link rel="stylesheet" type="text/css" ng-if="currentLang!='en'" href="/css/arm.css" media="all">-->
 </body>
 </html>
 <style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak{display:none;}ng\:form{display:block;}</style>
-<link rel="stylesheet" type="text/css" href="/css/allstyles.css" media="all">
+<!--<link rel="stylesheet" type="text/css" href="/css/allstyles.css" media="all">-->
 <script async src="/js/lib.js"></script>
 <style ng-if="currentLang!='en'">
     a, span, div, p, h1, h2, h3, h4, h5, h6 {
