@@ -1,3 +1,17 @@
 {
-  "products-more-btn" : "Read More"
+  "products-more-btn" : "Read More",
+
+  "About MobliOS" : "About us",
+  "aboutus1" : "The company was founded in 2013 for the purpose of representing «Huawei Technologies» – the leading global ICT solutions provider and smartphone vendor – in the territory of the Republic of Armenia. MobliOS provides a wide range of solutions and services, including enterprise networking, UC&C, cloud computing, data centers, e.t.c. Moreover, the company is engaged in the distribution and sale of Huawei mobile phones, tablets and home devices.",
+
+  "huawei-text" : "Huawei is a leading global ICT solutions provider.The products and solutions which Huawei offers have been deployed in over 140 countries, serving more than one third of the ...",
+  "redinet-text" : "«REDINET» CJSC is the leading system integrator company acting in Armenian, Georgian, Lebanese, Iraqi, Cyprus telecommunication markets. Company provides wide range of services...",
+  "armcard-text" : "Armenian Card presents service package which gives an opportunity to banks to issue and acquire ArCa, MasterCard, VISA and American Express cards using the modern technics ...",
+  "viva-text" : "K-Telecom CJSC (VivaCell-MTS) is Armenia&#39;s leading telecommunications operator, having the widest 2G/3.75G/4G network reach and spreading a wide range of Voice and ...",
+  "beeline-text" : "«Armenia Telephone Company» CJSC (trademark Beeline) is the largest telecommunication company in Armenia. The company provides a wide range of services for corporate customers...",
+  "ucom-text" : "Since entering the Armenian telecom market, Ucom has provided Armenian customer with high-quality services, using the most advanced technology...",
+  "innotech-text" : "InnoTech Service Center is one of the leading companies in Armenia specialized in providing software &amp; hardware assistance of smartphones, tablets, network equipment…",
+
+  "ent-text" : "Huawei \"Smart\" Solutions for Your Business",
+  "" : ""
 }
