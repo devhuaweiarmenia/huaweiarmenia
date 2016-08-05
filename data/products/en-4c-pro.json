@@ -1,0 +1,158 @@
+{
+  "lang": "en",
+  "slug": "4c-pro",
+  "img": [
+    "1.png","2.png","3.png","4.png","5.png","6.png","7.png"
+  ],
+  "title": "Honor 4C Pro",
+  "shortDescr": [
+    ""
+  ],
+  "price": "98.000 AMD",
+  "overview": [
+    {
+      "title": "The sign of exquisite craftsmanship",
+      "text": "Encased in a slick frame. The phone is crafted with Non-Conductive Vacuum Metalization to give it a metallic look. The rear panel is made up of microcosmic planes which when seen under different light conditions produce different textures.",
+      "img" : "a1.png"
+    },
+    {
+      "title": "4000 mAh battery",
+      "text": "Shorter charging time: 3hrs talktime with 10 minutes charge. With SmartPower 3.0, you can go the extra distance by saving over 30% of energy. Go for 20hrs with just 10% battery. The smartphone tracks background applications that consume energy and offers offers ways to optimize battery life. Charge another phone. 48 hours standby, moderate use",
+      "img" : "a2.png"
+    },
+    {
+      "title": "Charge another phone",
+      "text": "Stay connected all the time. Share your smartphone's charge with another phone: just use Honor 4C Pro as an external battery.",
+      "img" : "a3.png"
+    },
+    {
+      "title": "13 MP main camera",
+      "text": "The anti-Fingerprint coating allows you to shoot vivid moment of your life. Updated BSI sensor OV, aperture f / 2.0 and a wide viewing angle of 78° describe the camera’s abilities much better than the number of pixels. Lens ISP, consisting of five elements. Panorama, ultra-fast snapshot (0.8 seconds), continuous shooting and voice control functions.",
+      "img" : "a4.png"
+    },
+    {
+      "title": "5MP Frontal camera",
+      "text": "Aperture f / 2.2 will help to create a bright and high-contrast image. Camera angle 84? - ideal balance between the background and the subject of shooting: the wider the angle, the more friends will fit into the self-portrait. 10-level of Decoration mode and 8 filters for image processing.",
+      "img" : "a5.png"
+    },
+    {
+      "title": "64-BIT PROCESSOR, 2GB RAM",
+      "text": "2GB + 16GB memory expandable up to 128GB with a microSD Card. Outstanding gaming opportunities with a quad-core processor on board, capable of fast and responsive performance.",
+      "img" : "a6.png"
+    },
+    {
+      "title": "Dual sim",
+      "text": "Whether you’re on CDMA, 4G LTE, 3G or 2G, the Honor 4C Pro offers premium connectivity options without any signal loss. Both the SIM slots are compatible with 4G and CDMA although only one selected SIM with network data is able to receive 4G or 3G or CDMA data at a time.",
+      "img" : "a7.png"
+    },
+    {
+      "title": "HD-5'' Screen",
+      "text": "Resolution 1280 x 720 pixels, 16 M colors and 296 pixels per inch create a unique image quality. Improved color is particularly noticeable when watching movies and videos.",
+      "img" : "a8.png"
+    },
+    {
+      "title": "Audio and integrated speaker",
+      "text": "New level of sound and volume. With Dual-mic Noise Cancellation technology, communication becomes easier even when in a noisy environment.",
+      "img" : "a9.png"
+    }
+  ],
+  "specification": [
+    {
+      "title": "Size",
+      "text": [
+        "Height<br>143.1mm",
+        "Width<br>71.8mm",
+        "Depth<br>9.7mm",
+        "Weight<br>About 160g"
+      ]
+    },
+    {
+      "title": "Color",
+      "text": [
+        "Grey",
+        "White",
+        "Gold"
+      ]
+    },
+    {
+      "title": "Display",
+      "text": [
+        "Size: 5” IPS, 1280 x 720"
+      ]
+    },
+    {
+      "title": "CPU",
+      "text": [
+        "MTK MT6735P, Cortex A53, Quad-Core"
+      ]
+    },
+    {
+      "title": "Operation System",
+      "text": [
+        "Android™ 5.1 + EMUI 3.1 LITE"
+      ]
+    },
+    {
+      "title": "Memory",
+      "text": [
+        "RAM: 2GB",
+        "ROM: 16GB"
+      ]
+    },
+    {
+      "title": "Network",
+      "text": [
+        "Dual SIM",
+        "2G 850/900/1800/1900 MHz",
+        "3G HSPA + from 42 MHz",
+        "4G LTE Cat4 from 150 MHz"
+      ]
+    },
+    {
+      "title": "GPS",
+      "text": [
+        "GPS/AGPS",
+        "GPR",
+        "Glonass"
+      ]
+    },
+    {
+      "title": "Connectivity",
+      "text": [
+        "WI-FI 802.11 b/g/n, 2.4 GHz"
+      ]
+    },
+    {
+      "title": "Sensors",
+      "text": [
+        "Approach Sensor",
+        "Light Sensor"
+      ]
+    },
+    {
+      "title": "Camera",
+      "text": [
+        "Rear Camera: 13 MP",
+        "Front Camera: 5 MP"
+      ]
+    },
+    {
+      "title": "Audio",
+      "text": [
+        "Audio formats: MP3, WAV, OGG, MID, AMR"
+      ]
+    },
+    {
+      "title": "Video",
+      "text": [
+        "Video file formats: MP4, 3GP"
+      ]
+    },
+    {
+      "title": "Battery",
+      "text": [
+        "Capacity: 4000 mAh"
+      ]
+    }
+  ]
+}
