@@ -1,0 +1,139 @@
+{
+  "lang": "en",
+  "slug": "honor-5x",
+  "img": [
+    "1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"
+  ],
+  "title": "G6 3G",
+  "shortDescr": [
+    ""
+  ],
+  "price": "93,000 AMD",
+  "overview": [
+    {
+      "title": "Share Better",
+      "text": "Connect and share instantly with 3G 42 Mbps speed.",
+      "img" : "a1.jpg"
+    },
+    {
+      "title": "It’s a Beautiful Thing",
+      "text": "Take one look at the Ascend G6 3G and you’ll immediately notice what sets it apart from the rest. Its unbelievably slim 7.85 mm profile, stylish shape and elegantly curved edges take smartphone design to a new level of perfection.",
+      "img" : "a2.jpg"
+    },
+    {
+      "title": "DLNA Sharing",
+      "text": "DLNA sharing can give you more convenience.",
+      "img" : "a3.jpg"
+    },
+    {
+      "title": "Emotion UI",
+      "text": "Huawei Emotion UI is easy to use, convenient and efficient, gives you a smarter experience.",
+      "img" : "a4.jpg"
+    }
+  ],
+  "specification": [
+    {
+      "title": "Size",
+      "text": [
+        "Height<br>131.2mm",
+        "Width<br>65.3mm",
+        "Depth<br>7.85mm",
+        "Weight<br>About 115 g（with battery）"
+      ]
+    },
+    {
+      "title": "Color",
+      "text": [
+        "Black",
+        "White"
+      ]
+    },
+    {
+      "title": "Display",
+      "text": [
+        "4.5” qHD, 960x540, IPS, 245 ppi"
+      ]
+    },
+    {
+      "title": "CPU",
+      "text": [
+        "Qualcomm® MSM8926 (4x1.2GHz)"
+      ]
+    },
+    {
+      "title": "Operation System",
+      "text": [
+        "Android 4.3 Jelly Bean / EMUI 2.0 Lite"
+      ]
+    },
+    {
+      "title": "Memory",
+      "text": [
+        "RAM: 1GB",
+        "ROM: 4GB",
+        "Micro SD Card up to 32 GB"
+      ]
+    },
+    {
+      "title": "Network",
+      "text": [
+        "WCDMA 850/900/1700/1900/2100 MHz",
+        "GSM 850/900/1800/1900 MHz"
+      ]
+    },
+    {
+      "title": "GPS",
+      "text": [
+        "GPS/AGPS"
+      ]
+    },
+    {
+      "title": "Connectivity",
+      "text": [
+        "Wifi 802.11 b/g/n",
+        "Blue Tooth 4.0",
+        "USB 2.0 HS",
+        "NFC"
+      ]
+    },
+    {
+      "title": "Sensors",
+      "text": [
+        "Compass",
+        "Accelerometer",
+        "Proximity Sensor",
+        "Light Sensor"
+      ]
+    },
+    {
+      "title": "Camera",
+      "text": [
+        "Rear Camera: 8 MP AF BSI F2.0, with Flash",
+        "Front Camera: 5 MP"
+      ]
+    },
+    {
+      "title": "Audio",
+      "text": [
+        "Audio encoding: MP3, MIDI, AMR-NB, AMR-WB, AAC, AAC+, eAAC+",
+        "Audio file formats: MP3, MP4, 3GP, OGG, AMR, AAC, WAV, MIDI"
+      ]
+    },
+    {
+      "title": "Video",
+      "text": [
+        "Video encoding: H.263, H.264, MPEG-4",
+        "Video file formats: 3GP, MP4"
+      ]
+    },
+    {
+      "title": "Battery",
+      "text": [
+        "Capacity: 2000 mAh",
+        "Charging time:3 hours"
+      ]
+    }
+  ]
+}
+
+

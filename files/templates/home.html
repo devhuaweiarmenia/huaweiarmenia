@@ -23,7 +23,7 @@
 
 <div class="products-main video-list">
     <div class="video-list">
-        <div class="video-item" ng-repeat="video in mainVideos" ng-click="openVideoMain(video.link)">
+        <div class="video-item" ng-repeat="video in mainVideos">
             <div class="video-item-left">
                 <img class="video-item-img" ng-src="{{video.img}}">
             </div>
@@ -32,7 +32,7 @@
                 <span class="video-item-text">{{video.text}}</span>
             </div>
             <div class="products-main-cover"></div>
-            <div class="products-main-play"></div>
+            <div class="products-main-play" ng-click="openVideoMain(video.link)"></div>
         </div>
     </div>
     <div class="clear"></div>

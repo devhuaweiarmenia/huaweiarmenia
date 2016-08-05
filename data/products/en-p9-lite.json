@@ -1,0 +1,177 @@
+{
+  "lang": "en",
+  "slug": "p9-lite",
+  "img": [
+    "1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg"
+  ],
+  "title": "Huawei P9 lite",
+  "shortDescr": [
+    "Dual SIM",
+    "5.2” FHD 1920*1080, In-cell screen,",
+    "Kirin650 Quad-Core 2.0GHz + Quad-Core 1.7GHZ , 64-bit",
+    "Memory 16 GB ROM, 2 GB RAM",
+    "Camera 13MP BSI AF rear, 8MP FFfront"
+  ],
+  "price": "149.000 AMD",
+  "overview": [
+    {
+      "title": "HUAWEI P9 lite",
+      "text": "NEW STYLE OF LOOK.",
+      "img" : "a1.jpg"
+    },
+    {
+      "title": "HUAWEI P9lite",
+      "text": "Turn the dreams of tomorrow into today’s reality with the Huawei P9 lite, successor of the P8 lite. It features a number of innovative hardware upgrades showcased in a cutting-edge slim design. Take hold of a next generation smart device that combines dynamic design with breathtaking style in perfect harmony, all at a competitive price.",
+      "img" : "a2.jpg"
+    },
+    {
+      "title": "HUAWEI P9lite",
+      "text": "Showcasing a cutting-edge slim design. Huawei P9 lite features detailed elements and dynamic patterns that all come together in beautiful harmony.",
+      "img" : "a3.jpg"
+    },
+    {
+      "title": "SUPER MODEL THIN",
+      "text": "Featuring the expanded screen-to-body ratio of 76.4%, Huawei P9 lite will surely impress you with its elegant ID design and metallic bezel. With a 5.2 inch FHD in-cell screen and a wider color gamut, all fitted to a slimmer frame, it gives you greater detail, all in one delicately finished alloy frame.",
+      "img" : "a4.jpg"
+    },
+    {
+      "title": "BRING OUT THE BEAUTY WITH GREAT FEATURES",
+      "text": "Huawei P9 lite also contains a number of camera functions designed to display the best side of anything you capture. Maintain your image with the perfect selfie mode, where users can apply customized preset effects to their own look. You can also bring out the flavor in food shots or alter the fabric of time with time-lapse and slow-mo modes.",
+      "img" : "a5.jpg"
+    },
+    {
+      "title": "IT KNOWS YOU BY TOUCH",
+      "text": "Get the best security that allows easy access only to you. Huawei P9 lite uses a specialized chip-level fingerprint security integrated with ARM®TrustZone® technology, so you can keep what’s precious to you safe in your own hands.",
+      "img" : "a6.jpg"
+    },
+    {
+      "title": "AUDIO DYNAMITE",
+      "text": "Let every note stand out. The Huawei P9 lite features a HiSilicon Hi6402 audio DSP, 9 V Smart PA, with an integrated speaker design, which produces an unparalleled sound quality unheard of in any other smart device.",
+      "img" : "a7.jpg"
+    },
+    {
+      "title": "KEEP ON, KEEPING ON",
+      "text": "Have the power to accomplish all without any wasted energy. Remarkably improving standby time and handling background apps efficiently and effectively, the 3000mAh battery and SmartPower 4.0 optimize the user experience to the greatest extent.",
+      "img" : "a7.jpg"
+    },
+    {
+      "title": "GROUNDBREAKING PERFORMANCE THAT’S EASY TO PROCESS",
+      "text": "NThe future is now in the palm of your hands. Powered by 16nm HiSilicon Kirin 650 processor, Huawei P9 lite delivers a better experience, which affords excellent performance and low power consumption.",
+      "img" : "a8.jpg"
+    },
+    {
+      "title": "A TOUCH OF STYLE",
+      "text": "For professional quality pictures, just turn on Huawei P9 lite’ pro-camera mode. Now you can customize white balance, ISO or EV on the go while having the capability to adjust beauty parameters exactly to your liking, all at the press of a button.",
+      "img" : "a9.jpg"
+    },
+    {
+      "title": "PRECISION PICTURE TAKING",
+      "text": "Huawei P9 lite lets you capture anything you can imagine with a new 13MP SONY IMX214 image sensor. It features a large F2.0 aperture that can lead to high quality images you can see in every video or photo.",
+      "img" : "a10.jpg"
+    }
+  ],
+  "specification": [
+    {
+      "title": "Size",
+      "text": [
+        "Height<br>146.8mm",
+        "Width<br>72.6mm",
+        "Depth<br>7.5mm",
+        "Weight<br>About 147g"
+      ]
+    },
+    {
+      "title": "Color",
+      "text": [
+        "Black",
+        "White",
+        "Gold"
+      ]
+    },
+    {
+      "title": "Display",
+      "text": [
+        "Size: 5.2” FHD 1920*1080, In-cell screen"
+      ]
+    },
+    {
+      "title": "CPU",
+      "text": [
+        "Kirin650 Quad-Core 2.0GHz + Quad-Core 1.7GHZ , 64-bit"
+      ]
+    },
+    {
+      "title": "Operation System",
+      "text": [
+        "Android 6.0+EMUI 4.1"
+      ]
+    },
+    {
+      "title": "Memory",
+      "text": [
+        "RAM: GB",
+        "ROM: 16GB"
+      ]
+    },
+    {
+      "title": "Network",
+      "text": [
+        "Dual SIM",
+        "2G: GSM 850/900/1800/1900MHz",
+        "3G: UMTS B1/B2/B8",
+        "4G: FDD B1/B3/B7/B8/B20"
+      ]
+    },
+    {
+      "title": "GPS",
+      "text": [
+        "GPS/AGPS",
+        "Glonass"
+      ]
+    },
+    {
+      "title": "Connectivity",
+      "text": [
+        "Wifi 802.11 b/g/n",
+        "Wi-Fi direct",
+        "Wi-Fi hotspot",
+        "Micro-USB",
+        "NFC(only for VNS-L31&L21)"
+      ]
+    },
+    {
+      "title": "Sensors",
+      "text": [
+        "Compass",
+        "Accelerometer",
+        "Proximity Sensor",
+        "Ambient light sensor"
+      ]
+    },
+    {
+      "title": "Camera",
+      "text": [
+        "Rear Camera: 13 MP BSI AF",
+        "Front Camera: 8 MP 8MP FF"
+      ]
+    },
+    {
+      "title": "Audio",
+      "text": [
+        "Audio encoding: MP3, MID, AMR, AWB, 3GP, MP4, M4A, AAC, WAV,OGG, FLAC"
+      ]
+    },
+    {
+      "title": "Video",
+      "text": [
+        "Video encoding: 3GP, MP4, WEBM, MKV"
+      ]
+    },
+    {
+      "title": "Battery",
+      "text": [
+        "Capacity: 3000mAh(Typical)"
+      ]
+    }
+  ]
+}

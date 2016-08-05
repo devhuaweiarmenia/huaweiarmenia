@@ -12,7 +12,7 @@
                         </div>
 
                         <div class="product-image">
-                            <img style="margin: 0 auto" ng-src="/img/{{product.slug}}/images/{{currentBigImg}}" alt="{{data.title}}" title="{{product.title}}">
+                            <img style="margin: 0 auto" ng-src="/img/{{product.slug}}/{{currentBigImg}}" alt="{{data.title}}" title="{{product.title}}">
                         </div>
 
 
@@ -20,7 +20,7 @@
                             <div style="position: relative;padding: 0px 60px;">
                                 <div class="more-views-list">
                                     <a rel="group" ng-class="{'active' : currentBigImg==item}" ng-repeat="item in product.img" ng-click="toggleBigImg(item)" productsimgslider>
-                                        <img ng-src="/img/{{product.slug}}/images/{{item}}" width="85" height="85" alt="{{product.title}}" title="{{product.title}}" border="1"/>
+                                        <img ng-src="/img/{{product.slug}}/{{item}}" width="85" height="85" alt="{{product.title}}" title="{{product.title}}" border="1"/>
                                     </a>
                                 </div>
                             </div>
@@ -65,7 +65,7 @@
                                 <div class="tab-content-text" ng-bind-html="item.text"></div>
                             </div>
                             <div class="tab-content-image">
-                                <img src="/img/{{item.img}}" border="0" style="border: 0; float: right;">
+                                <img src="/img/{{product.slug}}/{{item.img}}" border="0" style="border: 0; float: right;">
                             </div>
                         </li>
                     </ul>
@@ -90,7 +90,7 @@
                             <div class="tab-content-text" ng-bind-html="item.text"></div>
                         </div>
                         <div class="tab-content-image">
-                            <img src="/img/{{item.img}}" border="0" style="border: 0; float: right; margin-left: 10px; margin-right: 10px;">
+                            <img src="/img/{{product.slug}}/{{item.img}}" border="0" style="border: 0; float: right; margin-left: 10px; margin-right: 10px;">
                         </div>
                     </li>
                 </ul>
@@ -102,7 +102,7 @@
                                 <div class="tab-content-text" ng-repeat="spec in item.text" ng-bind-html="spec"></div>
                             </div>
                             <div class="tab-content-img" ng-if="item.title=='Size'">
-                                <img width="100%" src="/img/{{product.slug}}/specification/size.png">
+                                <img width="100%" src="/img/{{product.slug}}/{{product.size}}">
                             </div>
                         </div>
                     </li>

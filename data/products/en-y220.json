@@ -1,0 +1,131 @@
+{
+  "lang": "en",
+  "slug": "y220",
+  "img": [
+    "1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"
+  ],
+  "title": "Y220",
+  "shortDescr": [
+    ""
+  ],
+  "price": "26.500 AMD",
+  "overview": [
+    {
+      "title": "Big screen entertainment. In your palm.",
+      "text": "Get sucked in. The Ascend Y220 is the smartphone that gives you an incredible visual experience you can carry with you every day. Enjoy the ultimate, performance driven graphic experience with a 3.5 inch, high-resolution, multi-touch screen. The next evolution of visual technology is here right in your hand.",
+      "img" : "a1.jpg"
+    },
+    {
+      "title": "A powerhouse. In your phone.",
+      "text": "Discover something amazing. Now you can have all the power you need, when and where you need it. With its dual-core 1 GHz processor, the Ascend Y220 lets you can enjoy faster web browsing, downloading and uploading as well as super responsive apps and effortless multitasking.",
+      "img" : "a2.jpg"
+    },
+    {
+      "title": "Power. Precision. Performance. All in one.",
+      "text": "The Ascend Y220, with its 28 nm processor, delivers astounding performance with less power consumption and more standby time. Now you can enjoy high speed functionality sharing and connecting with the stuff you love.",
+      "img" : "a3.jpg"
+    },
+    {
+      "title": "Pretty. Fast.",
+      "text": "With download speeds of up to 21 Mbps, the Ascend Y220 lets you surf the web and download apps at lightning fast speeds. Enjoy the freedom to have more fun, every day.",
+      "img" : "a4.jpg"
+    }
+  ],
+  "specification": [
+    {
+      "title": "Size",
+      "text": [
+        "Height<br>116.5mm",
+        "Width<br>60.6mm",
+        "Depth<br>12.3mm",
+        "Weight<br>About 130g"
+      ]
+    },
+    {
+      "title": "Color",
+      "text": [
+        "Black",
+        "White"
+      ]
+    },
+    {
+      "title": "Display",
+      "text": [
+        "3.5 inch screen HVGA (320 x 480)"
+      ]
+    },
+    {
+      "title": "CPU",
+      "text": [
+        "Dual core 1GHz processor, MTK MT6572M"
+      ]
+    },
+    {
+      "title": "Operation System",
+      "text": [
+        "AndroidTM 2.3"
+      ]
+    },
+    {
+      "title": "Memory",
+      "text": [
+        "RAM: 256MB",
+        "ROM: 512MB",
+        "Micro SD Card up to 32 GB"
+      ]
+    },
+    {
+      "title": "Network",
+      "text": [
+        "GSM/EDGE: 850/900/1800/1900 MHz",
+        "UMTS: 850/1900 or 900/2100 or 850/2100 MHz"
+      ]
+    },
+    {
+      "title": "GPS",
+      "text": [
+        "Not Supported"
+      ]
+    },
+    {
+      "title": "Connectivity",
+      "text": [
+        "Wifi 802.11 b/g/n",
+        "Wi-Fi Direct",
+        "BT3.0+EDR",
+        "Micro USB (high speed USB)"
+      ]
+    },
+    {
+      "title": "Sensors",
+      "text": [
+        "Accelerometer",
+        "Supporting auto-rotate"
+      ]
+    },
+    {
+      "title": "Camera",
+      "text": [
+        "Rear Camera: Rear camera: 0.3 MP"
+      ]
+    },
+    {
+      "title": "Audio",
+      "text": [
+        "Audio encoding: MP3、MIDI、AMR-NB、AAC、AAC+、eAAC+、WAV、OGG"
+      ]
+    },
+    {
+      "title": "Video",
+      "text": [
+        "Video encoding: H.263, H.264, MPEG-4"
+      ]
+    },
+    {
+      "title": "Battery",
+      "text": [
+        "Capacity: 1350 mAh"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "lang": "ru",
+  "slug": "mediapad-x1-7",
+  "img": [
+    "1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"
+  ],
+  "title": "MediaPad X1 7 3G",
+  "shortDescr": [
+    ""
+  ],
+  "price": "189.000 драм",
+  "overview": [
+    {
+      "title": "Ультратонкий",
+      "text": "Новый MediaPad X1 - самый тонкий планшетный ПК в своем классе. Он расширит Ваши представления об идеальном устройстве благодаря элегантному дизайну, превосходной функциональности и удобству использования.",
+      "img" : "a1.jpg"
+    },
+    {
+      "title": "Разрешение Full HD",
+      "text": "7” FHD-экран планшетного ПК MediaPad X1с углом обзора 178 градусов и IPS-матрицей обеспечивает непревзойденную реалистичность и четкость изображения при просмотре фото и видео, а также играх.",
+      "img" : "a2.jpg"
+    },
+    {
+      "title": "Голосовые вызовы",
+      "text": "MediaPad X1 поддерживает голосовые вызовы, Вы можете использовать его как обычный смартфон и совершать телефонные звонки.",
+      "img" : "a3.jpg"
+    },
+    {
+      "title": "Мощная батарея",
+      "text": "Разрабатывая планшет Huawei MediaPad X1, мы снабдили его батареей 5000 мА*ч, емкость которой на 20% превышает емкость батарей планшетов этого класса. Теперь Вы сможете наслаждаться работой Вашего MediaPad X1, не думая о его зарядке еще несколько часов.",
+      "img" : "a4.jpg"
+    }
+  ],
+  "specification": [
+    {
+      "title": "Размеры",
+      "text": [
+        "Высота<br>183.5мм",
+        "Ширина<br>103.9мм",
+        "Tолщина<br>7.18мм",
+        "Вес<br>около 239g"
+      ]
+    },
+    {
+      "title": "Цвет",
+      "text": [
+        "Белоснежный"
+      ]
+    },
+    {
+      "title": "Экран",
+      "text": [
+        "7 inch, 1200 x 1920 LTPS full-view-angle screen",
+        "323PPI (pixels per inch)",
+        "10-point capacitive touchscreen"
+      ]
+    },
+    {
+      "title": "CPU",
+      "text": [
+        "SoC: Hisilicon Kirin 910 quad core 1.6 GHz",
+        "GPU: Mali450-MP4"
+      ]
+    },
+    {
+      "title": "Операционная система",
+      "text": [
+        "Android 4.2(Jelly Bean) / Emotion UI 2.0"
+      ]
+    },
+    {
+      "title": "Память",
+      "text": [
+        "ROM: 16 ГБ (Дополнительно: дo 32ГБ microSD)",
+        "RAM: 2 ГБ LPDDR3",
+        "Micro SD (до 32 ГБ)"
+      ]
+    },
+    {
+      "title": "Сеть",
+      "text": [
+        "LTE TDD Cat4 (up to 112Mbps DL / 10Mbps UL)",
+        "LTE FDD Cat4 (up to 150Mbps DL / 50Mbps UL)"
+      ]
+    },
+    {
+      "title": "GPS",
+      "text": [
+        "GPS/AGPS"
+      ]
+    },
+    {
+      "title": "Связь",
+      "text": [
+        "Wifi 802.11 a/b/g/n",
+        "Bluetooth: 4.0 (compatible with 3.0 2.1 + EDR)",
+        "2.4&5 GHz (dual band for LTE version)"
+      ]
+    },
+    {
+      "title": "Датчики",
+      "text": [
+        "Компасс",
+        "Акселерометр",
+        "Датчик приближения",
+        "Датчик освещенности"
+      ]
+    },
+    {
+      "title": "Фото/Видеокамера",
+      "text": [
+        "Основная камера: 13 МП, автофокус",
+        "Фронтальная камера: 5 МП"
+      ]
+    },
+    {
+      "title": "Аудио",
+      "text": [
+        "Dual built-in noise reduction MIC, Receiver and Speaker",
+        "Audio file formats: MP3/WMA/FLAC/APE/WAV/RA/Ogg/MIDI/3GP and so on DTS sound technology"
+      ]
+    },
+    {
+      "title": "Видео",
+      "text": [
+        "1080p @ 30 fps full HD video playback",
+        "Video file formats: MPEG-4, 3GP, 3G2, RM, RMVB, ASF, FLAC, APE, MOV"
+      ]
+    },
+    {
+      "title": "Батарея",
+      "text": [
+        "Тип: Li-полимер",
+        "Емкость аккумулятора: 5000mAh",
+        "Зарядное устройство: 6600mAh"
+      ]
+    }
+  ]
+}

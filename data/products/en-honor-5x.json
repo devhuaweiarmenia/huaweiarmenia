@@ -1,0 +1,181 @@
+{
+  "lang": "en",
+  "slug": "honor-5x",
+  "img": [
+    "1.png","2.png","3.png","4.png","5.png","6.png","7.png"
+  ],
+  "title": "HONOR 5X",
+  "shortDescr": [
+    "Fingerprint sensor",
+    "Metallic body",
+    "Battery 3000 mAh",
+    "Dual SIM",
+    "4G LTE up to 150 Mbps",
+    "Rear camera 13 MP",
+    "5.5\" screen 1920x1080",
+    "Octa-core processor"
+  ],
+  "price": "135.000 AMD",
+  "overview": [
+    {
+      "title": "Aluminum alloy made with four-step finishing processes",
+      "text": "Sleek, robust housing crafted from diamond-polished aluminum alloy normally reserved for aircraft.<br>Finish created through a special brushing technique that produces a consistent, polished finish.<br>Sand-blasted matte sides that complement the phone's shiny CNC milled chamfer while completing its exquisite and elegant exterior.<br>Laser-etched rear logo produces an understated yet premium feel.",
+      "img" : "a1.png"
+    },
+    {
+      "title": "Fingerprint identification 2.0",
+      "text": "Speed and accuracy: A second-generation FPC rim-free touch fingerprint sensor that offers better performance, greater accuracy, and a 0.5-second unlocking time.<br>Adaptive sensor: Advanced technology that learns more about your fingerprint as you use it and prevents failed recognition caused by wet hands or partial fingerprints.<br>Easy setup: Fingerprint recording in just six touches.<br>Privacy protection: File Safe, App Lock, and Visitor Mode for added peace of mind.",
+      "img" : "a2.png"
+    },
+    {
+      "title": "Impressive fingerprint features",
+      "text": "Ability to call friends at the touch of a finger by linking a fingerprint with a contact – a feature that works in locked-screen mode.<br>Ability to launch an app with a single touch of a finger by linking it to a fingerprint input – a feature that works in locked-screen mode.<br>Ability to take photos with its fingerprint sensor, including both ordinary photos and selfies.<br>Notification bar control. Swipe down on the fingerprint sensor to pull down the notification bar. Double press the sensor to remove notification.<br>Press and hold the fingerprint sensor to answer incoming calls or cancel an alarm.",
+      "img" : "a3.png"
+    },
+    {
+      "title": "Combination of 2 GB RAM and a Qualcomm® 64-bit Octa-core processor",
+      "text": "High-speed 2 GB RAM for smooth, responsive user experience.<br>High-performance, low-power through SnapdragonTM big.LITTLE octa-core processor manufactured using 28 nm technology.<br>Ability to run 3D games seamlessly with PC-grade GPU.",
+      "img" : "a4.png"
+    },
+    {
+      "title": "The first Honor smartphone to feature three different card slots: nano-SIM, micro-SIM, and microSD (up to 128GB)",
+      "text": "This offers improved compatibility over dual nano-SIM solutions.<br>Simultaneous operation of three connectors - nano-SIM, micro-SIM and microSD.<br>Full SIM compatibility: A 4G SIM card can be inserted into either of the SIM card slots.<br>No distinction between a primary/secondary card, allowing for ability to choose SIM for data.<br>Higher-order mode ring patch antenna and automatic band switching technology that delivers stronger signal.",
+      "img" : "a5.png"
+    },
+    {
+      "title": "Picturesque 5.5-inch, full HD, fully laminated screen",
+      "text": "Pixel-by-pixel dynamic contrast adjustment for improved contrast under different lighting conditions and visibility through glare.<br>1920 x 1080 pixel, 16.7 million color, full HD IPS display with improved color reproduction and viewing angles.<br>High 72.5% screen-to-body ratio and fully-laminated screen that renders vivid and crisp images.<br>10 point multi-touch and manual color temperature adjustment controls.<br>High transparency screen protector with each device.",
+      "img" : "a6.png"
+    },
+    {
+      "title": "Stacked 13 MP image sensor with SmartImage 3.0 image processor",
+      "text": "Cutting-edge camera that captures high-quality images in a variety of different shooting scenarios.<br>Rear Camera: 13MP Wide F2.0 aperture, 28 mm wide angle lens with five elements and macro mode for close-up shots from just a few centimeters away<br>SmartImage 3.0 image processor to ensure clarity in every shot.<br>Ultra-strong, fingerprint-resistant cover that is even more scratch-resistant than glass.<br>Anti-reflective coating to increase the amount of light entering the lens, enabling the camera to take clearer shots in low-light conditions.<br>Front Camera: 5MP with an F2.4 aperture, 22 mm wide-angle lens with four elements, large 1.4 micron pixel size, and an 88-degree viewing angle for panoramic selfies.<br>Skin-beautifying algorithm for accurate color reproduction.",
+      "img" : "a7.png"
+    },
+    {
+      "title": "Exciting new shooting modes",
+      "text": "Food mode lets you capture pictures of food with stunning colors and realism.<br>Time-lapse mode to capture photos intervals that can be compiled into short videos.<br>Slow motion mode to capture video at 120 fps to enable playback at four-times slower than real life.<br>Perfect selfie mode and \"demist\" filter.<br>Exciting new shooting modes such as ultra-snapshot, watermarks, object tracking, and more.",
+      "img" : "a8.png"
+    },
+    {
+      "title": "Feature-packed with EMUI 3.1",
+      "text": "New privacy features let you hide home screen apps, store personal files in a safe place, and protect sensitive information.<br>Pop-up call reminders for incoming calls to avoid being interrupted while playing a game.<br>Reduced data transfer and added storage through H.265 video compression.",
+      "img" : "a9.png"
+    },
+    {
+      "title": "Unified speaker chamber, unique smart power amplifier, and bottom speaker design",
+      "text": "Unified speaker chamber, unique smart power amplifier, and bottom speaker design for crystal-clear audio quality.<br>Speaker volume 18.84 percent louder with excellent audio range.<br>Earpiece is able to handle sound 150 percent louder than competing modules, allowing you to make calls in noisy environments.",
+      "img" : "a10.png"
+    },
+    {
+      "title": "3000 mAh battery and SmartPower 3.0",
+      "text": "Supports 2A chargers for significantly shorter charging times.<br>Integrated SmartPower 3.0 technology with eight-point power saving plan to reduce power consumption by 30 percent.<br>Battery life that lasts 1.46 days with moderate use and over a day with heavy use.<br>Data based on Huawei laboratory tests, actual times may vary.",
+      "img" : "a11.png"
+    }
+  ],
+  "specification": [
+    {
+      "title": "Size",
+      "text": [
+        "Height<br>151,3 mm",
+        "Width<br>76,3 mm",
+        "Depth<br>8,15 mm",
+        "Weight<br>158g"
+      ]
+    },
+    {
+      "title": "Color",
+      "text": [
+        "Silver",
+        "Grey"
+      ]
+    },
+    {
+      "title": "Display",
+      "text": [
+        "5.5-inch IPS (1920 x 1080 (FHD)), 400 ppi, 16M colors"
+      ]
+    },
+    {
+      "title": "CPU",
+      "text": [
+        "Qualcomm Snapdragon 615, 1.2 GHz + 1.5 GHz, Octa-core (4x1.2 GHz +4x1.5 GHz)"
+      ]
+    },
+    {
+      "title": "Operation System",
+      "text": [
+        "Android 5.1"
+      ]
+    },
+    {
+      "title": "Memory",
+      "text": [
+        "RAM: 2GB",
+        "ROM: 16GB",
+        "Micro SD Card up to 128 GB"
+      ]
+    },
+    {
+      "title": "Network",
+      "text": [
+        "Dual SIM",
+        "LTE FDD: B1/B3/B7/B8/B20",
+        "WCDMA: B1/B2/B8",
+        "GSM：850/900/1800/1900"
+      ]
+    },
+    {
+      "title": "GPS",
+      "text": [
+        "GPS/AGPS/Glonass"
+      ]
+    },
+    {
+      "title": "Connectivity",
+      "text": [
+        "WLAN 802.11b/g/n",
+        "USB 2.0",
+        "BT 4.1"
+      ]
+    },
+    {
+      "title": "Sensors",
+      "text": [
+        "Compass",
+        "Accelerometer",
+        "Proximity Sensor",
+        "Ambient light",
+        "Fingerprint"
+      ]
+    },
+    {
+      "title": "Camera",
+      "text": [
+        "Rear Camera: 13 MP",
+        "Front Camera: 5 MP"
+      ]
+    },
+    {
+      "title": "Audio",
+      "text": [
+        "Audio encoding: MP3, MIDI, AMR-NB, AMR-WB, AAC, AAC+, eAAC+, PCM",
+        "Audio file formats: *.mp3, *.mid, *.amr, *.awb, *.3gp, *.mp4, *.m4a, *.aac, *.wav,*.ogg, *.flac"
+      ]
+    },
+    {
+      "title": "Video",
+      "text": [
+        "Video encoding: H.263, H.264, MPEG-4",
+        "Video file formats: *.3gp, *.mp4, *.webm, *.mkv"
+      ]
+    },
+    {
+      "title": "Battery",
+      "text": [
+        "Capacity: 3000 mAh"
+      ]
+    }
+  ]
+}
+

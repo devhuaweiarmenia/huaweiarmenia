@@ -1,0 +1,139 @@
+{
+  "lang": "en",
+  "slug": "mediapad-x1-7",
+  "img": [
+    "1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"
+  ],
+  "title": "MediaPad X1 7 3G",
+  "shortDescr": [
+    ""
+  ],
+  "price": "189.000 AMD",
+  "overview": [
+    {
+      "title": "Ultra Thin",
+      "text": "The new MediaPad X1 exceeds the limits, redefining the possibilities of design, functionality, and experience. Its ultra-slim 7.18 mm body makes it the most slender tablet in its class, while its fast LTE connectivity, advanced quad-core chip and FHD screen provide the ultimate multimedia experience, whether you’re playing, sharing, watching, or surfing.",
+      "img" : "a1.jpg"
+    },
+    {
+      "title": "Rear Camera",
+      "text": "Is it a camera or a tablet? Once you start snapping away with the 13MP rear camera with a large F2.2 diaphragm, 5 lens assembly with Hybrid IR flash, you may find yourself asking that question on more than one occasion.",
+      "img" : "a2.jpg"
+    },
+    {
+      "title": "LTE Cat4",
+      "text": "The era of 4G LTE has arrived. What better way to celebrate than with a device that is built to fully complement the speed and power of 4G technology.",
+      "img" : "a3.jpg"
+    },
+    {
+      "title": "Big Battery",
+      "text": "By optimizing the design of the MediaPad X1, we were able to fit a much larger 5000 mAh battery inside, at least 20% bigger than batteries used in other pocket-sized tablets. The result is many more hours to enjoy your MediaPad X1 without having to worry about finding the charger.",
+      "img" : "a4.jpg"
+    }
+  ],
+  "specification": [
+    {
+      "title": "Size",
+      "text": [
+        "Height<br>183.5mm",
+        "Width<br>103.9mm",
+        "Depth<br>7.18mm",
+        "Weight<br>About 239g"
+      ]
+    },
+    {
+      "title": "Color",
+      "text": [
+        "White"
+      ]
+    },
+    {
+      "title": "Display",
+      "text": [
+        "7 inch, 1200 x 1920 LTPS full-view-angle screen",
+        "323PPI (pixels per inch)",
+        "10-point capacitive touchscreen"
+      ]
+    },
+    {
+      "title": "CPU",
+      "text": [
+        "SoC: Hisilicon Kirin 910 quad core 1.6 GHz",
+        "GPU: Mali450-MP4"
+      ]
+    },
+    {
+      "title": "Operation System",
+      "text": [
+        "Android 4.2(Jelly Bean) / Emotion UI 2.0"
+      ]
+    },
+    {
+      "title": "Memory",
+      "text": [
+        "RAM: RAM: 2 GB LPDDR3",
+        "ROM: 16 GB (can be customized to 32GB)",
+        "Micro SD Card up to 32 GB"
+      ]
+    },
+    {
+      "title": "Network",
+      "text": [
+        "LTE TDD Cat4 (up to 112Mbps DL / 10Mbps UL)",
+        "LTE FDD Cat4 (up to 150Mbps DL / 50Mbps UL)"
+      ]
+    },
+    {
+      "title": "GPS",
+      "text": [
+        "GPS/AGPS"
+      ]
+    },
+    {
+      "title": "Connectivity",
+      "text": [
+        "Wifi 802.11 a/b/g/n",
+        "Bluetooth: 4.0 (compatible with 3.0 2.1 + EDR)",
+        "2.4&5 GHz (dual band for LTE version)"
+      ]
+    },
+    {
+      "title": "Sensors",
+      "text": [
+        "Compass",
+        "Accelerometer",
+        "Proximity Sensor",
+        "Ambient Light Sensor",
+        "Gyroscope"
+      ]
+    },
+    {
+      "title": "Camera",
+      "text": [
+        "Rear Camera: 5 MP",
+        "Front Camera: 13 MP"
+      ]
+    },
+    {
+      "title": "Audio",
+      "text": [
+        "Dual built-in noise reduction MIC, Receiver and Speaker",
+        "Audio file formats: MP3/WMA/FLAC/APE/WAV/RA/Ogg/MIDI/3GP and so on DTS sound technology"
+      ]
+    },
+    {
+      "title": "Video",
+      "text": [
+        "1080p @ 30 fps full HD video playback",
+        "Video file formats: MPEG-4, 3GP, 3G2, RM, RMVB, ASF, FLAC, APE, MOV"
+      ]
+    },
+    {
+      "title": "Battery",
+      "text": [
+        "Capacity: Built-in, 5000mAh",
+        "Type : Li-Polymer"
+      ]
+    }
+  ]
+}

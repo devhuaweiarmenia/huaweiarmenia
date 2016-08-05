@@ -1,0 +1,144 @@
+{
+  "lang": "en",
+  "slug": "mediapad-t1-8-0",
+  "img": [
+    "1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png"
+  ],
+  "title": "MediaPad T1 8.0",
+  "shortDescr": [
+    ""
+  ],
+  "price": "109.000 AMD",
+  "overview": [
+    {
+      "title": "Tap into stunning design.",
+      "text": "Inspired by the soft and elegant shape of a Swan’s wings, the MediaPad T1 slips seamlessly into your hand. Precision technology also makes the frame slimmer and easier to use while a sandblasted, aircraft-grade aluminum back shell rounds off a perfect look.",
+      "img" : "a1.png"
+    },
+    {
+      "title": "Vibrant colors.Beautifully displayed.",
+      "text": "A 1280x800 IPS display reproduces over 90% of Adobe RGB color space to deliver brighter colors and contrasts. With a 16:10 screen ratio, you also get a 20% bigger image display than a 4:3 screen ratio while a 178° wide-view angle makes for a naturally rotating screen.",
+      "img" : "a2.png"
+    },
+    {
+      "title": "Plug in and power yourself up.",
+      "text": "Now you can boost your device’s potential without sacrificing battery power. With a 4800 mAh battery, you get up to 16 hours of Internet browsing time, 36 hours for 3G voice calls and 13 hours of non-stop entertainment as well as a whopping 20 days on standby. It’s time to get more out of your device.",
+      "img" : "a3.png"
+    },
+    {
+      "title": "1.2 GHz quad-core technology.Power becomes more powerful.",
+      "text": "A 1.2 GHz quad-core Qualcomm processor coupled with Android 4.3 Jelly Bean gives the MediaPad T1 a powerful punch. Whether it's watching HD movies, playing action-packed games, or working on an important presentation, everything looks and performs faster and smoother. Power has just received an upgrade to powerful.",
+      "img" : "a4.png"
+    },
+    {
+      "title": "State-of-the-art technology speaks volumes.",
+      "text": "The MediaPad T1 supports 2G/3G voice calling services to guarantee clearer, crisper communication, anywhere. At last a better sound experience meets beautiful, easy-to-use design.",
+      "img" : "a5.png"
+    },
+    {
+      "title": "The power to do more. All at once.",
+      "text": "With the MediaPad T1’s special floating video function, you don’t have to switch back and forth between two different screens while watching your favorite movies – view it all simultaneously instead. Just another way your MediaPad T1 delivers more.",
+      "img" : "a6.png"
+    }
+  ],
+  "specification": [
+    {
+      "title": "Size",
+      "text": [
+        "Height<br>210.6mm",
+        "Width<br>127.7mm",
+        "Depth<br>7.9mm",
+        "Weight<br>About 360g (including the battery)"
+      ]
+    },
+    {
+      "title": "Color",
+      "text": [
+        "Silver"
+      ]
+    },
+    {
+      "title": "Display",
+      "text": [
+        "Size : 8 inch IPS full-view-angle IPS screen",
+        "Resolution: HD 1280 x 800 resolution",
+        "16M colors"
+      ]
+    },
+    {
+      "title": "CPU",
+      "text": [
+        "MSM8916 Quad-core 1.2GHz"
+      ]
+    },
+    {
+      "title": "Operation System",
+      "text": [
+        "Android 4.4(KitKat) + Emotion UI 2.3"
+      ]
+    },
+    {
+      "title": "Memory",
+      "text": [
+        "RAM: 1GB",
+        "ROM: 16GB"
+      ]
+    },
+    {
+      "title": "Network",
+      "text": [
+        "HSDPA+ (up to 42 Mbit/s DL/5.76 Mbit/s UL)"
+      ]
+    },
+    {
+      "title": "GPS",
+      "text": [
+        "GPS/AGPS",
+        "Glonoss Location & Navigation"
+      ]
+    },
+    {
+      "title": "Connectivity",
+      "text": [
+        "Wifi 802.11 b/g/n",
+        "Supporting Wi-Fi Hotspot",
+        "Wi-Fi Direct"
+      ]
+    },
+    {
+      "title": "Sensors",
+      "text": [
+        "Accelerometer",
+        "Proximity Sensor",
+        "Ambient Light Sensor"
+      ]
+    },
+    {
+      "title": "Camera",
+      "text": [
+        "Rear Camera: 5 MP",
+        "Front Camera: 2 MP"
+      ]
+    },
+    {
+      "title": "Audio",
+      "text": [
+        "Audio encoding: Built-in noise reduction MIC, Receiver and Speaker",
+        "Audio file formats: MP3/WMA/FLAC/APE/WAV/Ogg/MIDI/3GP and etc"
+      ]
+    },
+    {
+      "title": "Video",
+      "text": [
+        "Video file formats: 3GP/MP4/MOV/WEBM/FLV/WMV/TS/MKV/AVI/ASF etc."
+      ]
+    },
+    {
+      "title": "Battery",
+      "text": [
+        "Capacity: 4800mAh"
+      ]
+    }
+  ]
+}
+

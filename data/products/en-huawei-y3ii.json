@@ -1,0 +1,121 @@
+{
+  "lang": "en",
+  "slug": "huawei-y3ii",
+  "img": [
+    "1.png","2.png","3.png","4.png","5.png","6.png","7.png"
+  ],
+  "title": "Huawei Y3II",
+  "shortDescr": [
+    ""
+  ],
+  "price": "57.000 AMD",
+  "overview": [
+    {
+      "title": "Music to Your Ears",
+      "text": "Music is the irresistible drive of the night. Delivering an awesome acoustic performance, Huawei Y3II places the immersive experience of a concert in your own pocket.",
+      "img" : "a1.png"
+    },
+    {
+      "title": "The Easy Key to a Smarter Experience",
+      "text": "The Easy Key function offers an easy, intuitive way to operate the device. Simply pre-set the button function, and let the Easy Key to perform it. So if you set the action to camera, a single press will take a quick snapshot. Create multiple function shortcuts by using the double press and press-and-hold gestures to make the device easily accessible by touch alone.",
+      "img" : "a2.png"
+    }
+  ],
+  "specification": [
+    {
+      "title": "Size",
+      "text": [
+        "Height<br>134.18mm",
+        "Width<br>66.7mm",
+        "Depth<br>9.9mm",
+        "Weight<br>150g"
+      ]
+    },
+    {
+      "title": "Color",
+      "text": [
+        "Black",
+        "White"
+      ]
+    },
+    {
+      "title": "Display",
+      "text": [
+        "Size: 4.5inch FWVGA 854 x 480"
+      ]
+    },
+    {
+      "title": "CPU",
+      "text": [
+        "MT6735M,4*1.0GHz"
+      ]
+    },
+    {
+      "title": "Operation System",
+      "text": [
+        "Android 5.1 + EMUI 3.1 Lite"
+      ]
+    },
+    {
+      "title": "Memory",
+      "text": [
+        "RAM: 1GB",
+        "ROM: 8GB"
+      ]
+    },
+    {
+      "title": "Network",
+      "text": [
+        "Dual SIM",
+        "4G FDD-LTE/TD-LTE"
+      ]
+    },
+    {
+      "title": "GPS",
+      "text": [
+        "GPS"
+      ]
+    },
+    {
+      "title": "Connectivity",
+      "text": [
+        "WiFi 2.4GHz 802.11 b/g/n",
+        "BT4.0+LE"
+      ]
+    },
+    {
+      "title": "Sensors",
+      "text": [
+        "G-Sensor",
+        "L-Sensor",
+        "Proximity-sensorelectronic(3G version: G-Sensor, L-Sensor)r"
+      ]
+    },
+    {
+      "title": "Camera",
+      "text": [
+        "Rear Camera: 5 MP",
+        "Front Camera: 2 MP"
+      ]
+    },
+    {
+      "title": "Audio",
+      "text": [
+        "Audio encoding: AAC, AMR-NB, and PCM(3G version:mp3,wav,amr,AAC)"
+      ]
+    },
+    {
+      "title": "Video",
+      "text": [
+        "Video encoding: H.264, H.263",
+        "Video file formats: MP4"
+      ]
+    },
+    {
+      "title": "Battery",
+      "text": [
+        "Capacity: 2100 mAh Li-poly"
+      ]
+    }
+  ]
+}

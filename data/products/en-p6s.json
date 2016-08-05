@@ -1,0 +1,143 @@
+{
+  "lang": "en",
+  "slug": "p6s",
+  "img": [
+    "1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"
+  ],
+  "title": "P6S",
+  "shortDescr": [
+    ""
+  ],
+  "price": "121.000 AMD",
+  "overview": [
+    {
+      "title": "Back to perfection",
+      "text": "Huawei Ascend P6S — is the development of the successful model Huawei Ascend P6— the thinnest smartphone in the world (2013). Ascend P6S supplements its previous model with 2 SIM cards, new 1,6 GHz processor, expanded volume of internal memory up to 16 GB, updated version of Android 4.4 and Emotion UI 2.3 interface.",
+      "img" : "a1.jpg"
+    },
+    {
+      "title": "2 SIM cards",
+      "text": "The support of 2 SIM cards became an important addition in Ascend P6S, which makes it more convenient in case of using 2 mobile numbers at the same time: during the trip, in case of working and personal phones' combination e.t.c. The smartphone is equipped with 2 active radio modules, therefore both SIM cards are always active. You can receive calls on both cards at the same time, and internet connection via one of the cards will not be interrupted during the conversation by the other one.",
+      "img" : "a2.jpg"
+    },
+    {
+      "title": "Automatic object recognition",
+      "text": "In the automatic object recognition mode the phone automatically adjusts contrast, color and lighting, depending on the shooting location: cloudy, backlight, sunny, indoors, etc.",
+      "img" : "a3.jpg"
+    },
+    {
+      "title": "AirSharing function",
+      "text": "Instant sharing of photos, music, video files and many other things between multiple devices, including your friend's phone and TV set-top box with MediaQ.",
+      "img" : "a4.jpg"
+    }
+  ],
+  "specification": [
+    {
+      "title": "Size",
+      "text": [
+        "Height<br>132.6mm",
+        "Width<br>65.5mm",
+        "Depth<br>6.48mm",
+        "Weight<br>About 120g"
+      ]
+    },
+    {
+      "title": "Color",
+      "text": [
+        "Black",
+        "White"
+      ]
+    },
+    {
+      "title": "Display",
+      "text": [
+        "Size : 4.7 inch IPS+ LCD capacitive touchscreen",
+        "Resolution: 720 x 1280 resolution",
+        "16M colors"
+      ]
+    },
+    {
+      "title": "CPU",
+      "text": [
+        "Quad-core 1.6 GHz",
+        "HiSilicon Kirin 910"
+      ]
+    },
+    {
+      "title": "Operation System",
+      "text": [
+        "Android OS, v4.4 (KitKat) / Emotion UI 2.3"
+      ]
+    },
+    {
+      "title": "Memory",
+      "text": [
+        "RAM: 2GB",
+        "ROM: 16GB"
+      ]
+    },
+    {
+      "title": "Network",
+      "text": [
+        "HSDPA 850/900/1700/1900/2100 MHz",
+        "GSM 850/900/1800/1900 MHz"
+      ]
+    },
+    {
+      "title": "GPS",
+      "text": [
+        "GPS/AGPS",
+        "GLONASS"
+      ]
+    },
+    {
+      "title": "Connectivity",
+      "text": [
+        "Wi-Fi 802.11 b/g/n",
+        "Wi-Fi Direct",
+        "DLNA",
+        "Wi-Fi hotspot",
+        "Bluetooth : 4.0 LE+EDR",
+        "microUSB v2.0",
+        "USB On-the-go"
+      ]
+    },
+    {
+      "title": "Sensors",
+      "text": [
+        "Compass",
+        "Accelerometer",
+        "Proximity Sensor",
+        "Gyro"
+      ]
+    },
+    {
+      "title": "Camera",
+      "text": [
+        "Rear Camera: 8 MP",
+        "Camera resolution : 3264 x 2448 pixels, autofocus, LED flash",
+        "Front Camera: 5 MP"
+      ]
+    },
+    {
+      "title": "Audio",
+      "text": [
+        "Audio encoding: MP3, WMA 2–9, AMR-NB, AMR-WB, AAC, AAC+, eAAC+, MIDI",
+        "Audio file formats: MP3, MP4, 3GP, WMA, OGG, AMR, AAC, FLAC, WAV, MIDI"
+      ]
+    },
+    {
+      "title": "Video",
+      "text": [
+        "Video encoding: MPEG-4, H.264, H.263, Real Video 7–10, WMV 9, XVID, AC3",
+        "Video file formats: 3GP, MP4, WMV, RM, RMVB"
+      ]
+    },
+    {
+      "title": "Battery",
+      "text": [
+        "Capacity: 2000 mAh"
+      ]
+    }
+  ]
+}
