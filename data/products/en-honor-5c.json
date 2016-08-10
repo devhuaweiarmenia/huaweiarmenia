@@ -1,0 +1,134 @@
+{
+  "lang": "en",
+  "slug": "honor-5c",
+  "img": [
+    "1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"
+  ],
+  "title": "Honor 5C",
+  "shortDescr": [
+    ""
+  ],
+  "price": "N/A",
+  "overview": [
+    {
+      "title": "Ultra High-Performance",
+      "text": "Next-generation, super-powerful 16nm processor and flagship FinFET Plus technology togive you lightning speed.<br>Leading-edge octa-core chips provide a 65% performance boost and 40% cut in power consumption.<br>Seamless gaming with 100% increase in GPU performance compared to Kirin 620.<br>Ultra-smooth user experience thanks to brand-new EMUI 4.1 operating system.",
+      "img" : "a1.jpg"
+    },
+    {
+      "title": "Stunning Selfies",
+      "text": "Unrivalled 8 MP Sony/Hynix front camera for sensational selfies.<br>Rapid capture and preview speeds along with automatic scene recognition and ten beauty modes.<br>13 MP rear camera with 5P macro lens for crystal-clear shots every time.",
+      "img" : "a2.jpg"
+    },
+    {
+      "title": "Powerful Battery",
+      "text": "Compact battery design that packs a powerful punch, with huge 3,000 mAh capacity.<br>Enjoy extended heavy use thanks to power-saving technology, doze mode and more.<br>Super-efficient chipset and processing cut power consumption by an incredible 40%.",
+      "img" : "a3.jpg"
+    }
+  ],
+  "specification": [
+    {
+      "title": "Size",
+      "text": [
+        "Height<br>147.1mm",
+        "Width<br>73.76mm",
+        "Depth<br>8.3mm",
+        "Weight<br>About 156g"
+      ]
+    },
+    {
+      "title": "Color",
+      "text": [
+        "Gold",
+        "Silver",
+        "Grey"
+      ]
+    },
+    {
+      "title": "Display",
+      "text": [
+        "5.2” FHD 1920*1080"
+      ]
+    },
+    {
+      "title": "CPU",
+      "text": [
+        "Kirin650 (4*2.0GHz+4*1.7GHz), 64bit, 16nm"
+      ]
+    },
+    {
+      "title": "Operation System",
+      "text": [
+        "Android M"
+      ]
+    },
+    {
+      "title": "Memory",
+      "text": [
+        "RAM: 2 GB",
+        "ROM: 16 GB"
+      ]
+    },
+    {
+      "title": "Network",
+      "text": [
+        "GSM: 850/900/1800/1900MHz",
+        "3G: UMTS B1/B2/B8",
+        "4G: FDD:B1/B3/B7/B8/B20"
+      ]
+    },
+    {
+      "title": "GPS",
+      "text": [
+        "GPS/AGPS",
+        "GPR",
+        "Glonass"
+      ]
+    },
+    {
+      "title": "Connectivity",
+      "text": [
+        "Wi-Fi 2.4ГГц 802.11b/g/n",
+        "Wi-Fi Direct",
+        "Wi-Fi Hotspot",
+        "Micro USB v2.0",
+        "BTv4.1"
+      ]
+    },
+    {
+      "title": "Sensors",
+      "text": [
+        "Accelerometer",
+        "Proximity Sensor",
+        "Ambient light sensor",
+        "Digital compass"
+      ]
+    },
+    {
+      "title": "Camera",
+      "text": [
+        "Rear camera: 13 MP",
+        "Front camera: 8 MP"
+      ]
+    },
+    {
+      "title": "Audio",
+      "text": [
+        "Audio codecs: APE，AAC，AAC+ , FLAC, OGG, ADPCM",
+        "Audio formats: WAV，MP3，MP2，AMR-NB，AMR-WB，MIDI，Vorbis，"
+      ]
+    },
+    {
+      "title": "Video",
+      "text": [
+        "Video file formats: H.263, H.264, MPEG-4"
+      ]
+    },
+    {
+      "title": "Battery",
+      "text": [
+        "Capacity: 3000 mAh"
+      ]
+    }
+  ]
+}
