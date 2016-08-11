@@ -2,7 +2,13 @@
   "lang": "en",
   "slug": "y5ii",
   "img": [
-    "1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"
+    "1.jpg",
+    "2.jpg",
+    "3.jpg",
+    "4.jpg",
+    "5.jpg",
+    "6.jpg",
+    "7.jpg"
   ],
   "title": "Y5II",
   "shortDescr": [
@@ -13,17 +19,17 @@
     {
       "title": "Never Miss a Chance to Enjoy the Moment",
       "text": "It’s a pity to lose vivid details in photos because of lighting. The dual flashlight of Huawei Y5II performs exceptionally well in low-light conditions. The 8 megapixel camera and the F2.0 aperture creates photos of that look professional.",
-      "img" : "a1.jpg"
+      "img": "a1.jpg"
     },
     {
       "title": "Easy Key, Easier than Ever",
       "text": "Tired of endless menus when you are eager to post an exciting moment? The Easy Key function gives you a shorter path to your favorite content. With a simple press, double-press, or press-and-hold you can launch the application or feature you’ve assigned to each gesture.",
-      "img" : "a2.jpg"
+      "img": "a2.jpg"
     },
     {
       "title": "New Safe and Efficient Ecosystem",
       "text": "Based on Android 5.1, Huawei Y5II runs EMUI3.1 mobile operating system with the look, feel and usability undergoing a complete refresh. Data and applications are neatly organized and easy to find right by using the highly effective Timeline function. ",
-      "img" : "a3.jpg"
+      "img": "a3.jpg"
     }
   ],
   "specification": [
@@ -124,3 +130,4 @@
       ]
     }
   ]
+}

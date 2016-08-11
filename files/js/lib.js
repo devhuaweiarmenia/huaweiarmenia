@@ -595,52 +595,6 @@ app.controller('smartphonesController', ['$http', '$scope', '$rootScope', '$loca
     ).success(function(products) {
         $scope.productsMain = products;
     });
-    // $scope.productsMain = [
-    //     {
-    //         title: "Huawei P6S", description: "", status: '', statusText: '', img: "/img/main-products/", slug: "p6s"
-    //     },
-    //     {
-    //         title: "Honor 3", description: "", status: '', statusText: '', img: "/img/main-products/", slug: "honor-3"
-    //     },
-    //     {
-    //         title: "Huawei G6", description: "", status: '', statusText: '', img: "/img/main-products/", slug: "g6-3g"
-    //     },
-    //     {
-    //         title: "Huawei Y220", description: "", status: '', statusText: '', img: "/img/main-products/", slug: "y220"
-    //     },
-    //     {
-    //         title: "Honor 4C Pro", description: "", status: '', statusText: '', img: "/img/main-products/", slug: "4c-pro"
-    //     },
-    //     {
-    //         title: "Huawei G730", description: "", status: '', statusText: '', img: "/img/main-products/", slug: "g730"
-    //     },
-    //     {
-    //         title: "Huawei P9 Lite", description: "", status: 'new', statusText: 'Coming Soon', img: "/img/main-products/", slug: "p9-lite"
-    //     },
-    //     {
-    //         title: "Huawei P9", description: "", status: '', statusText: '', img: "/img/main-products/", slug: "huawei-p9"
-    //     },
-    //     {
-    //         title: "Honor 5X", description: "", status: '', statusText: '', img: "/img/main-products/", slug: "honor-5x"
-    //     },
-    //     {
-    //         title: "Huawei Y5 II", description: "", status: 'new', statusText: 'Coming Soon', img: "/img/main-products/", slug: "huawei-y5ii"
-    //     },
-    //     {
-    //         title: "Huawei Y3 II", description: "", status: '', statusText: '', img: "/img/main-products/", slug: "huawei-huawei-y3ii"
-    //     },
-    //     {
-    //         title: "Honor 5C", description: "", status: 'new', statusText: 'Coming Soon', img: "/img/main-products/"
-    //         //, slug: "honor-5c"
-    //     },
-    //     {
-    //         title: "Honor 8", description: "", status: 'new', statusText: 'Coming Soon', img: "/img/main-products/"
-    //         //,slug: "honor-8"
-    //     },
-    //     {
-    //         title: "Huawei Y6 II", description: "", status: 'new', statusText: 'Coming Soon', img: "/img/main-products/", slug: "huawei-y6ii"
-    //     }
-    // ];
 }
 
 ]);
@@ -652,17 +606,6 @@ app.controller('tabletsController', ['$http', '$scope', '$rootScope', '$location
     ).success(function(products) {
         $scope.productsMain = products;
     });
-    // $scope.productsMain = [
-    //     {
-    //         title: "Huawei MediaPad X1", description: "", img: "/img/main-products/", slug: "mediapad-t1-7-0"
-    //     },
-    //     {
-    //         title: "Huawei MediaPad T1 7.0", description: "", img: "/img/main-products/", slug: "mediapad-t1-8-0"
-    //     },
-    //     {
-    //         title: "Huawei MediaPad T1 8.0", description: "", img: "/img/main-products/", slug: "mediapad-x1-7"
-    //     }
-    // ];
 }
 
 ]);
@@ -675,7 +618,6 @@ app.controller('productController', ['$http', '$scope', '$routeParams', '$rootSc
     $scope.toggleBottom=function(tab) {
         $scope.productBottom==tab?$scope.productBottom='none': $scope.productBottom=tab;
     };
-    console.log($rootScope.currentLang, $routeParams.product_slug)
     $http({url:"/api/getProduct", method:"POST", data: {lang: $rootScope.currentLang, slug: $routeParams.product_slug}}
     ).success(function(product) {
             if(!product.error) {
@@ -700,29 +642,14 @@ app.controller('enterprisesController', ['$scope', '$routeParams', '$rootScope',
 }
 
 ]);
-app.controller('blogController', ['$scope', '$routeParams', '$rootScope', 'mainService', function($scope, $routeParams, $rootScope, mainService) {
+app.controller('blogController', ['$http', '$scope', '$routeParams', '$rootScope', 'mainService', function($http, $scope, $routeParams, $rootScope, mainService) {
     $rootScope.scrollToTop();
     mainService.init($routeParams);
     $scope.enterpriseLink=$rootScope.currentLang!='hy'?$rootScope.currentLang: 'ru';
-    $scope.news=[ {
-        title: 'All About App Search: Indexing, Ranking Factors, Universal Links, and More - Whiteboard Friday', text: 'App search is growing and changing, and there\'s more opportunity than ever to both draw customers in at the top of the funnel and retain them at the bottom. In today\'s special British Whiteboard Friday, Tom Anthony and Will Critchlow of Distilled dig into everything app search and highlight a future where Google may have some competition as the search engine giant.', date: 'May 20th, 2016', img: '1.png', slug: 'news1'
-    }
-        , {
-            title: 'All About App Search: Indexing, Ranking Factors, Universal Links, and More - Whiteboard Friday', text: 'App search is growing and changing, and there\'s more opportunity than ever to both draw customers in at the top of the funnel and retain them at the bottom. In today\'s special British Whiteboard Friday, Tom Anthony and Will Critchlow of Distilled dig into everything app search and highlight a future where Google may have some competition as the search engine giant.', date: 'May 20th, 2016', img: '1.png', slug: 'news1'
-        }
-        , {
-            title: 'All About App Search: Indexing, Ranking Factors, Universal Links, and More - Whiteboard Friday', text: 'App search is growing and changing, and there\'s more opportunity than ever to both draw customers in at the top of the funnel and retain them at the bottom. In today\'s special British Whiteboard Friday, Tom Anthony and Will Critchlow of Distilled dig into everything app search and highlight a future where Google may have some competition as the search engine giant.', date: 'May 20th, 2016', img: '1.png', slug: 'news1'
-        }
-        , {
-            title: 'All About App Search: Indexing, Ranking Factors, Universal Links, and More - Whiteboard Friday', text: 'App search is growing and changing, and there\'s more opportunity than ever to both draw customers in at the top of the funnel and retain them at the bottom. In today\'s special British Whiteboard Friday, Tom Anthony and Will Critchlow of Distilled dig into everything app search and highlight a future where Google may have some competition as the search engine giant.', date: 'May 20th, 2016', img: '1.png', slug: 'news1'
-        }
-        , {
-            title: 'All About App Search: Indexing, Ranking Factors, Universal Links, and More - Whiteboard Friday', text: 'App search is growing and changing, and there\'s more opportunity than ever to both draw customers in at the top of the funnel and retain them at the bottom. In today\'s special British Whiteboard Friday, Tom Anthony and Will Critchlow of Distilled dig into everything app search and highlight a future where Google may have some competition as the search engine giant.', date: 'May 20th, 2016', img: '1.png', slug: 'news1'
-        }
-        , {
-            title: 'All About App Search: Indexing, Ranking Factors, Universal Links, and More - Whiteboard Friday', text: 'App search is growing and changing, and there\'s more opportunity than ever to both draw customers in at the top of the funnel and retain them at the bottom. In today\'s special British Whiteboard Friday, Tom Anthony and Will Critchlow of Distilled dig into everything app search and highlight a future where Google may have some competition as the search engine giant.', date: 'May 20th, 2016', img: '1.png', slug: 'news1'
-        }
-    ];
+    $http({url:"/api/getArticles", method:"POST", data: {lang : $rootScope.currentLang}}
+    ).success(function(articles) {
+        $scope.news = articles;
+    });
     var Share= {
             vkontakte:function(purl, ptitle, pimg, text) {
                 url='http://vkontakte.ru/share.php?';
@@ -757,14 +684,20 @@ app.controller('blogController', ['$scope', '$routeParams', '$rootScope', 'mainS
 }
 
 ]);
-app.controller('articleController', ['$scope', '$routeParams', '$rootScope', 'mainService', function($scope, $routeParams, $rootScope, mainService) {
+app.controller('articleController', ['$http', '$scope', '$routeParams', '$rootScope', 'mainService', function($http, $scope, $routeParams, $rootScope, mainService) {
     $rootScope.scrollToTop();
     mainService.init($routeParams);
     $scope.enterpriseLink=$rootScope.currentLang!='hy'?$rootScope.currentLang: 'ru';
-    $scope.article= {
-        title: 'All About App Search: Indexing, Ranking Factors, Universal Links, and More - Whiteboard Friday', text: 'App search is growing and changing, and there\'s more opportunity than ever to both draw customers in at the top of the funnel and retain them at the bottom. In today\'s special British Whiteboard Friday, Tom Anthony and Will Critchlow of Distilled dig into everything app search and highlight a future where Google may have some competition as the search engine giant.', date: 'May 20th, 2016', img: '1.png', slug: 'news1'
-    }
-    ;
+    $http({url:"/api/getArticle", method:"POST", data: {lang: $rootScope.currentLang, slug: $routeParams.slug}}
+    ).success(function(product) {
+            if(!product.error) {
+                $scope.article=product;
+            }
+            else {
+                //$location.path("/"+$rootScope.currentLang+"/404")
+            }
+        }
+    );
     var Share= {
             vkontakte:function(purl, ptitle, pimg, text) {
                 url='http://vkontakte.ru/share.php?';
