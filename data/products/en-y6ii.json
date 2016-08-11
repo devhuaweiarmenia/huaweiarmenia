@@ -1,44 +1,39 @@
 {
   "lang": "en",
-  "slug": "g730",
+  "slug": "y6ii",
   "img": [
-    "1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"
+    "1.jpg","2.jpg","3.jpg","4.jpg"
   ],
-  "title": "G730",
+  "title": "Y6II",
   "shortDescr": [
-    ""
+    "New Vision. New Start"
   ],
-  "price": "67.900 AMD",
+  "price": "N/A",
   "overview": [
     {
-      "title": "A Larger Than Life Experience",
-      "text": "The 14 cm (5.5 inch) qHD screen of Ascend G730 brings every detail of your world to life. Be it the excitement of a car race or the life like pictures of your loved ones, the large screen of the Ascend G730 shows everything in vivid detail. This screen comes with the 5 point touch feature that takes the user experience to a whole new level.",
+      "title": "Make Life Bolder, Brighter, More Colorful",
+      "text": "Huawei Y6II’s new larger dynamic 1280x720 resolution display is crystal clear and rivals top digital screens, immersing you in the vivid colors and vibrancy of life in a whole new way. The durable GFF transparent lamination protects the display from scratches to ensure long-lasting brightness.",
       "img" : "a1.jpg"
     },
     {
-      "title": "Seize The Moment With Great Clarity",
-      "text": "The Ascend G730 comes with the dual camera that allows you to seize all your special moments with great clarity. The 5MP AF camera gives you clear pictures even in low lit areas. Special features like face detection and tracking, panorama from four directions, smile shutter and facial beautification add wings to your creativity. For great selfies and flawless video chats you can rely on the 0.3MP secondary camera of the phone.",
+      "title": "Customized Curves",
+      "text": "Don’t let anything slip away. The rounded curves of the 5.5-inch Huawei Y6II were designed for easy one-handed use, offering the greatest display size, best design and greatest comfort.",
       "img" : "a2.jpg"
     },
     {
-      "title": "Dual SIM/Dual Standby",
-      "text": "The Dual SIM/Dual Standby feature of the Huawei Ascend G730 opens up a world of possibilities for you. You can easily manage your professional and personal contacts by using this feature. Now, you can maintain a good work-life balance and at the same time can enhance your communication with people at large.",
+      "title": "Android 6.0 + EMUI",
+      "text": "Based on Android 6.0, the Y6II uses the EMUI4.1 operating system, using cutting-edge software to drive a breathtaking user experience. The built-in phone manager monitors power consumption for extended battery life, and cleans and optimizes the devices O.S., while the App Lock and Do Not Disturb functions protect user privacy.",
       "img" : "a3.jpg"
-    },
-    {
-      "title": "Fastest Downloads",
-      "text": "The Huawei Ascend G730 uses the latest HSPA+ technology to give your download speeds up to HSPA+ 21 Mbps and upload speed of HSUPA 5.76 Mbps. Be it your favourite video, game or graphics, you can download them at lightning speed.",
-      "img" : "a4.jpg"
     }
   ],
   "specification": [
     {
       "title": "Size",
       "text": [
-        "Height<br>149,5mm",
-        "Width<br>78mm",
-        "Depth<br>9.6mm",
-        "Weight<br>About 180g"
+        "Height<br>154.3mm",
+        "Width<br>77mm",
+        "Depth<br>8.45mm",
+        "Weight<br>168g (including battery)"
       ]
     },
     {
@@ -51,209 +46,83 @@
     {
       "title": "Display",
       "text": [
-        "Size : 5.5 inch qHD screen",
-        "Resolution : 960x540 pixels"
+        "5.5inch HD"
       ]
     },
     {
       "title": "CPU",
       "text": [
-        "Quad-core 1.3GHz processor"
+        "Krin620/MSM8952 (only for CAM-L32)"
       ]
     },
     {
       "title": "Operation System",
       "text": [
-        "Android OS v4.2 / Emui 2.0"
+        "Android M"
       ]
     },
     {
       "title": "Memory",
       "text": [
-        "RAM: 1GB",
-        "ROM: 4GB",
-        "Micro SD Card up to 32 GB"
+        "RAM: 2 GB",
+        "ROM: 16 GB"
       ]
     },
     {
       "title": "Network",
       "text": [
-        "Dual SIM",
-        "HSPA+: 21Mbps(DL); 5,76Mbps(UL)",
-        "GSM 850 / 900 / 1800 / 1900 MHz"
+        "2G <br> GSM: 850/900/1800/1900",
+        "3G <br>CAM-L03/CAM- L23: UMTS:850/900/1900/AWS/2100 <br>CAM-L21: UMTS:850/900/1900/2100 <br>CAM-L32: UMTS:850/900/2100",
+        "4G <br>CAM-L03/CAM- L23: FDD:B2/B4/B5/B7/B28 <br>CAM-L21: FDD:B1/B3/B8/B20 <br>CAM-L32: FDD:B1/B3/B5/B7/B8/B26"
       ]
     },
     {
       "title": "GPS",
       "text": [
-        "GPS/AGPS"
+        "GPS/AGPS",
+        "Glonass"
       ]
     },
     {
       "title": "Connectivity",
       "text": [
-        "Wifi 802.11 b/g/n",
-        "BT+HS",
-        "Micro USB (High Speed USB)"
+        "WIFI 2.4Ghz 802.11 b/g/n",
+        "BT4.1/BT4.0 LE"
       ]
     },
     {
       "title": "Sensors",
       "text": [
         "Accelerometer",
-        "Proximity Sensor"
+        "Proximity Sensor",
+        "Compass",
+        "Ambient light sensor"
       ]
     },
     {
       "title": "Camera",
       "text": [
-        "Rear camera: 5.0MP",
-        "Front camera: 0.3MP"
+        "Rear camera: 13 MP",
+        "Front camera: 8 MP"
       ]
     },
     {
       "title": "Audio",
       "text": [
-        "Audio: MP3, AAC+, Enhanced AAC etc",
-        "3.5mm Headset Connector"
+        "MP3/AMR-NB/AAC"
       ]
     },
     {
       "title": "Video",
       "text": [
-        "30fps (MP4 / H.263 / H.264 ) FWVGA decode",
-        "MPEG4 720P 30fps，MPEG4 720p, 30fps SP,level 0-3；H.264 720p,30fps,HP,level 0-3"
+        "H.263/H.264/MPEG-4"
       ]
     },
     {
       "title": "Battery",
       "text": [
-        "Capacity: 2300 mAh"
+        "Capacity: 3000mAh (not removable)"
       ]
     }
   ]
 }
-
-Y6II
-
-New Vision. New Start
-
-Make Life Bolder, Brighter, More Colorful
-
-Huawei Y6II’s new larger dynamic 1280x720 resolution display is crystal clear and rivals top
-
-digital screens, immersing you in the vivid colors and vibrancy of life in a whole new way. The
-
-durable GFF transparent lamination protects the display from scratches to ensure long-lasting
-
-brightness.
-
-Customized Curves
-
-Don’t let anything slip away. The rounded curves of the 5.5-inch Huawei Y6II were designed for
-
-easy one-handed use, offering the greatest display size, best design and greatest comfort.
-
-Android 6.0 + EMUI
-
-Based on Android 6.0, the Y6II uses the EMUI4.1 operating system, using cutting-edge software
-
-to drive a breathtaking user experience. The built-in phone manager monitors power
-
-consumption for extended battery life, and cleans and optimizes the devices O.S., while the App
-
-Lock and Do Not Disturb functions protect user privacy.
-
- Size Height
-
-154.3mm
-
-Width
-
-77mm
-
-Depth
-
-8.45mm
-
-Weight
-
-About 168g (including battery)
-
- Color
-
-Black/White/Gold/Pink/Blue/Yellow *The product color may vary in different countries and areas.
-
- Display
-
-5.5inch HD
-
- CPU
-
-Krin620/MSM8952 (only for CAM-L32)
-
- Operation System
-
-Android M
-
- Memory
-
-RAM 2GB+ ROM 16GB
-
- Network
-
-4G
-
-CAM-L03/CAM- L23: FDD:B2/B4/B5/B7/B28
-
-CAM-L21: FDD:B1/B3/B8/B20
-
-CAM-L32: FDD:B1/B3/B5/B7/B8/B26
-
-3G
-
-CAM-L03/CAM- L23: UMTS:850/900/1900/AWS/2100
-
-CAM-L21: UMTS:850/900/1900/2100
-
-CAM-L32: UMTS:850/900/2100
-
-2G
-
-GSM: 850/900/1800/1900
-
- GPS
-
-GPS (AGPS)/Clonass
-
- Connectivity
-
-WIFI 2.4Ghz 802.11 b/g/n+BT4.1/BT4.0 LE
-
- Sensors
-
-proximity/accelerate/compass/Ambient light sensor
-
- Camera
-
-Front: 8M; Back: 13M
-
- Audio
-
-MP3/AMR-NB/AAC
-
- Video
-
-H.263/H.264/MPEG-4
-
- EMUI
-
-EMUI 4.1
-
- Battery
-
-3000mAh (not removable)
-
- In the box
-
-Battery*1, USB Cable*1, Charger*1, QSG*1
