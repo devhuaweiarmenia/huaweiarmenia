@@ -692,6 +692,8 @@ app.controller('articleController', ['$http', '$scope', '$routeParams', '$rootSc
     ).success(function(product) {
             if(!product.error) {
                 $scope.article=product;
+                $scope.article.innerLink = '../../data/blog/'+ $rootScope.currentLang + '-' + $routeParams.slug + '.html'; 
+                console.log($scope.article.innerLink)
             }
             else {
                 //$location.path("/"+$rootScope.currentLang+"/404")
