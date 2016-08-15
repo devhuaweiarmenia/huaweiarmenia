@@ -420,87 +420,31 @@ app.config(['$routeProvider', '$locationProvider', '$translateProvider', functio
 app.run(['$rootScope', '$routeParams', '$route', '$location', '$timeout', '$translate', 'mainService', function($rootScope, $routeParams, $route, $location, $timeout, $translate, mainService) {
     $rootScope.$on("$routeChangeSuccess", function(event, current) {
             $rootScope.currentRoute=location.pathname.slice(4);
+            $(".header-nav-item").find('.dd-sub-menu').hide();
         }
     );
 }
 
 ]);
 app.controller('mainController', ['$http', '$routeParams', '$scope', '$rootScope', '$sce', 'mainService', function($http, $routeParams, $scope, $rootScope, $sce, mainService) {
-    $scope.appStart=false;
-    console.log(location.hostname);
-    if(location.hostname!='huaweiarmenia.am') {
-        $scope.appStart=true;
-    }
-    console.log($scope.appStart);
-    $scope.menuLinks= {
-        smartphones:[ {
-            title: 'Nexus 6P', slug: 'nexus-6p'
+    $scope.appStart=true;
+    $(".header-nav-item").hover(
+        function () {
+            $(this).find('.dd-sub-menu').show();
+        },
+        function () {
+            $(this).find('.dd-sub-menu').hide();
         }
-            , {
-                title: 'G6', slug: 'g6'
-            }
-            , {
-                title: 'G730', slug: 'g730'
-            }
-            , {
-                title: 'Honor 3', slug: 'honor3'
-            }
-            , {
-                title: 'Honor 3X', slug: 'honor-3x'
-            }
-            , {
-                title: 'Honor 4C', slug: 'honor-4c'
-            }
-            , {
-                title: 'Honor 4X', slug: 'honor-4x'
-            }
-            , {
-                title: 'Honor 7', slug: 'honor-7'
-            }
-            , {
-                title: 'P8 lite', slug: 'nexus-6p'
-            }
-            , {
-                title: 'P8', slug: 'p8'
-            }
-            , {
-                title: 'P6 S', slug: 'p6-s'
-            }
-            , {
-                title: 'Y220', slug: 'y220'
-            }
-            , {
-                title: 'Y330', slug: 'y330'
-            }
-            , {
-                title: 'Y541', slug: 'y541'
-            }
-            , {
-                title: 'Y625', slug: 'y625'
-            }
-            , {
-                title: 'Honor 5X', slug: 'honor-5x'
-            }
-        ], tablets:[ {
-            title: 'MediaPad X1', slug: 'mediapad-x1'
-        }
-            , {
-                title: 'MediaPad T1 7 3G', slug: 'mediapad-t1-7'
-            }
-            , {
-                title: 'MediaPad T1 8 4G', slug: 'mediapad-t1-8'
-            }
-        ]
-    }
-    ;
-    $scope.productsSubmenu=[ {
-        title: "Huawei P8", description: "5.2\" Dual SIM smartphone with IPS LCD display", img: "/img/header-menu/6p.png", slug: "huawei-p8"
-    }
-        , {
-            title: "Huawei Honor 7", description: "5.2\" Dual SIM smartphone with IPS-NEO LCD display", img: "/img/header-menu/6p.png", slug: "huawei-honor-7"
-        }
-        , {
-            title: "Huawei NEXUS 6P", description: "5.7\" Single SIM smartphone with AMOLED displayy", img: "/img/header-menu/6p.png", slug: "huawei-nexus-6p"
+    );
+    $scope.productsSubmenu=[
+        {
+            title: "Huawei P9", description: "", img: "/img/main-products/p9.png", slug: "huawei-p9"
+        },
+        {
+            title: "Huawei P9 Lite", description: "", img: "/img/main-products/p9-lite.png", slug: "p9-lite"
+        },
+        {
+            title: "Honor 5X", description: "", img: "/img/main-products/honor-5x.png", slug: "honor-5x"
         }
     ];
     $scope.trustSrc=function(src) {
@@ -535,58 +479,87 @@ app.controller('mainController', ['$http', '$routeParams', '$scope', '$rootScope
 ]);
 app.controller('homeController', ['$http', '$scope', '$rootScope', '$location', '$timeout', '$routeParams', '$translate', 'mainService', function($http, $scope, $rootScope, $location, $timeout, $routeParams, $translate, mainService) {
     $rootScope.scrollToTop();
-    $scope.videoLink='';
-    $scope.showVideo=false;
+    $scope.videoLink = '';
+    $scope.showVideo = false;
     mainService.init($routeParams);
-    $scope.homeSlider=[ {
-        title: 'Ascend Honor 4C', img: '/img/slider/111.jpg', description: "\- Three-segment ultra slim frame design <br> - Innovative design <br> - Strong signal reception delivers stable call experience <br>"
-    }
-        , {
-            title: 'Ascend Honor 4C', img: '/img/slider/111.jpg', description: "\- Three-segment ultra slim frame design <br> - Innovative design <br> - Strong signal reception delivers stable call experience <br>"
-        }
-        , {
-            title: 'Ascend Honor 4C', img: '/img/slider/111.jpg', description: "\- Three-segment ultra slim frame design <br> - Innovative design <br> - Strong signal reception delivers stable call experience <br>"
+    $scope.homeSlider = [
+        {
+            title: 'Ascend Honor 4C', img: '/img/slider/111.jpg', description: "", slug: "honor-5x"
+        },
+        {
+            title: 'Ascend Honor 4C', img: '/img/slider/222.jpg', description: "", slug: "huawei-p9"
+        },
+        {
+            title: 'Ascend Honor 4C', img: '/img/slider/333.jpg', description: "", slug: "y6ii"
+        },
+    ];
+    $scope.productsMain = [
+        {
+            title: "Huawei Y5 II", description: "", img: "/img/main-products/y5ii.png", slug: "y5ii"
+        },
+        {
+            title: "Huawei P6S", description: "", img: "/img/main-products/p6s.png", slug: "p6s"
+        },
+        {
+            title: "Huawei Y6 II", description: "", img: "/img/main-products/y6ii.png", slug: "y6ii"
+        },
+        {
+            title: "Huawei P9", description: "", img: "/img/main-products/p9.png", slug: "huawei-p9"
+        },
+        {
+            title: "Huawei P9 Lite", description: "", img: "/img/main-products/p9-lite.png", slug: "p9-lite"
+        },
+        {
+            title: "Honor 5X", description: "", img: "/img/main-products/honor-5x.png", slug: "honor-5x"
         }
     ];
-    $scope.productsMain=[ {
-        title: "Huawei NEXUS 6P", description: "5.7\" Single SIM smartphone with AMOLED displayy", img: "/img/main-products/Huawei NEXUS 6P.png", slug: "huawei-nexus-6p"
-    }
-        , {
-            title: "Huawei NEXUS 6P", description: "5.7\" Single SIM smartphone with AMOLED displayy", img: "/img/main-products/Huawei NEXUS 6P.png", slug: "huawei-nexus-6p"
-        }
-        , {
-            title: "Huawei NEXUS 6P", description: "5.7\" Single SIM smartphone with AMOLED displayy", img: "/img/main-products/Huawei NEXUS 6P.png", slug: "huawei-nexus-6p"
-        }
-        , {
-            title: "Huawei NEXUS 6P", description: "5.7\" Single SIM smartphone with AMOLED displayy", img: "/img/main-products/Huawei NEXUS 6P.png", slug: "huawei-nexus-6p"
-        }
-        , {
-            title: "Huawei NEXUS 6P", description: "5.7\" Single SIM smartphone with AMOLED displayy", img: "/img/main-products/Huawei NEXUS 6P.png", slug: "huawei-nexus-6p"
-        }
-        , {
-            title: "Huawei NEXUS 6P", description: "5.7\" Single SIM smartphone with AMOLED displayy", img: "/img/main-products/Huawei NEXUS 6P.png", slug: "huawei-nexus-6p"
-        }
-        , {
-            title: "Huawei NEXUS 6P", description: "5.7\" Single SIM smartphone with AMOLED displayy", img: "/img/main-products/Huawei NEXUS 6P.png", slug: "huawei-nexus-6p"
-        }
-    ];
-    $scope.mainVideos=[ {
-        title: 'Huawei P8', img: '/img/video/p9.png', text: 'Smartphone Huawei P8!', link: 'https://www.youtube.com/embed/uPV7v1SUDkY'
-    }
-    ];
-    $scope.openVideoMain=function(link) {
-        $scope.showVideo=true;
-        $scope.videoLink=link;
-    }
-    ;
-    $scope.closeVideo=function() {
-        $scope.showVideo=false;
-        $scope.videoLink='';
-    }
-    ;
-}
+    $scope.mainVideos = [{
+        title: 'Huawei P8',
+        img: '/img/video/p9.png',
+        text: 'Smartphone Huawei P8!',
+        link: 'https://www.youtube.com/embed/'
+    }];
+    // $scope.videoLink = link;
+    // $scope.openVideoMain = function (link) {
+    //     $scope.showVideo = true;
+    //     $scope.videoLink = link;
+    // }
+    // ;
+    // $scope.closeVideo = function () {
+    //     $scope.showVideo = false;
+    //     $scope.videoLink = '';
+    // };
 
-]);
+    var tag = document.createElement('script');
+    tag.src = "http://www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+
+    window.onYouTubePlayerAPIReady = function() {
+        player = new YT.Player('ytplayer', {
+            height: $(window).width() < 1024 ? "100%" : 675,
+            width: $(window).width() < 1024 ? "100%" : 1200,
+            playerVars: {
+                autoplay: 0
+            },
+            videoId: '4Zpj7vIhgBk'
+        });
+        $(window).scroll(function () {
+            $("iframe").each(function () {
+                if ($(window).scrollTop() >= $(this).offset().top - $("#ytplayer").height() - $("#block-footerLinks").height()) {
+                    player.playVideo();
+                } else {
+                    player.pauseVideo();
+                }
+            });
+        });
+    };
+
+
+
+}]);
 app.controller('smartphonesController', ['$http', '$scope', '$rootScope', '$location', '$timeout', '$routeParams', '$translate', 'mainService', function($http, $scope, $rootScope, $location, $timeout, $routeParams, $translate, mainService) {
     $rootScope.scrollToTop();
     mainService.init($routeParams);
