@@ -53,18 +53,20 @@ var options = {
     cert: fs.readFileSync('keys/huaweiarmenia_am.crt')
 };
 
-if (process.env.NODE_ENV != 'production') {
-    console.log(port)
-    var server = app.listen(port, function() {
-        console.log("listening on " + port);
-    });
-}
-else {
-    var server = https.createServer(options, app).listen(port, function(){
-        console.log("Express server listening on port " + port);
-    });
-}
-
+// if (process.env.NODE_ENV != 'production') {
+//     console.log(port)
+//     var server = app.listen(port, function() {
+//         console.log("listening on " + port);
+//     });
+// }
+// else {
+//     var server = https.createServer(options, app).listen(port, function(){
+//         console.log("Express server listening on port " + port);
+//     });
+// }
+var server = https.createServer(options, app).listen(port, function(){
+    console.log("Express server listening on port " + port);
+});
 //
 // var subscriber = JSON.stringify({
 //     "email_address": "test@test.com",
