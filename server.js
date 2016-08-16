@@ -64,9 +64,12 @@ var options = {
 //         console.log("Express server listening on port " + port);
 //     });
 // }
-var server = https.createServer(options, app).listen(port, function(){
-    console.log("Express server listening on port " + port);
-});
+// var server = https.createServer(options, app).listen(port, function(){
+//     console.log("Express server listening on port " + port);
+// });
+    var server = app.listen(port, function() {
+        console.log("listening on " + port);
+    });
 //
 // var subscriber = JSON.stringify({
 //     "email_address": "test@test.com",
