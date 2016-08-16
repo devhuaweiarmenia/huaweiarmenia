@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var app = express();
 var redis = require('redis');
 var http = require('http');
+var https = require('https');
 var compression = require('compression');
 
 mongoose = require('mongoose');
@@ -47,29 +48,47 @@ require('middleware/mongooseModels.js')(app, mongoose);
 
 productsSchema = mongoose.model('products', huaweiModels.product);
 
-var server = app.listen(port || 901, function() {
-    console.log("listening on " + port);
-});
+if (process.env.NODE_ENV === 'production') {
+    var options = {
+        key: fs.readFileSync('keys/priv.key'),
+        cert: fs.readFileSync('keys/server.srt')
+    };
+    https.createServer(options, app).listen(app.get("port"), function () {
+        console.log("Express server listening on port " + app.get("port"));
+    });
+    app.listen(app.get("port"), function () {
+        console.log("Express server listening on port " + app.get('port'));
+    });
+}
+else {
+    var server = app.listen(port || 901, function() {
+        console.log("listening on " + port);
+    });
+}
 
-var subscriber = JSON.stringify({
-    "email_address": "test@test.com",
-    "status": "subscribed",
-    "merge_fields": {
-        "FNAME": "Tester",
-        "LNAME": "Testerson"
-    }
-});
 
-var options = {
-    host: 'us13.api.mailchimp.com',
-    path: '/3.0/lists/403ece5b2c/members',
-    method: 'POST',
-    headers: {
-        'Authorization': 'apikey a756db21ca45ac2c287198217355ecd2-us13',
-        'Content-Type': 'application/json',
-        'Content-Length': subscriber.length
-    }
-};
+
+
+
+// var subscritber = JSON.stringify({
+//     "email_address": "test@test.com",
+//     "status": "subscribed",
+//     "merge_fields": {
+//         "FNAME": "Tester",
+//         "LNAME": "Testerson"
+//     }
+// });
+//
+// var options = {
+//     host: 'us13.api.mailchimp.com',
+//     path: '/3.0/lists/403ece5b2c/members',
+//     method: 'POST',
+//     headers: {
+//         'Authorization': 'apikey a756db21ca45ac2c287198217355ecd2-us13',
+//         'Content-Type': 'application/json',
+//         'Content-Length': subscriber.length
+//     }
+// };
 
 // var hreq = http.request(options, function (hres) {
 //     console.log('STATUS CODE: ' + hres.statusCode);
