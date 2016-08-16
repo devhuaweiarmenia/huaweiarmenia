@@ -3,11 +3,12 @@
  */
 
 var express = require('express');
-var fs = require('fs');
+fs = require('fs');
 var bodyParser = require('body-parser');
 var app = express();
 var redis = require('redis');
 var http = require('http');
+var https = require('https');
 var compression = require('compression');
 
 mongoose = require('mongoose');
@@ -56,9 +57,23 @@ require('middleware/mongooseModels.js')(app, mongoose);
 
 productsSchema = mongoose.model('products', huaweiModels.product);
 
-var server = app.listen(port, function() {
-    console.log("listening on " + port);
-});
+var options = {
+    key: fs.readFileSync('keys/key.pem'),
+    cert: fs.readFileSync('keys/huaweiarmenia_am.crt')
+};
+
+if (process.env.NODE_ENV != 'production') {
+    console.log(port)
+    var server = app.listen(port, function() {
+        console.log("listening on " + port);
+    });
+}
+else {
+    var server = https.createServer(options, app).listen(port, function(){
+        console.log("Express server listening on port " + port);
+    });
+}
+
 //
 // var subscriber = JSON.stringify({
 //     "email_address": "test@test.com",
