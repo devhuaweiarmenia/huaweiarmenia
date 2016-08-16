@@ -362,6 +362,10 @@ app.config(['$routeProvider', '$locationProvider', '$translateProvider', functio
             templateUrl: '/templates/home.html', controller: 'homeController'
         }
     );
+    $routeProvider.when("/EBC5C5CA1C7BADE743477D22918D1072.txt", {
+            templateUrl: '../EBC5C5CA1C7BADE743477D22918D1072.txt', controller: 'homeController'
+        }
+    );
     $routeProvider.when("/:lang/", {
             templateUrl: '/templates/home.html', controller: 'homeController'
         }
