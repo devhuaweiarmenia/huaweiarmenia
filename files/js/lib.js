@@ -430,7 +430,7 @@ app.run(['$rootScope', '$routeParams', '$route', '$location', '$timeout', '$tran
 }
 
 ]);
-app.controller('mainController', ['$http', '$routeParams', '$scope', '$rootScope', '$sce', 'mainService', function($http, $routeParams, $scope, $rootScope, $sce, mainService) {
+app.controller('mainController', ['$http', '$routeParams', '$scope', '$rootScope', '$sce', '$location', function($http, $routeParams, $scope, $rootScope, $sce, $location) {
         $scope.appStart=false;
         console.log(location.hostname);
         if(location.hostname!='huaweiarmenia.am') {
@@ -479,7 +479,14 @@ app.controller('mainController', ['$http', '$routeParams', '$scope', '$rootScope
             $rootScope.leftMenu.visible=true;
         }
         , close:function() {
+            $rootScope.leftMenu.opened = {
+                products: false, abouts: false
+            };
             $rootScope.leftMenu.visible=false;
+        }
+        , goto:function(lang, route) {
+            $rootScope.leftMenu.visible=false;
+            $location.path("/"+lang+"/"+route);
         }
     }
 }
@@ -631,13 +638,14 @@ app.controller('blogController', ['$http', '$scope', '$routeParams', '$rootScope
     ).success(function(articles) {
         $scope.news = articles;
     });
+
     var Share= {
             vkontakte:function(purl, ptitle, pimg, text) {
                 url='http://vkontakte.ru/share.php?';
                 url+='url='+'http://'+location.hostname+$rootScope.preLink+'/news/article/'+encodeURIComponent(purl);
                 url+='&title='+encodeURIComponent(ptitle);
                 url+='&description='+encodeURIComponent(text);
-                url+='&image='+'http://'+location.hostname + '' +encodeURIComponent(pimg);
+                url+='&image='+'http://'+location.hostname + '/' + encodeURIComponent(pimg);
                 url+='&noparse=true';
                 Share.popup(url);
             }
