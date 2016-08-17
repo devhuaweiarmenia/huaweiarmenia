@@ -14,7 +14,7 @@ var compression = require('compression');
 mongoose = require('mongoose');
 uaParser = require('ua-parser');
 
-var port = parseInt(process.env.OPENSHIFT_NODEJS_PORT) || parseInt(process.env.PORT) ||  3000;
+var port = parseInt(process.env.OPENSHIFT_NODEJS_PORT) || parseInt(process.env.PORT) ||  901;
 
 var dbURI = 'mongodb://huaweiarmenia:huawei901@ds019970.mlab.com:19970/heroku_c5wd0q4r';
 
@@ -70,6 +70,9 @@ var options = {
     var server = app.listen(port, function() {
         console.log("listening on " + port);
     });
+    // var server = https.createServer(options, app).listen(port, function(){
+    //     console.log("Express server listening on port " + port);
+    // });
 //
 // var subscriber = JSON.stringify({
 //     "email_address": "test@test.com",

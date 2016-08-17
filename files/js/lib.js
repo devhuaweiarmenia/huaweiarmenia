@@ -637,7 +637,7 @@ app.controller('blogController', ['$http', '$scope', '$routeParams', '$rootScope
                 url+='url='+'http://'+location.hostname+$rootScope.preLink+'/news/article/'+encodeURIComponent(purl);
                 url+='&title='+encodeURIComponent(ptitle);
                 url+='&description='+encodeURIComponent(text);
-                url+='&image='+encodeURIComponent(pimg);
+                url+='&image='+'http://'+location.hostname + '' +encodeURIComponent(pimg);
                 url+='&noparse=true';
                 Share.popup(url);
             }
