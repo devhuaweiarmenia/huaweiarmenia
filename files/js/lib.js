@@ -610,6 +610,9 @@ app.controller('productController', ['$http', '$scope', '$routeParams', '$rootSc
     ).success(function(product) {
             if(!product.error) {
                 $scope.product=product;
+
+                $('head').append('meta property="og:image" content="https://huaweiarmenia.herokuapp.com/img/' + product.slug + '/'+encodeURIComponent(product.img[0]) + '" />');
+
                 if($scope.product.img.length>0)$scope.currentBigImg=$scope.product.img[0];
                 $scope.toggleBigImg=function(url) {
                     $scope.currentBigImg=url;
@@ -636,7 +639,7 @@ app.controller('productController', ['$http', '$scope', '$routeParams', '$rootSc
                 url+='&title='+encodeURIComponent(ptitle);
                 url+='&p[summary]='+encodeURIComponent(text);
                 url+='&u=' + encodeURIComponent(location.href);
-                //url+='&p[images][0]='+'https://huaweiarmenia.herokuapp.com/img/'+slug+'/'+encodeURIComponent(pimg);
+                url+='&p[images][0]='+'https://huaweiarmenia.herokuapp.com/img/'+slug+'/'+encodeURIComponent(pimg);
                 Share.popup(url);
             }
             , twitter:function(purl, ptitle) {
