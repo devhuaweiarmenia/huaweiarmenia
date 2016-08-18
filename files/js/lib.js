@@ -611,7 +611,7 @@ app.controller('productController', ['$http', '$scope', '$routeParams', '$rootSc
             if(!product.error) {
                 $scope.product=product;
 
-                $('head').append('meta property="og:image" content="https://huaweiarmenia.herokuapp.com/img/' + product.slug + '/'+encodeURIComponent(product.img[0]) + '" />');
+                $('head').append('<meta property="og:image" content="https://huaweiarmenia.herokuapp.com/img/' + product.slug + '/'+encodeURIComponent(product.img[0]) + '" />');
 
                 if($scope.product.img.length>0)$scope.currentBigImg=$scope.product.img[0];
                 $scope.toggleBigImg=function(url) {
