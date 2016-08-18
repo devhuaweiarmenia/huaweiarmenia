@@ -637,9 +637,7 @@ app.controller('productController', ['$http', '$scope', '$routeParams', '$rootSc
             , facebook:function(slug, ptitle, pimg, text) {
                 url='http://www.facebook.com/sharer.php?s=100';
                 url+='&title='+encodeURIComponent(ptitle);
-                url+='&p[summary]='+encodeURIComponent(text);
                 url+='&u=' + encodeURIComponent(location.href);
-                url+='&p[images][0]='+'https://huaweiarmenia.herokuapp.com/img/'+slug+'/'+encodeURIComponent(pimg);
                 Share.popup(url);
             }
             , twitter:function(purl, ptitle) {
