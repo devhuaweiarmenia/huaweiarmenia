@@ -46,6 +46,12 @@
                                 </span>
                             </div>
                         </div>
+                        <div class="article-social">
+                            <div class="article-social-item f-link" ng-click="shareIt.facebook(product.slug, product.title, product.img[0], product.meta_desc)"></div>
+                            <div class="article-social-item t-link" ng-click="shareIt.twitter(product.slug, product.title)"></div>
+                            <div class="article-social-item g-link" ng-click="shareIt.google(product.slug)"></div>
+                            <div class="article-social-item b-link" ng-click="shareIt.vkontakte(product.slug, product.title, product.img[0], product.text.slice(120))"></div>
+                        </div>
                         <div style="clear:both"></div>
                     </div>
                     <div class="clearer"></div>
@@ -113,3 +119,9 @@
 
     </div>
 </div>
+
+<style>
+    .article-social-item {
+        background-image: url(../../img/sprite.png) !important;
+    }
+</style>

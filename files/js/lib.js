@@ -620,6 +620,43 @@ app.controller('productController', ['$http', '$scope', '$routeParams', '$rootSc
             }
         }
     );
+    console.log(location)
+    var Share= {
+            vkontakte:function(slug, ptitle, pimg, text) {
+                url='http://vkontakte.ru/share.php?';
+                url+='url='+encodeURIComponent(location.href);
+                url+='&title='+encodeURIComponent(ptitle);
+                url+='&description='+encodeURIComponent(text);
+                url+='&image='+'https://huaweiarmenia.herokuapp.com/img/'+slug+'/'+encodeURIComponent(pimg);
+                url+='&noparse=true';
+                Share.popup(url);
+            }
+            , facebook:function(slug, ptitle, pimg, text) {
+                url='http://www.facebook.com/sharer.php?s=100';
+                url+='&title='+encodeURIComponent(ptitle);
+                url+='&p[summary]='+encodeURIComponent(text);
+                url+='&u=' + encodeURIComponent(location.href);
+                //url+='&p[images][0]='+'https://huaweiarmenia.herokuapp.com/img/'+slug+'/'+encodeURIComponent(pimg);
+                Share.popup(url);
+            }
+            , twitter:function(purl, ptitle) {
+                url='http://twitter.com/share?';
+                url+='text='+encodeURIComponent(ptitle.replace(/<\S[^><]*>/g, ''));
+                url+='&url=' + encodeURIComponent(location.href);
+                url+='&counturl='+encodeURIComponent(purl);
+                Share.popup(url);
+            }
+            , google:function(purl) {
+                url='https://plus.google.com/share?';
+                url+='url=' + encodeURIComponent(location.href);
+                Share.popup(url);
+            }
+            , popup:function(url) {
+                window.open(url, '', 'toolbar=0,status=0,width=626,height=436');
+            }
+        }
+        ;
+    $scope.shareIt=Share;
 }
 
 ]);
