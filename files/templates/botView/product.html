@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><%= data.seo.title1 %><%= data.seo.title2 %></title>
+    <meta name="description" content="<%= data.seo.meta_description %>" />
+    <meta name="keywords" content="<%= data.seo.meta_keywords %>">
+    <meta property="og:site_name" content="<%= data.seo.title %>"/>
+    <meta property="og:title" content=" <%= data.seo.title %>" />
+    <meta property="og:url" content="<%= data.seo.url %>" />
+    <meta property="og:image" content="<%= data.seo.img %>" />
+    <meta property="og:description" content=" <%= data.seo.meta_description %>" />
+    <% for(var link in data.seo.lang_links) {%>
+        <link rel="alternate" href=" <%= data.seo.lang_links[link].href %> " hreflang="<%= data.seo.lang_links[link].lang %>" />
+    <% } %>
+    <% for(var link in data.seo.social_links) {%>
+        <link rel="publisher" href=" <%= data.seo.social_links[link] %> " />
+    <% } %>
+    <style>
+        .film_block img,
+        .film_block div.info{
+            vertical-align: top;
+            display: inline-block;
+        }
+        .film_block{
+            margin: 5px 0;
+        }
+        .info {
+            width: 85%;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1><%= data.seo.site_title %></h1>
+<footer>
+    <% for(var link in data.seo.social_links) {%>
+        <a href=" <%= data.seo.social_links[link] %> "> <%= data.seo.social_links[link] %></a>
+    <% } %>
+</footer>
+
+<h1><%= data.seo.title1 %><%= data.seo.title2 %></h1>
+
+</body>
+</html>
