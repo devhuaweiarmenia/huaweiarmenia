@@ -431,11 +431,11 @@ app.run(['$rootScope', '$routeParams', '$route', '$location', '$timeout', '$tran
 
 ]);
 app.controller('mainController', ['$http', '$routeParams', '$scope', '$rootScope', '$sce', '$location', function($http, $routeParams, $scope, $rootScope, $sce, $location) {
-        $scope.appStart=false;
-        console.log(location.hostname);
-        if(location.hostname!='huaweiarmenia.am') {
-                $scope.appStart=true;
-            }
+        $scope.appStart=true;
+        // console.log(location.hostname);
+        // if(location.hostname!='huaweiarmenia.am') {
+        //         $scope.appStart=true;
+        //     }
     $(".header-nav-item").hover(
         function () {
             $(this).find('.dd-sub-menu').show();
