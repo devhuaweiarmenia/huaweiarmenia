@@ -9,6 +9,7 @@
     <meta property="og:title" content="<%= data.seo.title2 %> | <%= data.seo.title1 %>" />
     <meta property="og:url" content="<%= data.seo.url %>" />
     <meta property="og:description" content=" <%= data.seo.meta_description %>" />
+    <meta property="og:image" content="<%= data.seo.img %>" />
     <% for(var link in data.seo.lang_links) {%>
         <link rel="alternate" href=" <%= data.seo.lang_links[link].href %> " hreflang="<%= data.seo.lang_links[link].lang %>" />
     <% } %>
