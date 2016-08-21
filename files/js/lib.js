@@ -502,11 +502,11 @@ app.controller('homeController', ['$http', '$scope', '$rootScope', '$location', 
             title: 'Ascend Honor 4C', img: '/img/slider/111.jpg', description: "", slug: "honor-5x"
         },
         {
-            title: 'Ascend Honor 4C', img: '/img/slider/222.jpg', description: "", slug: "huawei-p9"
+            title: "Huawei P9", img: '/img/slider/222.jpg', description: "", slug: "huawei-p9"
         },
         {
-            title: 'Ascend Honor 4C', img: '/img/slider/333.jpg', description: "", slug: "y6ii"
-        },
+            title: 'Huawei Y5II', img: '/img/slider/333.jpg', description: "", slug: "y6ii"
+        }
     ];
     $scope.productsMain = [
         {
