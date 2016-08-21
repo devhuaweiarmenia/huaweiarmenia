@@ -2,11 +2,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title><%= data.seo.title1 %><%= data.seo.title2 %></title>
+    <title><%= data.seo.title2 %> : <%= data.seo.title1 %></title>
     <meta name="description" content="<%= data.seo.meta_description %>" />
     <meta name="keywords" content="<%= data.seo.meta_keywords %>">
-    <meta property="og:site_name" content="<%= data.seo.title %>"/>
-    <meta property="og:title" content=" <%= data.seo.title %>" />
+    <meta property="og:site_name" content="<%= data.seo.title2 %> : <%= data.seo.title1 %>"/>
+    <meta property="og:title" content="<%= data.seo.title2 %> : <%= data.seo.title1 %>" />
     <meta property="og:url" content="<%= data.seo.url %>" />
     <meta property="og:image" content="<%= data.seo.img %>" />
     <meta property="og:description" content=" <%= data.seo.meta_description %>" />
@@ -33,7 +33,7 @@
 </head>
 <body>
 
-<h1><%= data.seo.site_title %></h1>
+<h1><%= data.seo.title2 %> : <%= data.seo.title1 %></h1>
 <img src="<%= data.seo.img %>"/>
 <footer>
     <% for(var link in data.seo.social_links) {%>
@@ -41,7 +41,7 @@
     <% } %>
 </footer>
 
-<h1><%= data.seo.title1 %><%= data.seo.title2 %></h1>
-
+<h1><%= data.seo.title2 %> : <%= data.seo.title1 %></h1>
+<h2><%= data.seo.meta_description %> </h2>
 </body>
 </html>
