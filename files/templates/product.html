@@ -17,13 +17,17 @@
 
 
                         <div class="more-views">
+
                             <div style="position: relative;padding: 0px 60px;">
+                                <div class='prod-arrow-left' ng-click='nextImage()'><img src='/img/other/arrow_dark_left.png'></div>
                                 <div class="more-views-list">
-                                    <a rel="group" ng-class="{'active' : currentBigImg==item}" ng-repeat="item in product.img" ng-click="toggleBigImg(item)" productsimgslider>
+                                    <a rel="group" ng-class="{'active' : currentBigImg==item}" ng-repeat="item in product.img track by $index" ng-click="toggleBigImg($index)" productsimgslider>
                                         <img ng-src="/img/{{product.slug}}/{{item}}" width="85" height="85" alt="{{product.title}}" title="{{product.title}}" border="1"/>
                                     </a>
                                 </div>
+                                <div class='prod-arrow-right ' ng-click='nextImage()'><img src='/img/other/arrow_dark_right.png'></div>
                             </div>
+
                         </div>
                     </div>
 

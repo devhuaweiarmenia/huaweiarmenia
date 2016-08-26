@@ -597,6 +597,7 @@ app.controller('productController', ['$http', '$scope', '$routeParams', '$rootSc
     $scope.isNarrow=$(window).width()>770;
     $scope.productBottom=$scope.isNarrow?'overview': 'none';
     $scope.currentBigImg="";
+    $scope.imgIndex = 0;
     $scope.toggleBottom=function(tab) {
         $scope.productBottom==tab?$scope.productBottom='none': $scope.productBottom=tab;
     };
@@ -607,10 +608,22 @@ app.controller('productController', ['$http', '$scope', '$routeParams', '$rootSc
 
                 $('head').append('<meta property="og:image" content="https://huaweiarmenia.herokuapp.com/img/' + product.slug + '/'+encodeURIComponent(product.img[0]) + '" />');
 
-                if($scope.product.img.length>0)$scope.currentBigImg=$scope.product.img[0];
-                $scope.toggleBigImg=function(url) {
-                    $scope.currentBigImg=url;
-                }
+                if($scope.product.img.length>0) $scope.currentBigImg=$scope.product.img[$scope.imgIndex];
+                $scope.toggleBigImg=function(index) {
+                    $scope.imgIndex = index;
+                    $scope.currentBigImg = $scope.product.img[index];
+                    console.log($scope.imgIndex, $scope.currentBigImg);
+                };
+                $scope.prevImage = function() {
+                    if($scope.imgIndex > 1) $scope.imgIndex--;
+                    else $scope.imgIndex = $scope.product.img.length -1;
+                    $scope.toggleBigImg($scope.imgIndex);
+                };
+                $scope.nextImage = function() {
+                    if($scope.imgIndex < $scope.product.img.length -2) $scope.imgIndex++;
+                    else $scope.imgIndex = 0;
+                    $scope.toggleBigImg($scope.imgIndex);
+                };
             }
             else {
                 //$location.path("/"+$rootScope.currentLang+"/404")
@@ -836,10 +849,20 @@ app.directive('productsimgslider', function($timeout) {
                 $timeout(function() {
                         if(scope.$last===true) {
                             var owl=$('.more-views-list');
+
                             owl.owlCarousel( {
-                                    margin: 0, loop: true, dots: false, navigation: true, navigationText: ["<img class=\"prod-arrow-left\" src='/img/other/arrow_dark_left.png'>", "<img class=\"prod-arrow-right\" src='/img/other/arrow_dark_right.png'>"], autoplay: true, autoplayTimeout: 5000, autoplayHoverPause: true
-                                }
-                            );
+                                margin: 0,
+                                loop: true,
+                                dots: false,
+                                navigation: false
+                            });
+
+                            $(".prod-arrow-right").click(function(){
+                                owl.trigger('owl.next');
+                            });
+                            $(".prod-arrow-left").click(function(){
+                                owl.trigger('owl.prev');
+                            });
                         }
                     }
                 )
