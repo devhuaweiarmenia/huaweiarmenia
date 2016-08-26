@@ -3,13 +3,12 @@
 </h1>
 <div class="blog-wrapper">
     <div class="article">
-        <img class="article-img" src="/img/blog/{{article.img}}">
+        <img class="article-img" alt="{{article.title}}" src="/img/blog/{{article.img}}">
         <div class="article-inner">
             <span class="article-date">{{article.date}}</span>
             <span class="article-title">{{article.title}}</span>
             <div class="article-text-and-social">
                 <span class="article-text article-inner-text" ng-bind-html="article.inner"></span>
-                <!--<span class="article-text" ng-include="article.innerLink"></span>-->
                 <ul class="lang-section follow-us main-follow" style="z-index: 9999;    top: 84px;">
                     <div class="social-link">&nbsp;
                         <div class="article-social-item f-link" ng-click="shareIt.facebook(article.slug, article.title, article.img[0], article.meta_desc)"></div>

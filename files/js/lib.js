@@ -578,22 +578,16 @@ app.controller('homeController', ['$http', '$scope', '$rootScope', '$location', 
 app.controller('smartphonesController', ['$http', '$scope', '$rootScope', '$location', '$timeout', '$routeParams', '$translate', 'mainService', function($http, $scope, $rootScope, $location, $timeout, $routeParams, $translate, mainService) {
     $rootScope.scrollToTop();
     mainService.init($routeParams);
-    $scope.menuActive='smartphones';
-    $http({url:"/api/getProducts", method:"POST", data: {type:'s'}}
-    ).success(function(products) {
-        $scope.productsMain = products;
-    });
+    $scope.menuActive='Smartphones';
+    $http({url:"/api/getProducts", method:"POST", data: {type:'s'}}).success(function(products) {$scope.productsMain = products;});
 }
 
 ]);
 app.controller('tabletsController', ['$http', '$scope', '$rootScope', '$location', '$timeout', '$routeParams', '$translate', 'mainService', function($http, $scope, $rootScope, $location, $timeout, $routeParams, $translate, mainService) {
     $rootScope.scrollToTop();
     mainService.init($routeParams);
-    $scope.menuActive='tablets';
-    $http({url:"/api/getProducts", method:"POST", data: {type:'t'}}
-    ).success(function(products) {
-        $scope.productsMain = products;
-    });
+    $scope.menuActive='Tablets';
+    $http({url:"/api/getProducts", method:"POST", data: {type:'t'}}).success(function(products) {$scope.productsMain = products;});
 }
 
 ]);

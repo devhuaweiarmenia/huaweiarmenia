@@ -34,7 +34,9 @@
 <body>
 
 <h1><%= data.seo.title2 %> : <%= data.seo.title1 %></h1>
-<img src="<%= data.seo.img %>"/>
+
+<img src="<%= data.seo.img %>" alt="<%= data.seo.title %>"/>
+
 <footer>
     <% for(var link in data.seo.social_links) {%>
         <a href=" <%= data.seo.social_links[link] %> "> <%= data.seo.social_links[link] %></a>

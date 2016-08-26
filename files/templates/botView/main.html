@@ -32,7 +32,7 @@
     </style>
 </head>
 <body>
-<img src="<%= data.seo.img %>"/>
+<img src="<%= data.seo.img %>"  alt="<%= data.seo.title %>"/>
 <footer>
     <% for(var link in data.seo.social_links) {%>
         <a href=" <%= data.seo.social_links[link] %> "> <%= data.seo.social_links[link] %></a>
@@ -40,6 +40,6 @@
 </footer>
 
 <h1><%= data.seo.title2 %></h1>
-
+<h2><%= data.seo.meta_description %> </h2>
 </body>
 </html>

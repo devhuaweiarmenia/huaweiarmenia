@@ -3,7 +3,7 @@
 </h1>
 <div class="blog-wrapper">
     <a class="blog-item" ng-href="{{preLink}}/blog/{{article.slug}}" ng-repeat="article in news">
-        <img class="blog-item-img" src="/img/blog/{{article.img}}">
+        <img class="blog-item-img"  alt="{{article.title}}" src="/img/blog/{{article.img}}">
         <span class="blog-item-date">{{article.date}}</span>
         <span class="blog-item-title">{{article.title}}</span>
         <span class="blog-item-text">{{article.text.slice(0,400)}}</span>
