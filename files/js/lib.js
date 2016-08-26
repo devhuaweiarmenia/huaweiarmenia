@@ -545,34 +545,34 @@ app.controller('homeController', ['$http', '$scope', '$rootScope', '$location', 
     //     $scope.videoLink = '';
     // };
 
-    var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/player_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    // var tag = document.createElement('script');
+    // tag.src = "https://www.youtube.com/player_api";
+    // var firstScriptTag = document.getElementsByTagName('script')[0];
+    // firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
     var player;
-
+    var winWidthMob = $(window).width() < 1024;
     window.onYouTubePlayerAPIReady = function() {
-        player = new YT.Player('ytplayer', {
-            height: $(window).width() < 1024 ? "100%" : 675,
-            width: $(window).width() < 1024 ? "100%" : 1200,
-            playerVars: {
-                autoplay: 0
-            },
-            videoId: 're8mFSniZ4k'
-        });
-        $(window).scroll(function () {
-            $("iframe").each(function () {
-                if ($(window).scrollTop() >= $(this).offset().top - $("#ytplayer").height() - $("#block-footerLinks").height()) {
-                    player.playVideo();
-                } else {
-                    player.pauseVideo();
-                }
-            });
-        });
+
     };
 
-
+    player = new YT.Player('ytplayer', {
+        height: winWidthMob ? "100%" : 675,
+        width: winWidthMob ? "100%" : 1200,
+        playerVars: {
+            autoplay: 0
+        },
+        videoId: 're8mFSniZ4k'
+    });
+    $(window).scroll(function () {
+        $("iframe").each(function () {
+            if ($(window).scrollTop() >= $(this).offset().top - $("#ytplayer").height() - $("#block-footerLinks").height()) {
+                player.playVideo();
+            } else {
+                player.pauseVideo();
+            }
+        });
+    });
 
 }]);
 app.controller('smartphonesController', ['$http', '$scope', '$rootScope', '$location', '$timeout', '$routeParams', '$translate', 'mainService', function($http, $scope, $rootScope, $location, $timeout, $routeParams, $translate, mainService) {
