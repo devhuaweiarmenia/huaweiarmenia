@@ -617,7 +617,7 @@ app.controller('productController', ['$http', '$scope', '$routeParams', '$rootSc
             }
         }
     );
-    console.log(location)
+
     var Share= {
             vkontakte:function(slug, ptitle, pimg, text) {
                 url='http://vkontakte.ru/share.php?';
@@ -731,24 +731,22 @@ app.controller('articleController', ['$http', '$scope', '$routeParams', '$rootSc
                 url+='&noparse=true';
                 Share.popup(url);
             }
-            , facebook:function(purl, ptitle, pimg, text) {
+            , facebook:function(slug, ptitle, pimg, text) {
                 url='http://www.facebook.com/sharer.php?s=100';
-                url+='&p[title]='+encodeURIComponent(ptitle);
-                url+='&p[summary]='+encodeURIComponent(text);
-                url+='&p[url]='+'http://'+location.host+$rootScope.preLink+'/news/article/'+encodeURIComponent(purl);
-                url+='&p[images][0]='+encodeURIComponent(pimg);
+                url+='&title='+encodeURIComponent(ptitle);
+                url+='&u=' + encodeURIComponent(location.href);
                 Share.popup(url);
             }
             , twitter:function(purl, ptitle) {
                 url='http://twitter.com/share?';
                 url+='text='+encodeURIComponent(ptitle.replace(/<\S[^><]*>/g, ''));
-                url+='&url='+'http://'+location.host+$rootScope.preLink+'/news/article/'+encodeURIComponent(purl);
+                url+='&url=' + encodeURIComponent(location.href);
                 url+='&counturl='+encodeURIComponent(purl);
                 Share.popup(url);
             }
             , google:function(purl) {
                 url='https://plus.google.com/share?';
-                url+='&url='+'http://'+location.host+$rootScope.preLink+'/news/article/'+encodeURIComponent(purl);
+                url+='url=' + encodeURIComponent(location.href);
                 Share.popup(url);
             }
             , popup:function(url) {
