@@ -438,10 +438,10 @@ app.controller('mainController', ['$http', '$routeParams', '$scope', '$rootScope
         //     }
     $(".header-nav-item").hover(
         function () {
-            $(this).find('.dd-sub-menu').show();
+            $(this).find('.dd-sub-menu').show(800);
         },
         function () {
-            $(this).find('.dd-sub-menu').hide();
+            $(this).find('.dd-sub-menu').hide(800);
         }
     );
     $scope.productsSubmenu=[
