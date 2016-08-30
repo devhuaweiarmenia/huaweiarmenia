@@ -6,12 +6,27 @@
             <priority>1</priority>
         </url>
     <% } %>
-
+    <% for(var locale in data.seo.locales) {%>
+        <% for(var item in data.seo.pages) {%>
+        <url>
+            <loc>http://<%= data.seo.hostname %>/<%= data.seo.locales[locale] %>/products/<%= data.seo.pages[item] %></loc>
+            <priority>0.9</priority>
+        </url>
+        <% } %>
+    <% } %>
     <% for(var locale in data.seo.locales) {%>
         <% for(var item in data.seo.products) {%>
         <url>
             <loc>http://<%= data.seo.hostname %>/<%= data.seo.locales[locale] %>/products/<%= data.seo.products[item].slug %></loc>
-            <priority>0.5</priority>
+            <priority>0.9</priority>
+        </url>
+        <% } %>
+    <% } %>
+    <% for(var locale in data.seo.locales) {%>
+        <% for(var item in data.seo.articles) {%>
+        <url>
+            <loc>http://<%= data.seo.hostname %>/<%= data.seo.locales[locale] %>/products/<%= data.seo.articles[item].slug %></loc>
+            <priority>0.9</priority>
         </url>
         <% } %>
     <% } %>
