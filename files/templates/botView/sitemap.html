@@ -9,7 +9,7 @@
     <% for(var locale in data.seo.locales) {%>
         <% for(var item in data.seo.pages) {%>
         <url>
-            <loc>http://<%= data.seo.hostname %>/<%= data.seo.locales[locale] %>/products/<%= data.seo.pages[item] %></loc>
+            <loc>http://<%= data.seo.hostname %>/<%= data.seo.locales[locale] %>/<%= data.seo.pages[item] %></loc>
             <priority>0.9</priority>
         </url>
         <% } %>
