@@ -1,0 +1,149 @@
+{
+  "lang": "en",
+  "slug": "honor-8",
+  "img": [
+    "1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"
+  ],
+  "title": "Honor 3",
+  "shortDescr": [
+    "Smart Key + Fingerprint sensor",
+    "12 MP + 12 MP",
+    "8 MP + LED-flash",
+    "Full HD 5.2” display",
+    "32 GB/ 64GB ROM + 4 GB RAM",
+    "2 SIM-cards with 4G LTE Cat6",
+    "NFC"
+  ],
+  "price": "N/A",
+  "overview": [
+    {
+      "title": "Design",
+      "text": "The ultra-narrow body of Honor 8 with 2.5D glass, aluminium alloy offset and 3D grating effect will certainly attrack attention.",
+      "img" : "a1.jpg"
+    },
+    {
+      "title": "Camera",
+      "text": "The camera is equipped with two sensors – RGB and black-white capturing with 1.25 um pixel size. Dual 12MP lenses increase the quality and detalization of the photos, making the images ultra-realistic. 3 types of focusing allow to make stunning macro shootings and photos even in low light conditions.",
+      "img" : "a2.png"
+    },
+    {
+      "title": "3D Fingerprint",
+      "text": "With the new 3D Fingerprint technology, the unlock takes only 0.4 seconds. 3D fingerprint technology provides a high-speed control possibility and ensures the security. Built-in, custom smart key function defines a whole new style of touch.",
+      "img" : "a3.png"
+    },
+    {
+      "title": "CPU",
+      "text": "Octa-core 2.3GHz processor with 16nm FinFET technology and 4GB LPDDR4 RAM allow to fulfill several tasks at the same time. CPU is equipped with i5 co-processor, which controls the sensors of Honor 8 and increases significantly the operational speed of Kirin 950 SoC by reducing the response times and prolonging the battery life. Rapid smart file processing system will provide a super-smooth user experience.",
+      "img" : "a4.jpg"
+    },
+    {
+      "title": "Display",
+      "text": "5.2-inch FHD display supports the technology of pixel-level contrast adjustment. Blue light filtering reduces eye strain and provides a safer, more comfortable viewing experience.",
+      "img" : "a5.png"
+    }
+  ],
+  "specification": [
+    {
+      "title": "Size",
+      "text": [
+        "Height<br>145.5mm",
+        "Width<br>71.0mm",
+        "Depth<br>7.45mm",
+        "Weight<br>About 153g"
+      ]
+    },
+    {
+      "title": "Color",
+      "text": [
+        "Black",
+        "White",
+        "Blue"
+      ]
+    },
+    {
+      "title": "Display",
+      "text": [
+        "5.2\" 1920x1080(FHD), 423 PPI "
+      ]
+    },
+    {
+      "title": "CPU",
+      "text": [
+        "Hisilicon Kirin 950, 4 x 2.3GHz + 4 x 1.8GHz "
+      ]
+    },
+    {
+      "title": "Operation System",
+      "text": [
+        "Android™ 6.0"
+      ]
+    },
+    {
+      "title": "Memory",
+      "text": [
+        "RAM: 4GB",
+        "ROM: 32 / 64 GB"
+      ]
+    },
+    {
+      "title": "Network",
+      "text": [
+        "LTE FDD: B1/B3/B7/B8/B20",
+        "TD-LTE: B38/B40",
+        "WCDMA: B1/B2/B8",
+        "GSM: 850/900/1800/1900"
+      ]
+    },
+    {
+      "title": "GPS",
+      "text": [
+        "GPS/AGPS",
+        "Glonass "
+      ]
+    },
+    {
+      "title": "Connectivity",
+      "text": [
+        "Bluetooth 4.2,WI-FI 802.11ac/a/b/g/n, 2.4G/5G",
+        "USB 2.0 with USB Type C Interface"
+      ]
+    },
+    {
+      "title": "Sensors",
+      "text": [
+        "Accelerometer",
+        "Proximity sensor",
+        "Ambient light sensor",
+        "Gyroscope",
+        "Compass" ,
+        "Hall-sensor"
+      ]
+    },
+    {
+      "title": "Camera",
+      "text": [
+        "Rear Camera: 12.0 MP Dual-camera",
+        "Front Camera: 8.0 MP camera"
+      ]
+    },
+    {
+      "title": "Audio",
+      "text": [
+        "AMR-NB, AAC, AAC+, eAAC+ "
+      ]
+    },
+    {
+      "title": "Video",
+      "text": [
+        "H.263, H.264, MPEG-4"
+      ]
+    },
+    {
+      "title": "Battery",
+      "text": [
+        "Capacity: 3000mAh"
+      ]
+    }
+  ]
+}
+
