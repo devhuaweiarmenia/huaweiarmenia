@@ -11,7 +11,7 @@
     <meta property="og:description" content=" <%= data.seo.meta_description %>" />
     <meta property="og:image" content="<%= data.seo.img %>" />
     <% for(var link in data.seo.lang_links) {%>
-        <link rel="alternate" href=" <%= data.seo.lang_links[link].href %> " hreflang="<%= data.seo.lang_links[link].lang %>" />
+        <link rel="alternate" href="<%= data.seo.lang_links[link].href %>" hreflang="<%= data.seo.lang_links[link].lang %>" />
     <% } %>
     <% for(var link in data.seo.social_links) {%>
         <link rel="publisher" href=" <%= data.seo.social_links[link] %> " />
@@ -32,14 +32,17 @@
     </style>
 </head>
 <body>
+
+<h1><%= data.seo.title2 %></h1>
+<h2><%= data.seo.meta_description %> </h2>
 <img src="<%= data.seo.img %>"  alt="<%= data.seo.title %>"/>
+
 <footer>
     <% for(var link in data.seo.social_links) {%>
         <a href=" <%= data.seo.social_links[link] %> "> <%= data.seo.social_links[link] %></a>
     <% } %>
 </footer>
 
-<h1><%= data.seo.title2 %></h1>
-<h2><%= data.seo.meta_description %> </h2>
+
 </body>
 </html>

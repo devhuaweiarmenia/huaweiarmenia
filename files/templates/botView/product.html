@@ -34,13 +34,15 @@
 <body>
 
 <h1><%= data.seo.site_title %></h1>
+<h1><%= data.seo.title1 %><%= data.seo.title2 %></h1>
+
 <footer>
     <% for(var link in data.seo.social_links) {%>
         <a href=" <%= data.seo.social_links[link] %> "> <%= data.seo.social_links[link] %></a>
     <% } %>
 </footer>
 
-<h1><%= data.seo.title1 %><%= data.seo.title2 %></h1>
+
 
 </body>
 </html>
